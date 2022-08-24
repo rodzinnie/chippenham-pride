@@ -1,12 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+
 import './App.css'
+import { MainLayout } from './layouts'
+import { Home, About } from './pages'
 
 function App() {
   return (
-    <>
-      Hello Chippenham
-    </>
+    <Routes>
+      <Route path='/' element={<MainLayout />}>
+        <Route index element={<Home />}></Route>
+        <Route path='about' element={<About />}></Route>
+      </Route>
+    </Routes>
   )
 }
 
