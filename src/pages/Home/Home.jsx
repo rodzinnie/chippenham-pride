@@ -26,11 +26,13 @@ function Home() {
           strengthen and enhance diverse connections.
         </p>
       </article>
-      <div className={styles.formParent}>
+      <div className={styles.formSection}>
         <div className={styles.imgParent}>
             <img className={styles.img} src={logo}/>
         </div>
-        <Form />
+        <div className={styles.formParent}>
+          <Form />
+        </div>
       </div>
     </section>
   )

@@ -17,7 +17,7 @@ strong {
     font-weight: 400;
 }
 
-.formParent{
+.formSection{
     min-height: 400px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.58);
@@ -32,4 +32,22 @@ strong {
 
 .img {
     width: 100%;
+}
+
+
+@media (min-width: 1000px) {
+    .formSection{
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .imgParent{
+        width: 50%;
+    }
+
+    .formParent{
+        padding-left: 30px;
+        width: 40%;
+    }
 }
