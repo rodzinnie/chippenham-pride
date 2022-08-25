@@ -44,3 +44,8 @@ body {
   100%{background-position:0% 82%}
 }
 
+@media (max-width: 1000px) {
+  #root {
+    background-color: #A76BB6;
+  }
+} 
