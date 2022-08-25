@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Button, Navbar } from '../../common'
 import styles from './Header.module.css'
+import arrow from '../../assets/arr.png'
 
 function Header() {
   return (
@@ -16,7 +17,9 @@ function Header() {
           </div>
           <div className={styles.button}>
             <Button text="Contact us" variant="light"/>
-            <img src="" alt="arrow down" />
+            <div className={styles.arrParent}>
+              <img className={styles.arr} src={arrow} alt="arrow down" />
+            </div>
           </div>
         </section>
     </header>

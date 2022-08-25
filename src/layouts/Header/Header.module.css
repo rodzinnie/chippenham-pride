@@ -75,11 +75,25 @@
     align-items: center;
 }
 
+.arr {
+    width: 30px;
+}
+
+.arrParent {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* @media (min-width: ) */
 
 @media (min-width: 800px) {
     .h1 {
         width: 90%;
         font-size: 60px;
+    }
+    .start, .place {
+        font-size: 50px;
     }
 }
