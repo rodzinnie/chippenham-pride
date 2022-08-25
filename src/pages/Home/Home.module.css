@@ -1,0 +1,18 @@
+strong {
+    font-weight: 900;
+}
+.article {
+    padding-bottom: 50px;
+}
+
+.article >* {
+    font-family: 'Poppins';
+    color: #000;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
