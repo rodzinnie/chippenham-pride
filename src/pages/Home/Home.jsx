@@ -1,6 +1,8 @@
 import React from 'react'
 
 import styles from './Home.module.css'
+import { Form } from '../../common'
+import logo from '../../assets/logo.png'
 
 function Home() {
   return (
@@ -24,7 +26,12 @@ function Home() {
           strengthen and enhance diverse connections.
         </p>
       </article>
-      {/* <Form /> */}
+      <div className={styles.formParent}>
+        <div className={styles.imgParent}>
+            <img className={styles.img} src={logo}/>
+        </div>
+        <Form />
+      </div>
     </section>
   )
 }
