@@ -35,7 +35,7 @@
     display:block;
     font-family: 'Poppins';
     line-height: 42px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight:900;
     white-space: pre;
 }
@@ -76,9 +76,7 @@
         justify-content: space-around;
         align-items: center;
     }
-    .span {
-        font-size: 23px;     
-    }
+
     .nav {
         display: flex;
         flex-direction: row;
