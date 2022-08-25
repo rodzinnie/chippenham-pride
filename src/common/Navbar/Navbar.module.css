@@ -10,7 +10,7 @@
     margin: 0;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     /* height: 80px; */
     background-color:var(--navbar-color);
@@ -28,6 +28,14 @@
     right: -100%;
     transition: right 1s;
     width: 100vw;
+}
+.span {
+    color: black;
+    font-size: 40px;
+    display:block;
+    font-family: 'Poppins';
+    line-height: 42px;
+    font-weight: bold;
 }
 
 .navlink {
@@ -49,4 +57,13 @@
     position: absolute;
     z-index: 10;
     right: 50px;
+}
+
+@media (max-width:500px) {
+    .span {
+        font-size: 23px;     
+    }
+    .hamburger {
+        right: 20px;
+    }
 }

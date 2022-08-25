@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
+import { NavLink } from 'react-router-dom'
 
 import { Button } from '..'
-import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import styles from './Navbar.module.css'
 
@@ -21,7 +21,10 @@ function Navbar() {
   return (
     <div className={styles.root}>
             <img src={logo}  alt="logo" className={styles.logo}/>
-            <div className={styles.title}>Chippenham Pride 2023</div>
+            <div className={styles.title}>
+                <span className={styles.span}>Chippenham</span>
+                <span className={styles.span}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pride 2023</span>
+            </div>
             <nav ref={inputRef} className={styles.nav}>
                 <NavLink className={styles.navlink} to="/">Home</NavLink>
                 <NavLink className={styles.navlink} to="/">About</NavLink>
