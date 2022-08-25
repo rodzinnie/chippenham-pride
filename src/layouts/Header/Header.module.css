@@ -5,7 +5,6 @@
 
 .root {
     width: 100%;
-    min-height: 800px;
     position: relative;
     color: white; 
 
@@ -55,7 +54,8 @@
 .date {
     font-size: 100px;
     font-weight: 900;
-    background: linear-gradient(90deg, #A76BB6 4.09%, #FEB932 18.58%, #FBFE60 37.06%, #B7FE7E 51.05%, #00FAFA 64.03%, #0019FA 78.52%, #F500FA 90.01%, #FE8787 100%);    background-clip: text;
+    background: -webkit-linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
