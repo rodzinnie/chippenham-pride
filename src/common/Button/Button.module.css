@@ -1,10 +1,21 @@
-.dark {
-    padding: 15px 30px;
+.dark, .light {
     margin: 0;
     height: fit-content;
-    background-color: black;
     border-radius: 35px;
     font-family: 'Poppins';
     font-weight: 200;
     font-size: 25px;
+}
+
+.dark {
+    padding: 15px 30px;
+    background-color: black;
+
+}
+
+.light {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
 }
