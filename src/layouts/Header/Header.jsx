@@ -8,12 +8,16 @@ function Header() {
     <header className={styles.root}>
         <Navbar />
         <section className={styles.section}>
-            <h1>Join Proud Chippenham in celebrating its diversity!</h1>
+          <div className={styles.shoutout}>
+            <h1 className={styles.h1}>Join Proud Chippenham in celebrating its diversity!</h1>
             <p className={styles.date}>17 June 2023</p>
             <p className={styles.start}>Start: 1pm</p>
             <p className={styles.place}>Monkton Park, Chippenham</p>
+          </div>
+          <div className={styles.button}>
             <Button text="Contact us" variant="light"/>
             <img src="" alt="arrow down" />
+          </div>
         </section>
     </header>
   )
