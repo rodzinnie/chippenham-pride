@@ -1,0 +1,43 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav {
+    display:flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.root >*, .nav >*{
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins';
+    line-height: 30px;
+    
+}
+
+.media{
+    flex-basis: 33%;
+    padding: 40px;
+}
+
+.media a {
+    padding: 0 40px;
+}
+
+.registry {
+    width: max-content;
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 25px;
+
+}
