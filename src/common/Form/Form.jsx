@@ -32,6 +32,7 @@ function Form() {
     console.log(email, reason, name, content)
     console.log(e.target)
     dispatch(sendMessageAction(message))
+    navigate('/submitmessage')
   }
   return (
     <form className={styles.root}>
