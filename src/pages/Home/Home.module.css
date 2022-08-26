@@ -27,6 +27,7 @@ strong {
 }
 
 .imgParent {
+    padding-top: 40px;
     width: 80%;
 }
 
@@ -36,6 +37,12 @@ strong {
 
 
 @media (min-width: 1000px) {
+    p{  
+        margin:auto;
+        width:60%;
+        line-height: 40px;
+        font-size: 35px;
+    }
     .formSection{
         width: 100%;
         flex-wrap: nowrap;
