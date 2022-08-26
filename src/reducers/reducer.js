@@ -10,7 +10,7 @@ const initState = {
     error: ''
 }
 
-export default reducer = (state=initState, action) => {
+const reducer = (state=initState, action) => {
     switch (action.type){
         case 'SEND_MESSAGE':
             return {
@@ -28,3 +28,5 @@ export default reducer = (state=initState, action) => {
     }
 
 }
+
+export default reducer
