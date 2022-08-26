@@ -16,8 +16,8 @@ const reducer = (state=initState, action) => {
             return {
                 ...state,
                 person: {
-                    email: action.payload.message.email,
-                    name: action.payload.message.name
+                    email: action.payload.person.email,
+                    name: action.payload.person.name
                 },
                 message: action.payload.message,
                 department: action.payload.department,

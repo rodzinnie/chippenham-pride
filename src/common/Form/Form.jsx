@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom'
 
 import styles from './Form.module.css'
 import { Button } from '..'
+import { sendMessageAction } from '../../actions'
 
 function Form() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
   const [email, setEmail ] = useState('')
   const [reason, setReason ] = useState('')
   const [name, setName ] = useState('')
@@ -16,9 +20,18 @@ function Form() {
   }
 
   const handleSubmit = (e) => {
+    const message = {
+        person: {
+          email: email,
+          name: name
+        },
+        message: content,
+        department: reason,
+    }
     e.preventDefault()
     console.log(email, reason, name, content)
     console.log(e.target)
+    dispatch(sendMessageAction(message))
   }
   return (
     <form className={styles.root}>
