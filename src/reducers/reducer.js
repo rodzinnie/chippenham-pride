@@ -6,7 +6,6 @@ const initState = {
     },
     department: '',
     loading: true,
-    showData: [],
     error: ''
 }
 
