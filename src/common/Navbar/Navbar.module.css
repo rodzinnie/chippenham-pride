@@ -17,6 +17,12 @@
     overflow-y: visible;
 }
 
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
 .nav {
     display: flex;
     flex-direction: column;

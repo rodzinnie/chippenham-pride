@@ -50,10 +50,12 @@ function Navbar() {
 
   return (
     <div className={styles.root} ref={rootRef}>
-            <img src={logo}  alt="logo" className={styles.logo}/>
-            <div className={styles.title}>
-                <span className={styles.span}>Chippenham</span>
-                <span className={styles.span}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pride 2023</span>
+            <div className={styles.logos}>
+                <img src={logo}  alt="logo" className={styles.logo}/>
+                <div className={styles.title}>
+                    <span className={styles.span}>Chippenham</span>
+                    <span className={styles.span}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pride 2023</span>
+                </div>
             </div>
             <nav ref={inputRef} className={styles.nav}>
                 <NavLink style={handleIsActive} className={styles.navlink} to="/">Home</NavLink>
