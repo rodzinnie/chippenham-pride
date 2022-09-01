@@ -35,6 +35,11 @@
     padding-top: 10px;
     height: 200px;
 }
+.newsletter {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
 
 .label{
     color: black;

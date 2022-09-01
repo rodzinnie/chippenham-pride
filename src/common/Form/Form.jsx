@@ -55,7 +55,7 @@ function Form() {
         <input className={styles.input} type="text" placeholder="Name" onChange={(e) => handleInput(e, setName)} value={name}/>
         <textarea rows='14' cols='10' className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)}>{content}</textarea>
         
-        <label htmlFor='newsletter'>
+        <label htmlFor='newsletter' className={styles.newsletter}>
           <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked} onChange={handleCheckboxChange}/>
           <p className={styles.label}>I want to receive the newsletter about Chippenham Pride 2023</p>
         </label>
