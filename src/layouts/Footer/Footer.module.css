@@ -11,6 +11,10 @@
     padding-left: 40px;
 }
 
+.root{
+    border-top: 1px solid rgb(205, 205, 205);
+}
+
 .root >*, .nav >*{
     width: 100%;
     font-size: 20px;
