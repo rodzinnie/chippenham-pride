@@ -40,6 +40,10 @@ function Form() {
   const handleCheckbox = () => {
     setChecked(!checked)
   }
+
+  const handleCheckboxChange = () => {
+    console.log('checkbox ' + !checked)
+  }
   return (
     <form className={styles.root}>
         <input className={styles.input} type="text" placeholder="Email"  onChange={(e) => handleInput(e,setEmail)} value={email}/>
@@ -53,7 +57,7 @@ function Form() {
         <input className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)} value={content}/>
         
         <label htmlFor='newsletter'>
-          <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked}/>
+          <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked} onChange={handleCheckboxChange}/>
           <p className={styles.label}>I want to receive the newsletter about Chippenham Pride 2023</p>
         </label>
         <div className={styles.buttonParent}>
