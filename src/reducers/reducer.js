@@ -6,6 +6,7 @@ const initState = {
     },
     department: '',
     loading: true,
+    newsletter: false,
     error: ''
 }
 

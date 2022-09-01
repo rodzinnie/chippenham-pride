@@ -28,6 +28,7 @@ function Form() {
         },
         message: content,
         department: reason,
+        newsletter: checked,
     }
     e.preventDefault()
     console.log(email, reason, name, content)
