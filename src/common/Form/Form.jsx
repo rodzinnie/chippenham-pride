@@ -31,8 +31,6 @@ function Form() {
         newsletter: checked,
     }
     e.preventDefault()
-    console.log(email, reason, name, content)
-    console.log(e.target)
     dispatch(sendMessageAction(message))
     navigate('/submitmessage')
   }
@@ -42,8 +40,9 @@ function Form() {
   }
 
   const handleCheckboxChange = () => {
-    console.log('checkbox ' + !checked)
+    return ''
   }
+
   return (
     <form className={styles.root}>
         <input className={styles.input} type="text" placeholder="Email"  onChange={(e) => handleInput(e,setEmail)} value={email}/>
