@@ -21,22 +21,24 @@
     color: black;
     font-family: 'Poppins';
     line-height: 30px;
-    
 }
 
-.media{
-    padding: 40px;
-    flex-wrap: nowrap;
+.media {
+    margin: auto;
+    margin-top: 60px;
 }
-
 .media a {
     padding: 0 10px;
+}
+
+.media a img {
+    width: 40px;
 }
 
 .registry {
     width: max-content;
     text-align: center;
-    padding-right: 40px;
+    margin: auto;
     padding-top: 40px;
 }
 
@@ -48,6 +50,13 @@
 
 @media (min-width: 1000px) {
     .media{
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .media{
         flex-basis: 33%;
+        flex-wrap: nowrap;
     }
 }
