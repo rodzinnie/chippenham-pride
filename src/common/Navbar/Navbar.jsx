@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 import { Button } from '..'
 import logo from '../../assets/logo.png'
@@ -12,6 +12,7 @@ function Navbar() {
     const [windowSize, setWindowSize] = useState(getWindowSize());
     const inputRef = useRef();
     const rootRef = useRef();
+    const navigateTo = useNavigate();
 
     useEffect(() => {
         function handleWindowResize() {
@@ -48,6 +49,11 @@ function Navbar() {
         return {borderBottom: isActive ? "1px black solid" : 'none',   textShadow: isActive ? '2px 4px #33323280' : 'none'}
     }
 
+    const handleOnClick = (e) => {
+        e.preventDefault()
+        navigateTo('/form')
+    }
+
   return (
     <div className={styles.root} ref={rootRef}>
             <div className={styles.logos}>
@@ -63,7 +69,7 @@ function Navbar() {
                 <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Volunteer</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Support</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>
-                <Button text="Contact us" variant="dark" />
+                <Button text="Contact us" variant="dark" onClick={handleOnClick}/>
             </nav>
             <div className={styles.hamburger}>
                 <Hamburger onToggle={handleHamburger} toggled={isOpen} toggle={setOpen} color="#FFFFFF"/>
