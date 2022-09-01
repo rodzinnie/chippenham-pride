@@ -40,7 +40,7 @@ function Navbar() {
             rootRef.current.style.overflow = 'visible'
         } else {
             inputRef.current.style.right = '-120%'
-            setTimeout(() => rootRef.current.style.overflow = 'hidden', 800)
+            setTimeout(() => rootRef.current.style.overflow = 'hidden', 400)
         }
     }
 
