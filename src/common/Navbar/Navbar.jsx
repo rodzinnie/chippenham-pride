@@ -11,6 +11,7 @@ function Navbar() {
     const [isOpen, setOpen] = useState(false)
     const [windowSize, setWindowSize] = useState(getWindowSize());
     const inputRef = useRef();
+    const rootRef = useRef();
 
     useEffect(() => {
         function handleWindowResize() {
@@ -36,8 +37,10 @@ function Navbar() {
     const handleHamburger = (toggled) => {
         if(toggled) {
             inputRef.current.style.right = 0
+            rootRef.current.style.overflow = 'visible'
         } else {
-            inputRef.current.style.right = '-200%'
+            inputRef.current.style.right = '-120%'
+            setTimeout(() => rootRef.current.style.overflow = 'hidden', 800)
         }
     }
 
@@ -46,7 +49,7 @@ function Navbar() {
     }
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} ref={rootRef}>
             <img src={logo}  alt="logo" className={styles.logo}/>
             <div className={styles.title}>
                 <span className={styles.span}>Chippenham</span>

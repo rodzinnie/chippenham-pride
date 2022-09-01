@@ -12,10 +12,9 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    /* height: 80px; */
-    /* background-color:var(--navbar-color); */
     opacity: 1;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .nav {
