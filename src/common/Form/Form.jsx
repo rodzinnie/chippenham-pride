@@ -14,6 +14,7 @@ function Form() {
   const [reason, setReason ] = useState('')
   const [name, setName ] = useState('')
   const [content, setContent ] = useState('')
+  const [checked, setChecked] = useState(true)
 
   const handleInput = (e, fun)  => {
     fun(e.target.value)
@@ -34,6 +35,10 @@ function Form() {
     dispatch(sendMessageAction(message))
     navigate('/submitmessage')
   }
+
+  const handleCheckbox = () => {
+    setChecked(!checked)
+  }
   return (
     <form className={styles.root}>
         <input className={styles.input} type="text" placeholder="Email"  onChange={(e) => handleInput(e,setEmail)} value={email}/>
@@ -45,6 +50,11 @@ function Form() {
         </select>
         <input className={styles.input} type="text" placeholder="Name" onChange={(e) => handleInput(e, setName)} value={name}/>
         <input className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)} value={content}/>
+        
+        <label htmlFor='newsletter'>
+          <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked}/>
+          <p className={styles.label}>I want to receive the newsletter about Chippenham Pride 2023</p>
+        </label>
         <div className={styles.buttonParent}>
             <Button text="Submit" variant="dark" handleClick={handleSubmit}/>
         </div>
