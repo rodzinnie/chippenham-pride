@@ -46,14 +46,14 @@ function Form() {
   return (
     <form className={styles.root}>
         <input className={styles.input} type="text" placeholder="Email"  onChange={(e) => handleInput(e,setEmail)} value={email}/>
-        <select className={styles.input} type="text" placeholder="Reason for contact" onChange={(e) => handleInput(e, setReason)} value={reason}>
+        <select className={styles.select} type="text" placeholder="Reason for contact" onChange={(e) => handleInput(e, setReason)} value={reason}>
           <option value='none'>Choose an option</option>
           <option value='volunteer'>Volunteer with us!</option>
-          <option value='perform'>Perform at Chippenham Pride 2023</option>
+          <option value='perform'>Perform at our Pride 2023</option>
           <option value='sell'>Sell your merch!</option>
         </select>
         <input className={styles.input} type="text" placeholder="Name" onChange={(e) => handleInput(e, setName)} value={name}/>
-        <input className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)} value={content}/>
+        <textarea rows='14' cols='10' className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)}>{content}</textarea>
         
         <label htmlFor='newsletter'>
           <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked} onChange={handleCheckboxChange}/>

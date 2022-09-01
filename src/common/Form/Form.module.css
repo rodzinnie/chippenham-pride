@@ -7,19 +7,24 @@
     margin: 50px 0;
 }
 
-.input, .areaInput {
-    width: 100%;
-    padding-left: 40px;
+.input, .areaInput, .select {
+    padding:0 40px;
     font-family: 'Poppins';
     font-weight: 200;
     color: black;
     min-height: 35px;
-    margin-bottom: 20px;
     line-height: 25px;
     font-size: 20px;
     border: 1px solid rgb(45, 45, 45);
     border-radius: 20px;
     background-color: transparent;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 .buttonParent{
@@ -27,7 +32,7 @@
 }
 
 .areaInput {
-
+    padding-top: 10px;
     height: 200px;
 }
 
