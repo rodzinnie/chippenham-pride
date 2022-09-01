@@ -8,7 +8,9 @@ function MainLayout() {
   return (
     <div className={styles.root}>
         <Header />
-        <Outlet />
+        <div className={styles.outlet}>
+          <Outlet />
+        </div>
         <Footer />
     </div>
   )

@@ -2,8 +2,9 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
+import { Form } from './common';
 import { MainLayout } from './layouts'
-import { Home, About, SubmitMessage } from './pages'
+import { Home, About, SubmitMessage, Support, Team } from './pages'
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Route path='/' element={<MainLayout />}>
         <Route index element={<Home />}></Route>
         <Route path='about' element={<About />}></Route>
+        <Route path='volunteer' element={<Form />}></Route>
+        <Route path='support' element={<Support />}></Route>
+        <Route path='team' element={<Team />}></Route>
       </Route>
       <Route path='/submitmessage' element={<SubmitMessage />}></Route>
     </Routes>

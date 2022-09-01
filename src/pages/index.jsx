@@ -1,3 +1,5 @@
 export { default as Home } from './Home/Home'
 export { default as About } from './About/About'
 export { default as SubmitMessage } from './SubmitMessage/SubmitMessage'
+export { default as Support } from './Support/Support'
+export { default as Team } from './Team/Team'
