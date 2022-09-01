@@ -53,7 +53,7 @@ function Form() {
           <option value='sell'>Sell your merch!</option>
         </select>
         <input className={styles.input} type="text" placeholder="Name" onChange={(e) => handleInput(e, setName)} value={name}/>
-        <textarea rows='14' cols='10' className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)}>{content}</textarea>
+        <textarea rows='14' cols='10' className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)} defaultValue={content}></textarea>
         
         <label htmlFor='newsletter' className={styles.newsletter}>
           <input className={styles.checkbox} placeholder="Your message" type='checkbox' id='newsletter' onClick={handleCheckbox} checked={checked} onChange={handleCheckboxChange}/>
