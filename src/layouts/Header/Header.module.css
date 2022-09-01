@@ -65,6 +65,8 @@
     font-weight: 400;
     color: black;
     text-align: center;
+    font-family: 'Poppins';
+    font-weight: 900;
 }
 
 .button {
