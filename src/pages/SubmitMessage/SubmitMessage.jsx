@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-
-import { Button } from '../../common'
+import emailjs from '@emailjs/browser'
 
 function SubmitMessage() {
+    const reason = useSelector(state => state.reason)
     const message = useSelector(state => state.message)
     const person = useSelector(state => state.person)
+    const form = useRef()
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -15,20 +16,29 @@ function SubmitMessage() {
         }
     })
 
-    const handleClick = (e) => {
-        e.preventDefault()
-        console.log("Your message: " + message)
-        console.log('this is now being send to chippenham@pride.com')
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(form.current)
+        emailjs.sendForm(import.meta.env.VITE_REACT_APP_SERVICE, import.meta.env.VITE_REACT_APP_TEMPLATE, form.current, import.meta.env.VITE_REACT_APP_PUBLIC_KEY)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
 
   return (
     <div>{message ?         
-    <div>
+    <form ref={form} onSubmit={sendEmail}>
+        <input type='hidden' name='user' value={person.name} />
+        <input type='hidden' name='email' value={person.email} />
+        <input type='hidden' name='message' value={message} />
+        <input type='hidden' name='reason' value={reason} />
         <h1>Thank you, {person.name}</h1>
         <p>you are about to send the following message to the Chippenham Pride Committee. Please check if you are happy with this message.</p>
         <p>{message}</p>
-        <Button text={"I'm happy with this message. Send it!"} handleClick={handleClick}/>
-    </div> 
+        <input type='submit' value="I'm happy with this message. Send it!" />
+    </form> 
     : 
     <h1>Please submit your message first</h1>}</div>
   )
