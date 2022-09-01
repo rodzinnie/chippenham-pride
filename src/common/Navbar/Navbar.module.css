@@ -15,6 +15,7 @@
     /* height: 80px; */
     /* background-color:var(--navbar-color); */
     opacity: 1;
+    overflow: hidden;
 }
 
 .nav {
