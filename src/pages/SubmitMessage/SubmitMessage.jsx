@@ -24,7 +24,8 @@ function SubmitMessage() {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
-          });
+          })
+          .then(navigate('/message'));
       };
 
   return (
