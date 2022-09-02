@@ -1,0 +1,14 @@
+
+
+.button {
+    margin: auto;
+    height: fit-content;
+    border-radius: 35px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 25px;
+    max-width: fit-content;
+    padding: 15px 30px;
+    background-color: black;
+    align-self: center;
+}

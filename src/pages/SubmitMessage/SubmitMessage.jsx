@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
+import styles from './SubmitMessage.module.css'
+
 function SubmitMessage() {
     const reason = useSelector(state => state.reason)
     const message = useSelector(state => state.message)
@@ -38,7 +40,7 @@ function SubmitMessage() {
         <h1>Thank you, {person.name}</h1>
         <p>you are about to send the following message to the Chippenham Pride Committee. Please check if you are happy with this message.</p>
         <p>{message}</p>
-        <input type='submit' value="I'm happy with this message. Send it!" />
+        <input type='submit' value="I'm happy with this message. Send it!" className={styles.button}/>
     </form> 
     : 
     <h1>Please submit your message first</h1>}</div>
