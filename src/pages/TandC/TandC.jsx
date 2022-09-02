@@ -22,6 +22,7 @@ function TandC() {
         <li>kept in a form which permits identification of data subjects for no longer than is necessary;</li>
         <li>processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage.</li>
       </ol>
+      <p>People where there is a legal obligation on the Charity to collect, process and share information with a third party - eg: the legal obligations to collect, process and share with HM Revenue &amp; Customs payroll information on employees of the Charity. The information provided will be held, processed and shared with others solely for the purpose meeting the Charity's legal obligations.</p>
     </div>
   )
 }
