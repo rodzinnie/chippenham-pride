@@ -10,7 +10,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: -webkit-linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background: -webkit-linear-gradient(124deg, #fd8270, #d63232, #ddb83d, #e5e83b, #53e16b, #68dfe5, #5e54e0, #de4eec, #e03def);
   background-size: 1800% 1800%;
   
   -webkit-animation: rainbow 60s ease infinite;
