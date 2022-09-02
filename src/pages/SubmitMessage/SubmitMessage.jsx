@@ -32,7 +32,7 @@ function SubmitMessage() {
 
   return (
     <div>{message ?         
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <input type='hidden' name='user' value={person.name} />
         <input type='hidden' name='email' value={person.email} />
         <input type='hidden' name='message' value={message} />

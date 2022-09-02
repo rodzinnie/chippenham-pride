@@ -1,7 +1,15 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.form >* {
+    margin-top: 30px;
+}
 .button {
-    margin: auto;
+    margin: 20px auto;
     height: fit-content;
     border-radius: 35px;
     font-family: 'Poppins';
