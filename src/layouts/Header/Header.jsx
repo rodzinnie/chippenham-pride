@@ -9,7 +9,7 @@ function Header() {
   const handleOnClick = (e) => {
     console.log('first')
     e.preventDefault()
-    navigateTo('/volunteer#contact')
+    navigateTo('/volunteer')
   }
   
   return (
@@ -23,8 +23,8 @@ function Header() {
             <p className={styles.place}>Monkton Park, Chippenham</p>
           </div>
           <div className={styles.button}>
-            <Button text="Contact us" variant="light" handleClick={handleOnClick}/>
-            <div className={styles.arrParent}>
+            <Button text="Contact us" variant="light" handleClick={() => console.log('clicks')}/>
+            <div className={styles.arrParent} onClick={() => console.log('jelo')}>
               <img className={styles.arr} src={arrow} alt="arrow down" />
             </div>
           </div>

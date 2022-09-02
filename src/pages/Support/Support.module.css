@@ -38,3 +38,13 @@
     font-family: 'Poppins';
     display: none;
 }
+
+.img {
+    width: 50%;
+}
+
+@media (min-width: 1000px) {
+    .img {
+        width: 100%;
+    }
+}
