@@ -12,8 +12,8 @@ function Footer() {
       <div className={styles.content}>
         <nav className={styles.nav}>
           <NavLink to="about">About</NavLink>
-          <NavLink to="contact">Contact us</NavLink>
-          <NavLink to="fund">Help us fund the PRIDE</NavLink>
+          <NavLink to="volunteer">Contact us</NavLink>
+          <NavLink to="support">Help us fund the PRIDE</NavLink>
           <NavLink to="tsandcs">T's and C's of the Chippenham Pride 2023</NavLink>
         </nav>
         <div className={styles.media}>
