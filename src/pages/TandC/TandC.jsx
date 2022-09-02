@@ -4,8 +4,24 @@ import styles from './TandC.module.css'
 function TandC() {
   return (
     <div className={styles.root}>
-        <h1>Please familiarise yourself with our T's and C's</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore temporibus neque assumenda vero. Iusto numquam animi beatae mollitia? Saepe quo eveniet id, veritatis nisi a temporibus velit sapiente accusamus tempore nihil pariatur facere similique reiciendis rem hic fugit tempora ratione repudiandae explicabo? Libero iusto nihil necessitatibus deserunt! Laborum explicabo possimus a ab veritatis consequuntur repudiandae ut adipisci, earum est odio architecto, laudantium ex voluptatem eum vero asperiores aspernatur rem consectetur beatae! Ullam consequatur temporibus officia delectus consequuntur error iure iste modi vitae sit deserunt ea odit unde esse quasi praesentium illo, aspernatur aperiam! Minus quia veniam aperiam qui voluptates unde nostrum, nisi exercitationem reiciendis doloremque obcaecati sit a repellat quaerat fugiat cupiditate assumenda doloribus sint impedit, non perferendis pariatur nihil. Optio ipsam, dicta esse laudantium, ut illo soluta veniam rem nesciunt delectus doloremque temporibus doloribus. Aspernatur natus vero vitae, quasi assumenda hic cumque perferendis illum dolorem, tempora laboriosam dolores!</p>
+      <h1>Respect, bullying and harassment</h1>
+      <p>Everyone will be treated with dignity and respect at Chippenham Pride. Bullying and harassment
+          of any kind are in no-one's interest and will not be tolerated; this includes bullying or
+          harassment of staff by visitors of Chippenham Pride.
+          This policy applies to all Trustees, members, volunteers and staff on and off the premises.
+          Bullying and harassment will be treated as disciplinary offences.
+          If necessary, authorities will be informed and appropriate action will be undertaken.
+        </p>
+      <h1>GDPR</h1>
+      <ol>
+      The Charity will ensure that all personal data that it holds will be:
+        <li>Processed lawfully, fairly and in a transparent manner;</li>
+        <li>collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes;</li>
+        <li>adequate, relevant and limited to what is necessary;</li>
+        <li>accurate and kept up to date;</li>
+        <li>kept in a form which permits identification of data subjects for no longer than is necessary;</li>
+        <li>processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage.</li>
+      </ol>
     </div>
   )
 }
