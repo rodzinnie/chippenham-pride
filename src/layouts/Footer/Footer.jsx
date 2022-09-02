@@ -25,7 +25,7 @@ function Footer() {
             CHIPPENHAM PRIDE CIC <br /> Company number: <br />14287807
           </div>
       </div>
-        <p className={styles.rights}>Created &amp; maintained by The Chippenham Pride Team @ 2022</p>
+        <p className={styles.rights}>Created &amp; maintained by The Chippenham Pride Team 2022 Ⓒ</p>
     </footer>
   )
 }
