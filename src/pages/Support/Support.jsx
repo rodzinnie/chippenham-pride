@@ -26,7 +26,7 @@ function Support() {
           <div ref={more} className={styles.more}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis recusandae rem neque quis commodi molestiae. Necessitatibus in deserunt minus accusamus veritatis omnis ullam porro rem at aut nam, tenetur recusandae magni amet ab nulla unde sunt quis ut inventore? Atque reprehenderit porro cupiditate earum repellat, saepe numquam iure quam!</div>
         </div>
         <div className={styles.right}>
-            <Button text='Donate with PayPal' variant='dark' className={styles.button}/>
+            <Button text='Donate with PayPal' variant='dark' className={styles.button} handleClick={console.log('elo')}/>
             <img src={paypal} />
             <Button text='Donate with Go Fund Me' variant='dark'  className={styles.button} handleClick={handleClick}/>
             <img src={gofundme} />

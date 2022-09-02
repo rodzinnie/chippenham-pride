@@ -44,7 +44,7 @@ function Form() {
   }
 
   return (
-    <form className={styles.root}>
+    <form className={styles.root} id='contact'>
         <input className={styles.input} type="text" placeholder="Email"  onChange={(e) => handleInput(e,setEmail)} value={email}/>
         <select className={styles.select} type="text" placeholder="Reason for contact" onChange={(e) => handleInput(e, setReason)} value={reason}>
           <option value='none'>Choose an option</option>

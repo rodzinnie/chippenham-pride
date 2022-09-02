@@ -51,7 +51,8 @@ function Navbar() {
 
     const handleOnClick = (e) => {
         e.preventDefault()
-        navigateTo('/form')
+        navigateTo('/volunteer')
+
     }
 
   return (
@@ -69,7 +70,7 @@ function Navbar() {
                 <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Volunteer</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Support</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>
-                <Button text="Contact us" variant="dark" onClick={handleOnClick}/>
+                <Button text="Contact us" variant="dark" handleClick={handleOnClick}/>
             </nav>
             <div className={styles.hamburger}>
                 <Hamburger onToggle={handleHamburger} toggled={isOpen} toggle={setOpen} color="#FFFFFF"/>
