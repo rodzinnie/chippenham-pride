@@ -3,6 +3,7 @@ strong {
 }
 .article {
     padding-bottom: 50px;
+    margin: 0 7%;
 }
 
 .article >* {
