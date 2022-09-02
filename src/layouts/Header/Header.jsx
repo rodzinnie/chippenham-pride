@@ -5,6 +5,12 @@ import styles from './Header.module.css'
 import arrow from '../../assets/arr.png'
 
 function Header() {
+  
+  const handleOnClick = (e) => {
+    e.preventDefault()
+    navigateTo('/form')
+  }
+  
   return (
     <header className={styles.root}>
         <Navbar />
@@ -16,7 +22,7 @@ function Header() {
             <p className={styles.place}>Monkton Park, Chippenham</p>
           </div>
           <div className={styles.button}>
-            <Button text="Contact us" variant="light"/>
+            <Button text="Contact us" variant="light" onclick={handleOnClick}/>
             <div className={styles.arrParent}>
               <img className={styles.arr} src={arrow} alt="arrow down" />
             </div>
