@@ -50,7 +50,6 @@ function Form() {
           <option value='none'>Choose an option</option>
           <option value='volunteer'>Volunteer with us!</option>
           <option value='perform'>Perform at our Pride 2023</option>
-          <option value='sell'>Sell your merch!</option>
         </select>
         <input className={styles.input} type="text" placeholder="Name" onChange={(e) => handleInput(e, setName)} value={name}/>
         <textarea rows='14' cols='10' className={styles.areaInput} placeholder="Your message"  onChange={(e) => handleInput(e, setContent)} defaultValue={content}></textarea>
