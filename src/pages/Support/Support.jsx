@@ -26,13 +26,16 @@ function Support() {
         <article className={styles.sponsorPacks}>
           <h1 className={styles.h1}>Learn about our Sponsorship Packages</h1>
           <a href={sponsorship} className={styles.button} download>
-            <Button text='Download a general Sponsorship pack'></Button>
+            <h3 className={styles.h3}>General Sponsorship Pack</h3>
+            <Button variant='dark' text='Download'></Button>
           </a>
           <a href={sponsorshipSmallBiz} className={styles.button} download>
-            <Button text='Download Sponsorship pack for Small Businesses'></Button>
+            <h3 className={styles.h3}>Sponsorship pack for Small Businesses</h3>
+            <Button variant='dark' text='Download'></Button>
           </a>
           <a href={sponsorshipCorporate} className={styles.button} download>
-            <Button text='Download Sponsorship pack for Corporates'></Button>
+            <h3 className={styles.h3}>Sponsorship pack for Corporates</h3>
+            <Button variant='dark' text='Download'></Button>
           </a>
         </article>
 
