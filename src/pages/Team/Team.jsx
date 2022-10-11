@@ -6,9 +6,9 @@ import { PersonCard } from '../../common';
 function Team() {
   return (
     <div className={styles.root}>
-      <PersonCard />
-      <PersonCard />
-      <PersonCard />
+      <PersonCard name={'John Doe'}/>
+      <PersonCard name={'Jane Doe'}/>
+      <PersonCard name={'Abra Cardabra'}/>
     </div>
   )
 }
