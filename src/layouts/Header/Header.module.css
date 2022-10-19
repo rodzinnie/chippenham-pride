@@ -19,6 +19,7 @@
 }
 
 .section::before {
+    z-index: 0;
     content: "";
     background-image: url('../../assets/hero.jpg');
     background-size: cover;

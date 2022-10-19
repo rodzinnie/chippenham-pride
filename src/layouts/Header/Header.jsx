@@ -1,14 +1,13 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 import { Button, Navbar } from '../../common'
 import styles from './Header.module.css'
 import arrow from '../../assets/arr.png'
 
 function Header() {
-  
-  const handleOnClick = (e) => {
-    console.log('first')
-    e.preventDefault()
+  const navigateTo = useNavigate()
+  const handleClick = () => {
     navigateTo('/volunteer')
   }
   
@@ -23,7 +22,7 @@ function Header() {
             <p className={styles.place}>Monkton Park, Chippenham</p>
           </div>
           <div className={styles.button}>
-            <Button text="Contact us" variant="light" handleClick={() => console.log('clicks')}/>
+            <Button text="Contact us" variant="light" handleClick={handleClick}/>
             <div className={styles.arrParent} onClick={() => console.log('jelo')}>
               <img className={styles.arr} src={arrow} alt="arrow down" />
             </div>
