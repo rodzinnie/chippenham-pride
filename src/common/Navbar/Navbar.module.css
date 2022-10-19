@@ -4,6 +4,16 @@
     --main-font: 'Poppins', sans-serif;
 }
 
+.ppform {
+    align-self: end;
+    padding: 0;
+}
+
+.donate {
+    align-self: end;
+    margin: 0;
+}
+
 .root {
 
     padding: 0;

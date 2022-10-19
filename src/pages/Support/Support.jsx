@@ -13,6 +13,10 @@ function Support() {
     window.location.assign('https://www.gofundme.com/f/chippenham-pride-2023')
   }
 
+  const handleClickPP = () => {
+    window.location.assign('https://www.gofundme.com/f/chippenham-pride-2023')
+  }
+
   const showMore = () => {
     if (more.current.style.display == 'block'){
       more.current.style.display = 'none'
@@ -45,8 +49,13 @@ function Support() {
           <div ref={more} className={styles.more}>Chippenham Pride is a pro-bono charity. We have a policy of total transparency. If you want to know more about our spendings, please contact Bryan via our contact form.</div>
         </div>
         <div className={styles.right}>
-            <Button text='Donate with PayPal' variant='dark' className={styles.button} handleClick={() => console.log('elo')}/>
-            <img className={styles.img} src={paypal} />
+            {/* <Button text='Donate with PayPal' variant='dark' className={styles.button} handleClick={handleClickPP}/> */}
+            <form className={styles.ppform} action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="campaign_id" value="R7BQRSQPLBM3A" />
+              <input className={styles.donate} type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+              <img className={styles.imgpp} src={paypal} />
             <Button text='Donate with Go Fund Me' variant='dark'  className={styles.button} handleClick={handleClick}/>
             <img className={styles.img} src={gofundme} />
         </div>

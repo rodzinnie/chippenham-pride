@@ -43,6 +43,15 @@
     width: 50%;
 }
 
+.imgpp{
+    width: 30%;
+}
+
+.ppform {
+    display: flex;
+    justify-content: space-around;
+}
+
 .sponsorPacks{
     width: 60%;
     /* min-height: 300px; */
@@ -75,7 +84,7 @@
     font-family: 'Poppins';
     color: #000;
     text-align: center;
-  }
+}
 
 @media (min-width: 1000px) {
     .img {
