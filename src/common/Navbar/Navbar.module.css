@@ -7,6 +7,8 @@
 .ppform {
     align-self: end;
     padding: 0;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .donate {
