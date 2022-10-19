@@ -19,7 +19,9 @@ function Navbar() {
             setWindowSize(getWindowSize());
             if(innerWidth >= 1200) {
                 setOpen(true);
-            } 
+            } else {
+                setOpen(false)
+            }
         }
         window.addEventListener('resize', handleWindowResize);
 
@@ -39,7 +41,6 @@ function Navbar() {
         if(toggled) {
             inputRef.current.style.right = 0
             rootRef.current.style.overflow = 'visible'
-            setOpen(false)
         } else {
             inputRef.current.style.right = '-120%'
             setTimeout(() => rootRef.current.style.overflow = 'hidden', 400)
