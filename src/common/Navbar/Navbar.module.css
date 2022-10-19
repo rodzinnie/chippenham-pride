@@ -113,6 +113,9 @@
         font-size: 25px;
         color: black;
         width: max-content;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
     }
     .navlink:visited{
         color: black;

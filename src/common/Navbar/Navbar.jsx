@@ -39,6 +39,7 @@ function Navbar() {
         if(toggled) {
             inputRef.current.style.right = 0
             rootRef.current.style.overflow = 'visible'
+            setOpen(false)
         } else {
             inputRef.current.style.right = '-120%'
             setTimeout(() => rootRef.current.style.overflow = 'hidden', 400)
@@ -46,7 +47,7 @@ function Navbar() {
     }
 
     const handleIsActive = ({isActive}) => {
-        return {borderBottom: isActive ? "1px black solid" : 'none',   textShadow: isActive ? '2px 4px #33323280' : 'none'}
+        return {borderBottom: isActive ? "1px black solid" : 'none',   textShadow: isActive ? '2px 3px #33323280' : 'none'}
     }
 
     const handleOnClick = (e) => {
