@@ -10,38 +10,5 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: -webkit-linear-gradient(124deg, #fd8270, #d63232, #ddb83d, #e5e83b, #53e16b, #68dfe5, #5e54e0, #de4eec, #e03def);
-  background-size: 1800% 1800%;
-  
-  -webkit-animation: rainbow 60s ease infinite;
-  -z-animation: rainbow 60s ease infinite;
-  -o-animation: rainbow 60s ease infinite;
-    animation: rainbow 60s ease infinite;
+  background: -webkit-linear-gradient(124deg, #f5bfb7, #e3f4a0, #f4d87e, #f4f671, #99f7a9, #9beef3, #8c85ef, #ea78f5, #eb9ff1);
 }
-
-@-webkit-keyframes rainbow {
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-/* 
-@media (max-width: 1000px) {
-  #root {
-    background-color: #A76BB6;
-  }
-}  */
