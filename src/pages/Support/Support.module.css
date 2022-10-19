@@ -5,6 +5,12 @@
     flex-wrap: wrap;
 }
 
+.donatepp {
+    /* background-color: transparent; */
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
 .shoutout {
     font-size: 80px;
     font-family: 'Lato';
