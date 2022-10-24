@@ -18,6 +18,18 @@
 .light {
     padding: 10px 30px;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid rgb(244, 243, 243);
+    color: rgb(243, 243, 243);
+    border-color: white;
+}
+
+.dark:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.light:hover {
+    background-color: white;
     color: black;
+    border-color: rgb(0, 0, 0);
 }
