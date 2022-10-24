@@ -18,7 +18,7 @@ function Team() {
         <PersonCard name={'Shaun Holley'} role={'secretary'} email={''} src={shaun}/>
         <PersonCard name={'Bryan Houde'} role={'treasurer'} email={'accounts@chippenhampride.com'} src={bryan}/>
         <PersonCard name={'Bobby Pickard'} role={'sponsorship'} email={'sponsorship@chippenhampride.com'} src={bobby}/>
-        <PersonCard name={'Stuart Rolfe'} role={'entertainment'} email={'sponsorship@chippenhampride.com'} src={stu}/>
+        <PersonCard name={'Stuart Rolfe'} role={'entertainment'} email={'entertainment@chippenhampride.com'} src={stu}/>
       </div>
       <h2 className={styles.subheader}>And others</h2>
     </>
