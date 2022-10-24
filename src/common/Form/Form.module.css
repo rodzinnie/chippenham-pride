@@ -34,6 +34,7 @@
 .areaInput {
     padding-top: 10px;
     height: 200px;
+    resize: none;
 }
 .newsletter {
     width: 80%;
