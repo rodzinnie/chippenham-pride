@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Button } from '../../common';
+import { ArticleSection, Button } from '../../common';
 import styles from './Support.module.css'
 import paypal from '../../assets/paypal.png'
 import gofundme from '../../assets/gofundme.png'
@@ -28,7 +28,7 @@ function Support() {
   return (
     <div className={styles.root}>
         <article className={styles.sponsorPacks}>
-          <h1 className={styles.h1}>Learn about our Sponsorship Packages</h1>
+          <ArticleSection header='Learn about our Sponsorship Packages' />
           <a href={sponsorship} className={styles.button} download>
             <h3 className={styles.h3}>General Sponsorship Pack</h3>
             <Button variant='dark' text='Download'></Button>
