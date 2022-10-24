@@ -4,4 +4,12 @@
 
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.subheader{
+  margin: 20px auto;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins';
 }
