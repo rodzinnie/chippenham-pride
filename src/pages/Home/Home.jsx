@@ -25,15 +25,16 @@ function Home() {
           strengthen and enhance diverse connections.
         </p>
       </ArticleSection>
-      <ArticleSection header='Contact us!'></ArticleSection>
-      <div className={styles.formSection}>
-        <div className={styles.imgParent}>
-            <img className={styles.img} src={logo}/>
+      <ArticleSection  header='Contact us!' background={true}>
+        <div className={styles.formSection}>
+          <div className={styles.imgParent}>
+              <img className={styles.img} src={logo}/>
+          </div>
+          <div className={styles.formParent}>
+            <Form />
+          </div>
         </div>
-        <div className={styles.formParent}>
-          <Form />
-        </div>
-      </div>
+      </ArticleSection>
     </section>
   )
 }

@@ -9,7 +9,6 @@ strong {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .imgParent {
@@ -36,11 +35,11 @@ strong {
         font-size: 35px;
     }
     .formSection{
-        width: 54%;
+        width: 60%;
         margin: auto;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
     .imgParent{
         width: 50%;

@@ -2,15 +2,23 @@ article{
   color: #000;
   
 }
-.article >* {
+
+.highlight{
+  width: 100%;
+  background-color: rgb(172, 209, 253);
+}
+.article >*, .highlight >* {
   font-family: 'Poppins';
   text-align: center;
   font-size: 26px;
   text-align:justify;
 }
 
-.article {
+.article, .highlight {
   padding-bottom: 50px;
+}
+
+.article {
   margin: 0 7%;
   background-color: white;
 }
@@ -22,7 +30,7 @@ article{
   text-align:center;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url('https://images.pexels.com/photos/1174952/pexels-photo-1174952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   color: transparent; 
-  background-size: cover;
+  background-size: contain;
 }
