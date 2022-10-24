@@ -1,14 +1,13 @@
 import React from 'react'
 
 import styles from './Home.module.css'
-import { Form } from '../../common'
+import { Form, ArticleSection } from '../../common'
 import logo from '../../assets/logo.png'
 
 function Home() {
   return (
-    <section>
-      <article className={styles.article}>
-        <h1 className={styles.h1}>Mission Statement</h1>
+    <section className={styles.root}>
+      <ArticleSection header='Mission Statement'>
         <p>We're committed to celebrating our LGBTQIA+ Community. We aim to work toward a future without discrimination where all people have equal rights.
             We aim to host LGBTQIA+ Pride events that inspire, educate, commemorate and celebrate our diverse community within Chippenham and the surrounding areas. We want EVERYONE to know they are not alone! 
             An Inspirational family event that helps support allies as well as the direct community with stalls for mental health, physical health and all other LGBTQIA+ needs. Bringing the fun, acceptance and vibrancy Into our beautiful market town and local businesses footfall to. 
@@ -25,7 +24,8 @@ function Home() {
           Community so we will provide both digital and real-world support that
           strengthen and enhance diverse connections.
         </p>
-      </article>
+      </ArticleSection>
+      <ArticleSection header='Contact us!'></ArticleSection>
       <div className={styles.formSection}>
         <div className={styles.imgParent}>
             <img className={styles.img} src={logo}/>

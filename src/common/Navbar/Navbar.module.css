@@ -40,7 +40,7 @@
     flex-direction: column;
     position: absolute;
     background-color: rgba(0, 0, 0);
-    color:white;
+    color:--navbar-color;
     z-index: 1;
     text-align: center;
     right: -100%;
@@ -48,7 +48,7 @@
 }
 
 .span {
-    color: black;
+    color: var(--navbar-color);
     width: auto;
     display:block;
     font-family: 'Poppins';
@@ -60,14 +60,14 @@
 
 .navlink {
     font-family: 'Poppins';
-    color: white;
+    color: --navbar-color;
     padding-top: 20px;
     padding-right: 100px;
     width: 100%;
 }
 
 .navlink:visited{
-    color: white;
+    color: var(--navbar-color);
 }
 
 .logo{
@@ -111,14 +111,14 @@
 
     .navlink{
         font-size: 25px;
-        color: black;
+        color: var(--navbar-color);
         width: max-content;
         padding-right: 10px;
         padding-left: 10px;
         text-align: center;
     }
     .navlink:visited{
-        color: black;
+        color: var(--navbar-color);
     }
 
     .hamburger {
