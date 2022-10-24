@@ -6,7 +6,7 @@ export default function ScrollDown() {
 
   useEffect(() => {
     if(pathname != '/') {
-        setTimeout(() => {window.scrollTo({ top: 500, behavior: 'smooth' });}, 1500)
+        setTimeout(() => {window.scrollTo({ top: 500, behavior: 'smooth' });}, 100)
         
     }
   }, [pathname]);
