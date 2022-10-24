@@ -5,6 +5,16 @@
     justify-content: space-between;
 }
 
+.sponsors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sponsorImg{
+    width: 20vw;
+}
+
 .qr {
     width: 100%;
     text-align: center;
@@ -21,12 +31,12 @@
 
 .root{
     border-top: 1px solid rgb(205, 205, 205);
-    margin: 0 40px;
+    margin: 10% 40px 0 40px;
 }
 
 .root >*, .nav >*{
     width: 100%;
-    font-size: 20px;
+    font-size: 14px;
     color: black;
     font-family: 'Poppins';
     line-height: 30px;
@@ -54,7 +64,7 @@
 
 .rights {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 

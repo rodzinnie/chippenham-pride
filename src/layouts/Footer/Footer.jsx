@@ -5,11 +5,21 @@ import fb from '../../assets/facebook.png'
 import insta from '../../assets/insta.png'
 import tiktok from '../../assets/tiktok.png'
 import pppride from '../../assets/prideqr.png'
+import titc from '../../assets/titc.png'
+import winemo from '../../assets/winemonkey.png'
+import frankie from '../../assets/frankielane.png'
 
 
 function Footer() {
   return (
     <footer className={styles.root}>
+      <h2>Sponsors</h2>
+      <section className={styles.sponsors}>
+      <img src={titc} alt="trans in the city" className={styles.sponsorImg} />
+      <img src={winemo} alt="trans in the city" className={styles.sponsorImg} /> 
+      <img src={frankie} alt="trans in the city" className={styles.sponsorImg} /> 
+      </section>
+
       <div className={styles.content}>
         <nav className={styles.nav}>
           <NavLink to="about">About</NavLink>
