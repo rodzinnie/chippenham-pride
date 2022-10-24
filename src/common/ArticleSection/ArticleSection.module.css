@@ -1,0 +1,28 @@
+article{
+  color: #000;
+  
+}
+.article >* {
+  font-family: 'Poppins';
+  text-align: center;
+  font-size: 26px;
+  text-align:justify;
+}
+
+.article {
+  padding-bottom: 50px;
+  margin: 0 7%;
+  background-color: white;
+}
+
+.h1 {
+  font-size: 60px;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align:center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url('https://images.pexels.com/photos/1174952/pexels-photo-1174952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  color: transparent; 
+  background-size: cover;
+}
