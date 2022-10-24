@@ -31,7 +31,8 @@
 
 .root{
     width: 100%;
-    border-top: 1px solid rgb(172, 209, 253);
+    border-top: 1px solid rgba(172, 208, 253, 0.29);
+    /* background-color: rgb(255, 255, 255); */
     padding: 0 40px;
 }
 
