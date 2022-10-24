@@ -7,12 +7,13 @@
 
 .sponsors{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sponsorImg{
-    width: 20vw;
+    width: 60vw;
 }
 
 .qr {
@@ -73,6 +74,14 @@
 @media (min-width: 1000px) {
     .media{
         padding: 40px;
+    }
+
+    .sponsors{
+        justify-content: center;
+    }
+        
+    .sponsorImg{
+        width: 20vw;
     }
 }
 
