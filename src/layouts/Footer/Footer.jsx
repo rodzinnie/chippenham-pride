@@ -32,11 +32,11 @@ function Footer() {
           <a href="facebook.com"><img src={insta} alt="instagram" /></a>
           <a href="facebook.com"><img src={tiktok} alt="tiktok" /></a>
         </div>
-          <div className={styles.registry}>
-            CHIPPENHAM PRIDE CIC <br /> Company number: <br />14287807
-            <div><strong>Donate</strong></div>
-          <div className={styles.qr}><img src={pppride} /></div>
-          </div>
+        <div className={styles.registry}>
+          CHIPPENHAM PRIDE CIC <br /> Company number: <br />14287807
+          <div><strong>Donate</strong></div>
+        <div className={styles.qr}><img src={pppride} /></div>
+        </div>
       </div>
         <p className={styles.rights}>Created &amp; maintained by The Chippenham Pride Team 2022 Ⓒ</p>
     </footer>

@@ -5,6 +5,10 @@
     justify-content: space-between;
 }
 
+.nav, .media, .registry {
+    flex-basis: 80%;
+}
+
 .sponsors{
     display: flex;
     justify-content: center;
@@ -13,7 +17,8 @@
 }
 
 .sponsorImg{
-    width: 60vw;
+    width: 50vw;
+    padding-top: 60px;
 }
 
 .qr {
@@ -31,7 +36,7 @@
 }
 
 .root{
-    width: 100%;
+    width: 100wv;
     border-top: 1px solid rgba(172, 208, 253, 0.29);
     /* background-color: rgb(255, 255, 255); */
     padding: 0 40px;
@@ -47,7 +52,7 @@
 
 .media {
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
 }
 .media a {
@@ -72,21 +77,22 @@
 }
 
 @media (min-width: 1000px) {
+
     .media{
-        padding: 40px;
+        margin-top: 0;
     }
 
-    .sponsors{
-        justify-content: center;
+    .sponsors, .content{
+        justify-content: space-around;
     }
         
     .sponsorImg{
         width: 20vw;
-    }
-}
+        padding-top: 0;
 
-@media (min-width: 1000px) {
-    .media{
+    }
+
+    .nav, .registry, .media{
         flex-basis: 33%;
         flex-wrap: nowrap;
     }
