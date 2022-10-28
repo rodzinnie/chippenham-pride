@@ -14,8 +14,7 @@ function Team() {
     <>
       <ArticleSection header={'Meet our Team'} />
       <div className={styles.root}>
-        <PersonCard name={'Penny Richman'} role={'chair'} email={''} src={penny}/>
-        <PersonCard name={'Shaun Holley'} role={'secretary'} email={''} src={shaun}/>
+        <PersonCard name={'Penny Richman'} role={'chair'} email={'penny@chippenhampride.corm'} src={penny}/>
         <PersonCard name={'Bryan Houde'} role={'treasurer'} email={'accounts@chippenhampride.com'} src={bryan}/>
         <PersonCard name={'Bobby Pickard'} role={'sponsorship'} email={'sponsorship@chippenhampride.com'} src={bobby}/>
         <PersonCard name={'Stuart Rolfe'} role={'entertainment'} email={'entertainment@chippenhampride.com'} src={stu}/>
