@@ -58,18 +58,6 @@
     justify-content: space-around;
 }
 
-.sponsorPacks{
-    width: 60%;
-    /* min-height: 300px; */
-    margin: auto;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .button {
     margin-top: 30px;
     display: flex;
