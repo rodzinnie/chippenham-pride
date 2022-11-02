@@ -5,8 +5,24 @@
     justify-content: space-between;
 }
 
-.nav, .media, .registry {
+.nav, .registry {
     flex-basis: 80%;
+}
+
+.socialMed{
+    flex-basis: 100%;
+    /* outline: 1px solid black; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialMed p {
+    font-size: 20px;
+    padding: 0;
 }
 
 .sponsors{
@@ -22,7 +38,13 @@
 }
 
 .qr {
-    width: 100%;
+    /* width: 100%; */
+    /* text-align: center; */
+    text-align: end;
+
+}
+
+.donate{
     text-align: center;
 }
 
@@ -79,11 +101,12 @@
 @media (min-width: 1000px) {
 
     .media{
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .sponsors, .content{
         justify-content: space-around;
+        margin-bottom: 50px;
     }
         
     .sponsorImg{
@@ -92,8 +115,22 @@
 
     }
 
-    .nav, .registry, .media{
+    .socialMed{
+        text-align: center;
+    }
+
+    .nav, .registry, .socialMed{
+        /* outline: 1px black solid; */
         flex-basis: 33%;
         flex-wrap: nowrap;
+    }
+
+    .registry{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 0;
+        /* flex-direction: column;
+        align-items: flex-end; */
     }
 }

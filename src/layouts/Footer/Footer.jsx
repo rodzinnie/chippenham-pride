@@ -27,15 +27,17 @@ function Footer() {
           <NavLink to="tsandcs">T's and C's of the Chippenham Pride 2023</NavLink>
           <NavLink to="support">Help us fund the PRIDE</NavLink>
         </nav>
+       <div className={styles.socialMed}>
+        <p>See us on Social Media</p>
         <div className={styles.media}>
           <a href="https://fb.me/e/oXu4YKJNG"><img src={fb} alt="facebook" /></a>
-          <a href="facebook.com"><img src={insta} alt="instagram" /></a>
-          <a href="facebook.com"><img src={tiktok} alt="tiktok" /></a>
+          <a href="https://www.instagram.com/chippenham_pride/?igshid=YmMyMTA2M2Y%3D"><img src={insta} alt="instagram" /></a>
         </div>
+       </div>
         <div className={styles.registry}>
           CHIPPENHAM PRIDE CIC <br /> Company number: <br />14287807
-          <div><strong>Donate</strong></div>
-        <div className={styles.qr}><img src={pppride} /></div>
+          
+        <div className={styles.qr}><div className={styles.donate}><strong>Donate</strong></div><img src={pppride} /></div>
         </div>
       </div>
         <p className={styles.rights}>Created &amp; maintained by The Chippenham Pride Team 2022 Ⓒ</p>
