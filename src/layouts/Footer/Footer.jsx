@@ -15,9 +15,9 @@ function Footer() {
     <footer className={styles.root}>
       <h2>Sponsors</h2>
       <section className={styles.sponsors}>
-      <img src={titc} alt="trans in the city" className={styles.sponsorImg} />
-      <img src={winemo} alt="trans in the city" className={styles.sponsorImg} /> 
-      <img src={frankie} alt="trans in the city" className={styles.sponsorImg} /> 
+      <a href='https://www.transinthecity.co.uk/'><img src={titc} alt="trans in the city" className={styles.sponsorImg} /></a>
+      <a href=' https://www.winemonkey.co.uk'><img src={winemo} alt="wine monkey logo" className={styles.sponsorImg} /> </a>
+      <a href='https://frankielane.co.uk/'><img src={frankie} alt="frankie lane logo" className={styles.sponsorImg} /> </a>
       </section>
 
       <div className={styles.content}>
