@@ -30,7 +30,7 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 500px;
+    min-height: 200px;
 }
 
 .right {
@@ -76,12 +76,19 @@
 .h1, .h3 {
     font-weight: 400;
     font-family: 'Poppins';
-    color: #000;
     text-align: center;
+}
+
+.p{
+    color: black;
+    width: 80%;
+    font-family: "Poppins";
+    text-align: justify;
+    padding-top: 50px;
 }
 
 @media (min-width: 1000px) {
     .img {
-        width: 100%;
+        width: 50%;
     }
 }
