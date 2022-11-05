@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ArticleSection.module.css'
+import styles from './index.module.css'
 function ArticleSection({header, children, background}) {
   return (
   <article className={background ? styles.highlight : styles.article}>

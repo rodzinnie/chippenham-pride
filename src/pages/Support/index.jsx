@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { ArticleSection, Button } from '../../common';
-import styles from './Support.module.css'
+import styles from './index.module.css'
 import gofundme from '../../assets/gofundme.png'
 
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 
-import styles from './Form.module.css'
+import styles from './index.module.css'
 import { Button } from '..'
 import { sendMessageAction } from '../../actions'
 

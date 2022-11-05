@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 import { Button } from '..'
 import logo from '../../assets/logo.png'
-import styles from './Navbar.module.css'
+import styles from './index.module.css'
 
 
 function Navbar() {
@@ -69,7 +69,7 @@ function Navbar() {
             <nav ref={inputRef} className={styles.nav}>
                 <NavLink style={handleIsActive} className={styles.navlink} to="/">Home</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="about">About</NavLink>
-                <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Volunteer</NavLink>
+                <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Contact us!</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Sponsor Pride</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="business">For Businesses</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>

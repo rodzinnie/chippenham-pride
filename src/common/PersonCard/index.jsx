@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PersonCard.module.css'
+import styles from './index.module.css'
 
 function PersonCard({name, role, src, email}) {
   return (

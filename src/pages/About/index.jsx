@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './About.module.css'
-import {ArticleSection} from '../../common/'
+import styles from './index.module.css'
+import {ArticleSection} from '../../common'
 function About() {
   return (
     <ArticleSection header='About our Pride'>
