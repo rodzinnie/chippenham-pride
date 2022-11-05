@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import styles from './Footer.module.css'
+import styles from './index.module.css'
 import fb from '../../assets/facebook.png'
 import insta from '../../assets/insta.png'
 import tiktok from '../../assets/tiktok.png'
