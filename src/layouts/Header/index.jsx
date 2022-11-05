@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from "react-router-dom";
 
 import { Button, Navbar } from '../../common'
-import styles from './Header.module.css'
+import styles from './index.module.css'
 import arrow from '../../assets/arr.png'
 
 function Header() {
