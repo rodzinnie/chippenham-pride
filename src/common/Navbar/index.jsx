@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 import { Button } from '..'
 import logo from '../../assets/logo.png'
-import styles from './Navbar.module.css'
+import styles from './index.module.css'
 
 
 function Navbar() {

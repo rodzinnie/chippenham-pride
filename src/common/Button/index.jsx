@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './Button.module.css'
+import styles from './index.module.css'
 
 function Button({ text, variant, handleClick}) {
   // console.log(handleClick)
