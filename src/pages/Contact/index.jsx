@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArticleSection, Form } from '../../common'
-import styles from './Contact.module.css'
+import styles from './index.module.css'
 
 function Contact() {
   return (

@@ -69,7 +69,7 @@ function Navbar() {
             <nav ref={inputRef} className={styles.nav}>
                 <NavLink style={handleIsActive} className={styles.navlink} to="/">Home</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="about">About</NavLink>
-                <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Volunteer</NavLink>
+                <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Contact us!</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Sponsor Pride</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="business">For Businesses</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>

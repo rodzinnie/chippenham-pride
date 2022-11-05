@@ -3,7 +3,8 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
-import styles from './SubmitMessage.module.css'
+import styles from './index.module.css'
+import { ArticleSection } from '../../common';
 
 function SubmitMessage() {
     const reason = useSelector(state => state.reason)
@@ -31,7 +32,7 @@ function SubmitMessage() {
       };
 
   return (
-    <div>{message ?         
+    <ArticleSection header={'Do you wish to send this message?'} background={true}>{message ?         
     <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <input type='hidden' name='user' value={person.name} />
         <input type='hidden' name='email' value={person.email} />
@@ -43,7 +44,7 @@ function SubmitMessage() {
         <input type='submit' value="I'm happy with this message. Send it!" className={styles.button}/>
     </form> 
     : 
-    <h1>Please submit your message first</h1>}</div>
+    <h1>Please submit your message first</h1>}</ArticleSection>
   )
 }
 

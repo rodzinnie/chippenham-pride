@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './TandC.module.css'
+import styles from './index.module.css'
 
 function TandC() {
   return (
