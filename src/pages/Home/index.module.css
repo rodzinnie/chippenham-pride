@@ -28,7 +28,14 @@ strong {
     position: relative;
     width: 100%;  
 }
+.subTitle{
+    font-size: 20px;
+}
 
+.donateText{
+    width: 90%;
+    margin: auto;
+}
 .overlay{
     position: absolute;
     width: 100%;

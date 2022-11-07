@@ -26,7 +26,7 @@ function Home() {
           </div>
         </div>
         <div className={styles.eventInfo}>
-          <h2>Drag Bingo for Chippenham Pride</h2>
+          <h2 className={styles.subTitle}>Drag Bingo for Chippenham Pride</h2>
           <p className={styles.cardInfo}><b>When: </b>15th of Januray 2023</p>
           <p className={styles.cardInfo}><b>Where: </b>The Neeld</p>
           <p className={styles.cardInfo}><b>Info: </b>After selling out all over the UK, Charlie Hides is bringing his shiny balls to Chippenham. An outrageously fun event hosted by Internationally Famous Drag Queen Charlie Hides. With stand-up comedy, games and prizes to be one!
@@ -39,7 +39,7 @@ function Home() {
         </div>
       </ArticleSection>
       <ArticleSection header='Donate!' background>
-        <p >We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
+        <p className={styles.donateText}>We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
         <GoFundMe />
 
       </ArticleSection>
