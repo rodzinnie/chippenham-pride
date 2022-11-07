@@ -81,6 +81,9 @@ strong {
 }
 
 @media (min-width: 1000px) {
+    .subTitle{
+        font-size: 30px;
+    }
     p{  
         margin:auto;
         width:60%;
