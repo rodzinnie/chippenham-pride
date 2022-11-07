@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 
-import { Button, Navbar } from '../../common'
+import { Button, GoFundMe, Navbar } from '../../common'
 import styles from './index.module.css'
 import arrow from '../../assets/arr.png'
 
@@ -22,7 +22,7 @@ function Header() {
             <p className={styles.place}>Monkton Park, Chippenham</p>
           </div>
           <div className={styles.button}>
-            <Button text="Contact us" variant="light" handleClick={handleClick}/>
+            <GoFundMe noImage={false} light={true} />
             <div className={styles.arrParent} onClick={() => console.log('jelo')}>
               <img className={styles.arr} src={arrow} alt="arrow down" />
             </div>

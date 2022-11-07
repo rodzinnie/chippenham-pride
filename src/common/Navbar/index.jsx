@@ -73,7 +73,6 @@ function Navbar() {
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Sponsor Pride</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="business">For Businesses</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>
-                <GoFundMe noImage={true} />
             </nav>
             <div className={styles.hamburger}>
                 <Hamburger onToggle={handleHamburger} toggled={isOpen} toggle={setOpen} color="#FFFFFF"/>

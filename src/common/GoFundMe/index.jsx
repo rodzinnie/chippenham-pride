@@ -5,7 +5,7 @@ import styles from './index.module.css'
 import gofundme from '../../assets/gofundme.png'
 
 
-function GoFundMe({noImage}) {
+function GoFundMe({noImage, light}) {
   const handleClick = () => {
     window.location.assign('https://www.gofundme.com/f/chippenham-pride-2023')
   }
@@ -13,7 +13,7 @@ function GoFundMe({noImage}) {
     <>        
       <div className={styles.right}>
         {!noImage && <img className={styles.img} src={gofundme} />}
-        <Button text='Donate' variant='dark'  className={styles.button} handleClick={handleClick}/>
+        <Button text='Donate' variant={light ? 'light' : 'dark'}  className={styles.button} handleClick={handleClick}/>
     </div>
   </>
   )
