@@ -37,6 +37,7 @@
 }
 
 .shoutout {
+    -webkit-user-select:none;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
 }
 
 .date, .start, .place {
+    -webkit-user-select:none;
     font-family: var(--main-font);
     font-size: 30px;
     padding-top: 10px;

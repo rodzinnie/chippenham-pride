@@ -1,0 +1,23 @@
+.left, .right {
+  margin: auto;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 200px; */
+}
+
+
+.img {
+  width: 50%;
+}
+
+
+.button {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
