@@ -1,10 +1,7 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
 
 import styles from './index.module.css'
 import { Form, ArticleSection, Button, GoFundMe } from '../../common'
-import logo from '../../assets/logo.png'
-import dragBingo from '../../assets/dragbingo.jpg'
 import bingo from '../../assets/bingo.mp4'
 
 function Home() {
