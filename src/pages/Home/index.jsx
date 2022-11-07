@@ -8,20 +8,24 @@ import dragBingo from '../../assets/dragbingo.jpg'
 import bingo from '../../assets/bingo.mp4'
 
 function Home() {
+  const handleClick = (e) => {
+    window.location.assign('https://thelittleboxoffice.com/neeld/event/view/170166')
+  }
+
   return (
     <section className={styles.root}>
-      
       <ArticleSection  header='Comedy Drag Bingo!'>
         <div className={styles.eventCard}>
-          <video className={styles.eventInfo} autoPlay muted loop>
+          <video className={styles.eventMedia} autoPlay muted loop>
             <source src={bingo} type='video/mp4' className={styles.video}/>
           </video>
           <div className={styles.overlay}>
             <div className={styles.eventCardButton}>
-              <Button text='Get Tickets' variant='light'></Button>
+              <Button text='Get Tickets' variant='light' handleClick={handleClick}></Button>
             </div>
           </div>
         </div>
+        <div className={styles.eventInfo}>
           <h2>Drag Bingo for Chippenham Pride</h2>
           <p className={styles.cardInfo}><b>When: </b>15th of Januray 2023</p>
           <p className={styles.cardInfo}><b>Where: </b>The Neeld</p>
@@ -32,8 +36,9 @@ function Home() {
             <b>Tickets £35.</b> <br ></br>
             Over 18s only. <br></br>Duration: 4 hours. <br></br><span className={styles.smallPrint}>Please contact the venue for any access requirements.  Seating will be unreserved, cabaret style with a maximum of 8 people per table.Tickets are also available through our Box Office on 01249 446699, or at the Town Hall.Tickets are non-refundable unless this event is cancelled or postponed</span>
           </p>
+        </div>
       </ArticleSection>
-      <ArticleSection header='Donate!'>
+      <ArticleSection header='Donate!' background>
         <p >We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
         <GoFundMe />
 
