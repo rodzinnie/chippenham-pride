@@ -3,14 +3,6 @@ strong {
 }
 
 
-.formSection{
-    min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.58);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .imgParent {
 
     padding-top: 40px;
@@ -26,6 +18,37 @@ strong {
     margin: auto;
 }
 
+.eventCard {
+    width: 100%;
+    
+    min-height: 100px;
+    position: relative;
+    outline: 1px solid pink;
+}
+
+.eventCardImage{
+    width: 100%;
+}
+.eventInfo{
+    position: relative;
+    width: fit-content;
+}
+.eventCardButton{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.306);
+}
+.eventCardButton:hover{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (min-width: 1000px) {
     p{  
@@ -52,6 +75,25 @@ strong {
         width: 100%;
     }
     
+    .eventCard {
+        width: 60%;
+        margin: auto;
+        min-height: 100px;
+        /* outline: 1px solid blue; */
+        position: static;
+        display: flex;
+        align-items: center;
+    }
+    .eventCardImage{
+        width: 80%;
+    }
+    .eventCardButton{
+        position:static;
+        min-width: 200px;
+        border-radius: 25px;
+        /* left: 0; */
+        transform: none;
+    }
 
     .formParent{
         width: 60%;
