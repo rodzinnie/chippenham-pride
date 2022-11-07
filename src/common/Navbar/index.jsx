@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
 import { NavLink, useNavigate } from 'react-router-dom'
 
-import { Button } from '..'
+import { GoFundMe } from '..'
 import logo from '../../assets/logo.png'
 import styles from './index.module.css'
 
@@ -73,6 +73,7 @@ function Navbar() {
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Sponsor Pride</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="business">For Businesses</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="team">The Team</NavLink>
+                <GoFundMe noImage={true} />
             </nav>
             <div className={styles.hamburger}>
                 <Hamburger onToggle={handleHamburger} toggled={isOpen} toggle={setOpen} color="#FFFFFF"/>

@@ -4,18 +4,6 @@
     --main-font: 'Poppins', sans-serif;
 }
 
-.ppform {
-    align-self: end;
-    padding: 0;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.donate {
-    align-self: end;
-    margin: 0;
-}
-
 .root {
 
     padding: 0;
@@ -91,16 +79,20 @@
 
 
 @media (min-width:1200px) {
+    .span{
+        font-size: 25px;
+    }
     .root {
         justify-content: space-around;
         align-items: center;
         overflow-y: visible;
     }
-
+    
     .nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        text-align: center;
         position: relative;
         background-color: rgba(0, 0, 0, 0);
         z-index: 1;
@@ -108,14 +100,15 @@
         right: 0;
         white-space: pre;
     }
-
+    
     .navlink{
-        font-size: 25px;
+        font-size: 20px;
         color: var(--navbar-color);
         width: max-content;
         padding-right: 10px;
         padding-left: 10px;
         text-align: center;
+        padding-top: 55px;
     }
     .navlink:visited{
         color: var(--navbar-color);
@@ -123,5 +116,11 @@
 
     .hamburger {
         display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navlink{
+        font-size: 25px;
     }
 }
