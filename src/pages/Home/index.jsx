@@ -1,39 +1,42 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
 import styles from './index.module.css'
-import { Form, ArticleSection } from '../../common'
+import { Form, ArticleSection, Button, GoFundMe } from '../../common'
 import logo from '../../assets/logo.png'
+import dragBingo from '../../assets/dragbingo.jpg'
+import bingo from '../../assets/bingo.mp4'
 
 function Home() {
   return (
     <section className={styles.root}>
-      <ArticleSection header='Mission Statement'>
-        <p>We're committed to celebrating our LGBTQIA+ Community. We aim to work toward a future without discrimination where all people have equal rights.
-            We aim to host LGBTQIA+ Pride events that inspire, educate, commemorate and celebrate our diverse community within Chippenham and the surrounding areas. We want EVERYONE to know they are not alone! 
-            An Inspirational family event that helps support allies as well as the direct community with stalls for mental health, physical health and all other LGBTQIA+ needs. Bringing the fun, acceptance and vibrancy Into our beautiful market town and local businesses footfall to. 
-        </p>
-        <p><strong>Education: </strong>We aim to deliver informative and valuable education to the LGBTQIA+
-          Community AND  the wider community through inviting local as well as national organisations/ charities to host stalls and give information freely to those who
-          need or seek it. 
-          Representation: We will act as a voice for the LGBTQIA+ community &amp; ensure that
-          they are represented at all levels, including but not limited too media and public
-          services.
-        </p>
-        <p>
-          <strong>Community: </strong>We believe that a strong community is a safe and welcoming
-          Community so we will provide both digital and real-world support that
-          strengthen and enhance diverse connections.
-        </p>
-      </ArticleSection>
-      <ArticleSection  header='Contact us!' background={true}>
-        <div className={styles.formSection}>
-          <div className={styles.imgParent}>
-              <img className={styles.img} src={logo}/>
-          </div>
-          <div className={styles.formParent}>
-            <Form />
+      
+      <ArticleSection  header='Comedy Drag Bingo!'>
+        <div className={styles.eventCard}>
+          <video className={styles.eventInfo} autoPlay muted loop>
+            <source src={bingo} type='video/mp4' className={styles.video}/>
+          </video>
+          <div className={styles.overlay}>
+            <div className={styles.eventCardButton}>
+              <Button text='Get Tickets' variant='light'></Button>
+            </div>
           </div>
         </div>
+          <h2>Drag Bingo for Chippenham Pride</h2>
+          <p className={styles.cardInfo}><b>When: </b>15th of Januray 2023</p>
+          <p className={styles.cardInfo}><b>Where: </b>The Neeld</p>
+          <p className={styles.cardInfo}><b>Info: </b>After selling out all over the UK, Charlie Hides is bringing his shiny balls to Chippenham. An outrageously fun event hosted by Internationally Famous Drag Queen Charlie Hides. With stand-up comedy, games and prizes to be one!
+            Guaranteed good time, snatch up your tickets fast for eyes down!. “Dame Charlie Hides, you are one fierce queen”- Ru Paul. “Outrageously talented” – Attitude Magazine. <br></br>Fundraising raffle and auction for Chippenham Pride 2023.<br></br>
+            <b>Food included by Boston Burger.</b><br></br>
+            Bingo sheets included in price.<br></br>
+            <b>Tickets £35.</b> <br ></br>
+            Over 18s only. <br></br>Duration: 4 hours. <br></br><span className={styles.smallPrint}>Please contact the venue for any access requirements.  Seating will be unreserved, cabaret style with a maximum of 8 people per table.Tickets are also available through our Box Office on 01249 446699, or at the Town Hall.Tickets are non-refundable unless this event is cancelled or postponed</span>
+          </p>
+      </ArticleSection>
+      <ArticleSection header='Donate!'>
+        <p >We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
+        <GoFundMe />
+
       </ArticleSection>
     </section>
   )
