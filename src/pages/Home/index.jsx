@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './index.module.css'
 import { Form, ArticleSection, Button, GoFundMe } from '../../common'
 import bingo from '../../assets/bingo.mp4'
+import map from '../../assets/pridemap.jpg'
 
 function Home() {
   const handleClick = (e) => {
@@ -38,8 +39,15 @@ function Home() {
       <ArticleSection header='Donate!' background>
         <p className={styles.donateText}>We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
         <GoFundMe />
-
       </ArticleSection>
+      <ArticleSection header='The Event'>
+        <h2 className={styles.subTitle}>The plan</h2>
+        <h2 className={styles.subTitle}>See the map</h2>
+        <div className={styles.mapWrapper}>
+          <img src={map} className={styles.map}></img>
+        </div>
+      </ArticleSection>
+
     </section>
   )
 }

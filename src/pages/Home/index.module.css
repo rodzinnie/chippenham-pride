@@ -30,6 +30,18 @@ strong {
 }
 .subTitle{
     font-size: 20px;
+    text-align: center;
+}
+
+.mapWrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.map{
+    width: 60%;
+    margin: auto;
 }
 
 .donateText{
