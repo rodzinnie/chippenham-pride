@@ -27,7 +27,6 @@ function Footer() {
         <nav className={styles.nav}>
           <NavLink to="about">About</NavLink>
           <NavLink to="volunteer">Contact us</NavLink>
-          <NavLink to="tsandcs">T's and C's of the Chippenham Pride 2023</NavLink>
           <NavLink to="support">Help us fund the PRIDE</NavLink>
         </nav>
        <div className={styles.socialMed}>
