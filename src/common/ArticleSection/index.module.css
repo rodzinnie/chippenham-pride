@@ -1,6 +1,6 @@
 article{
   color: #000;
-  
+  min-height: 90px;
 }
 
 .highlight{
@@ -25,6 +25,8 @@ article{
 
 .h1 {
   font-size: 60px;
+  text-shadow: 2px 4px rgba(255, 0, 0, 0.1);
+  line-height: 90px;
   font-family: 'Poppins';
   font-weight: 800;
   text-align:center;
