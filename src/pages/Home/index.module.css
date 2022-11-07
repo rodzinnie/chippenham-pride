@@ -24,7 +24,7 @@ strong {
     position: relative;
 }
 
-.eventInfo{
+.eventMedia{
     position: relative;
     width: 100%;  
 }
@@ -46,7 +46,7 @@ strong {
 
 }
 .smallPrint{
-    font-size: 10px;
+    font-size: 12px;
 }
 .eventCardButton{
     height: 100%;
@@ -67,6 +67,17 @@ strong {
         width:60%;
         line-height: 40px;
         font-size: 35px;
+    }
+    .eventCard {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .eventInfo{
+        width: 40%;
+        margin: auto;
+        text-align: justify;
     }
     .formSection{
         width: 60%;
