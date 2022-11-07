@@ -67,7 +67,7 @@ function Navbar() {
                 </div>
             </div>
             <nav ref={inputRef} className={styles.nav}>
-                <NavLink style={handleIsActive} className={styles.navlink} to="/">The Event</NavLink>
+                <NavLink style={handleIsActive} className={styles.navlink} to="/">Events</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="about">About</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="volunteer">Contact us!</NavLink>
                 <NavLink style={handleIsActive} className={styles.navlink} to="support">Sponsor Pride</NavLink>
