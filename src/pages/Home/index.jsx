@@ -40,7 +40,7 @@ function Home() {
         </div>
       </ArticleSection>
       <ArticleSection header='Donate!' background>
-        <p className={styles.donateText}>We do our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
+        <p className={styles.donateText}>We organise our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
         <GoFundMe />
       </ArticleSection>
       <ArticleSection header='The Event'>
