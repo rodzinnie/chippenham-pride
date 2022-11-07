@@ -22,20 +22,6 @@
     margin: auto;
 }
 
-.left, .right {
-    margin: auto;
-    padding: 30px;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-}
-
-.right {
-    margin-bottom: 40px
-}
 
 .more {
     width: 60%;
@@ -43,10 +29,6 @@
     color: black;
     font-family: 'Poppins';
     display: none;
-}
-
-.img {
-    width: 50%;
 }
 
 .imgpp{

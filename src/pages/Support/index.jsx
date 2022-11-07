@@ -1,14 +1,11 @@
 import React, { useRef } from 'react'
-import { ArticleSection, Button } from '../../common';
+import { ArticleSection, Button, GoFundMe } from '../../common';
 import styles from './index.module.css'
-import gofundme from '../../assets/gofundme.png'
 
 
 function Support() {
   const more = useRef();
-  const handleClick = () => {
-    window.location.assign('https://www.gofundme.com/f/chippenham-pride-2023')
-  }
+
 
   const handleClickPP = () => {
     window.location.assign('https://www.gofundme.com/f/chippenham-pride-2023')
@@ -30,10 +27,7 @@ function Support() {
             <Button text='Learn more about our spendings' variant='light' handleClick={showMore} />
           <div ref={more} className={styles.more}>Chippenham Pride is a pro-bono charity. We have a policy of total transparency. If you want to know more about our spendings, please contact Bryan via our contact form.</div>
         </div>
-        <div className={styles.right}>
-            <Button text='Donate with Go Fund Me' variant='dark'  className={styles.button} handleClick={handleClick}/>
-            <img className={styles.img} src={gofundme} />
-        </div>
+        <GoFundMe />
     </ArticleSection>
   )
 }
