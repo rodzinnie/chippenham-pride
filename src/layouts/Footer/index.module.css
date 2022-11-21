@@ -25,6 +25,16 @@
     padding: 0;
 }
 
+.credits{
+    text-decoration: none;
+    /* color: black; */
+    font-size: 12px;
+}
+
+.credits:visited, .credits:active{
+    /* color: black; */
+}
+
 .sponsors{
     display: flex;
     justify-content: center;

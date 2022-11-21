@@ -42,7 +42,7 @@ function Footer() {
         <GoFundMe noImage={true}/>
         </div>
       </div>
-        <p className={styles.rights}>Created &amp; maintained by The Chippenham Pride Team 2022 Ⓒ</p>
+        <p className={styles.rights}><a href='https://aggieskorska.co.uk' className={styles.credits}>Created &amp; maintained by The Chippenham Pride Team 2022 Ⓒ</a></p>
     </footer>
   )
 }
