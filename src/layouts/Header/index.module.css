@@ -10,6 +10,7 @@
     width: 100%;
     position: relative;
     color: var(--navbar-color); 
+    overflow: hidden;
 
 }
 .section{
