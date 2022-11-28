@@ -13,7 +13,7 @@ function Team() {
     <>
       <ArticleSection header={'Meet our Team'} />
       <div className={styles.root}>
-        <PersonCard name={'Penny Richman'} role={'chair'} email={'penny@chippenhampride.corm'} src={penny}/>
+        <PersonCard name={'Penny Richman'} role={'chair'} email={'penny@chippenhampride.com'} src={penny}/>
         <PersonCard name={'Bobbi Pickard'} role={'sponsorship'} email={'sponsorship@chippenhampride.com'} src={bobby}/>
         <PersonCard name={'Stuart Rolfe'} role={'entertainment'} email={'entertainment@chippenhampride.com'} src={stu}/>
         <PersonCard name={'Bryan Houde'} role={'treasurer'} email={'accounts@chippenhampride.com'} src={bryan}/>
