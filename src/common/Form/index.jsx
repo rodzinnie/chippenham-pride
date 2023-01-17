@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,6 +12,7 @@ const initialUserState = {
   reason: '',
   nick: '',
   content: '',
+  hasError: false,
 }
 
 function Form() {
@@ -30,6 +31,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!isEmailValid(user.email)) {
+      setUser({ ...user, hasError: true })
       return null
     }
     if (user.nick && user.reason && user.email && user.content) {
@@ -45,30 +47,50 @@ function Form() {
       setUser(initialUserState)
       dispatch(sendMessageAction(message))
       navigate('/submitmessage')
+    } else {
+      setUser({ ...user, hasError: true })
     }
+  }
+
+  const invalidEmailEntered = (name) => {
+    return (
+      user.hasError &&
+      name === 'email' &&
+      user[name] &&
+      !isEmailValid(user[name])
+    )
+  }
+
+  const getMessage = (name) => {
+    if (invalidEmailEntered(name)) return 'Please enter a valid email'
+    return user.hasError && !user[name] ? 'This field is required' : user[name]
+  }
+
+  const getStyle = (name, style) => {
+    const invalidEmail = invalidEmailEntered(name)
+    const emptyField = user.hasError && !user[name]
+    return invalidEmail || emptyField ? `${style} ${styles.error}` : style
   }
 
   return (
     <form className={styles.root} id='contact' onSubmit={handleSubmit}>
       <input
-        className={styles.input}
+        className={getStyle('email', styles.input)}
         type='text'
         placeholder='Email'
         name='email'
         onChange={handleChange}
         value={user.email}
-        required
       />
       <select
-        className={styles.select}
+        className={getStyle('reason', styles.select)}
         type='text'
         placeholder='Reason for contact'
         name='reason'
         onChange={handleChange}
-        value={user.reason}
-        required
+        value='Choose an option'
       >
-        <option value=''>Choose an option</option>
+        <option>Choose an option</option>
         <option name='volunteer' value='volunteer'>
           Volunteer with us!
         </option>
@@ -77,23 +99,21 @@ function Form() {
         </option>
       </select>
       <input
-        className={styles.input}
+        className={getStyle('nick', styles.input)}
         type='text'
         placeholder='Name'
         name='nick'
         onChange={handleChange}
-        value={user.nick}
-        required
+        value={getMessage('nick')}
       />
       <textarea
         rows='14'
         cols='10'
-        className={styles.areaInput}
+        className={getStyle('content', styles.areaInput)}
         placeholder='Your message'
         name='content'
         onChange={handleChange}
-        value={user.content}
-        required
+        value={getMessage('content')}
       />
       <div className={styles.buttonParent}>
         <Button type='submit' text='Submit' variant='dark' />

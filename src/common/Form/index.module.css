@@ -1,62 +1,68 @@
-.root{
-    width: 100%;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    align-items: flex-start;
-    margin: 50px 0;
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
 }
 
-.input, .areaInput, .select {
-    padding:0 40px;
-    font-family: 'Poppins';
-    font-weight: 200;
-    color: black;
-    min-height: 35px;
-    line-height: 25px;
-    font-size: 20px;
-    border: 1px solid rgb(45, 45, 45);
-    border-radius: 20px;
-    background-color: transparent;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-
+.input,
+.areaInput,
+.select {
+  padding: 0 40px;
+  font-family: 'Poppins';
+  font-weight: 200;
+  color: black;
+  min-height: 35px;
+  line-height: 25px;
+  font-size: 20px;
+  border: 1px solid rgb(45, 45, 45);
+  border-radius: 20px;
+  background-color: transparent;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.buttonParent{
-    margin:auto;
+.error {
+  border: 1px solid red;
+  color: red;
+}
+
+.buttonParent {
+  margin: auto;
 }
 
 .areaInput {
-    padding-top: 10px;
-    height: 200px;
-    resize: none;
+  padding-top: 10px;
+  height: 200px;
+  resize: none;
 }
 .newsletter {
-    width: 80%;
-    text-align: center;
-    margin: auto;
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
-.label{
-    color: black;
-    display: inline;
-    font-family: 'Poppins';
-    font-size: 10px;
+.label {
+  color: black;
+  display: inline;
+  font-family: 'Poppins';
+  font-size: 10px;
 }
 
 .checkbox {
-    display: inline;
+  display: inline;
 }
 
 @media (min-width: 1000px) {
-    .root{
-        width: 90%;
-        margin: auto;
-        margin-top: 30px;
-    }
+  .root {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
 }
