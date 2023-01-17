@@ -1,0 +1,25 @@
+.sponsors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsorImg{
+  width: 50vw;
+  padding-top: 60px;
+}
+
+@media (min-width: 1000px) {
+
+  .sponsors{
+      justify-content: space-around;
+      margin-bottom: 50px;
+  }
+      
+  .sponsorImg{
+      width: 20vw;
+      padding-top: 0;
+
+  }
+}
