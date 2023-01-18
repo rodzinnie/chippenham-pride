@@ -12,31 +12,9 @@ function Home() {
 
   return (
     <section className={styles.root}>
-      <ArticleSection  header='Comedy Drag Bingo!'>
-        <div className={styles.eventCard}>
-          <video className={styles.eventMedia} autoPlay muted loop>
-            <source src={bingo} type='video/mp4' className={styles.video}/>
-          </video>
-          <div className={styles.overlay}>
-            <div className={styles.eventCardButton}>
-              <Button text='Get Tickets' variant='light' handleClick={handleClick}></Button>
-            </div>
-          </div>
-        </div>
-        <div className={styles.eventInfo}>
-          <h2 className={styles.subTitle}>Drag Bingo for Chippenham Pride</h2>
-          <p className={styles.cardInfo}><b>When: </b>15th of Januray 2023</p>
-          <p className={styles.cardInfo}><b>Where: </b>The Neeld</p>
-          <p className={styles.cardInfo}><b>Info: </b>After selling out all over the UK, Charlie Hides is bringing his shiny balls to Chippenham. An outrageously fun event hosted by Internationally Famous Drag Queen Charlie Hides. With stand-up comedy, games and prizes to be won!
-            A guaranteed good time! Snatch up your tickets fast! <br /><br /><em>Dame Charlie Hides, you are one fierce queen</em> <br />~ Ru Paul. <br /><br /><em>Outrageously talented</em><br />~ Attitude Magazine. <br></br><br />There will also be a fundrising raffle and prize auction for Chippenham Pride 2023.<br></br>
-            <b>Food provided by Boston Burger.</b><br></br>
-            Bingo sheets included in price.<br></br>
-            <b>Tickets £35.</b> <br ></br>
-            Over 18s only. <br></br>Duration: 4 hours. <br></br>
-            <span className={styles.smallPrint}>Please contact the venue for any access requirements. Seating will be unreserved, cabaret style with a maximum of 8 people per table. Tickets are also available through our Box Office on 01249 446699, or at the Town Hall. Tickets are non-refundable unless this event is cancelled or postponed
-            <br></br>A paid food bar will be available on site. This will be run by the Neeld Chippenham.</span>
-
-          </p>
+      <ArticleSection  header='Register for your walk!'>
+        <div className={styles.form}>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="640" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </ArticleSection>
       <ArticleSection header='Donate!' background>
