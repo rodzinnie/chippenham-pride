@@ -6,10 +6,11 @@ import styles from './index.module.css'
 import { Button } from '..'
 import { sendMessageAction } from '../../actions'
 import { isEmailValid } from './utils'
+import { useEffect } from 'react'
 
 const initialUserState = {
   email: '',
-  reason: '',
+  reason: 'Choose an option',
   nick: '',
   content: '',
   hasError: false,
@@ -34,7 +35,15 @@ function Form() {
       setUser({ ...user, hasError: true })
       return null
     }
-    if (user.nick && user.reason && user.email && user.content) {
+    console.log('Pierwszy', user.reason, initialUserState.reason)
+    if (
+      user.nick &&
+      user.reason !== initialUserState.reason &&
+      user.email &&
+      user.content
+    ) {
+      console.log('Drugi', user.reason, initialUserState.reason)
+
       const message = {
         person: {
           email: user.email,
@@ -61,60 +70,67 @@ function Form() {
     )
   }
 
-  const getMessage = (name) => {
-    if (invalidEmailEntered(name)) return 'Please enter a valid email'
-    return user.hasError && !user[name] ? 'This field is required' : user[name]
-  }
-
   const getStyle = (name, style) => {
     const invalidEmail = invalidEmailEntered(name)
-    const emptyField = user.hasError && !user[name]
-    return invalidEmail || emptyField ? `${style} ${styles.error}` : style
+    const emptyField = user.hasError && user[name] === initialUserState[name]
+
+    if (invalidEmailEntered(name))
+      return `${style} ${styles.error} ${styles.invalidEmail}`
+
+    return emptyField ? `${style} ${styles.error}` : style
   }
 
   return (
     <form className={styles.root} id='contact' onSubmit={handleSubmit}>
-      <input
-        className={getStyle('email', styles.input)}
-        type='text'
-        placeholder='Email'
-        name='email'
-        onChange={handleChange}
-        value={user.email}
-      />
-      <select
-        className={getStyle('reason', styles.select)}
-        type='text'
-        placeholder='Reason for contact'
-        name='reason'
-        onChange={handleChange}
-        value='Choose an option'
-      >
-        <option>Choose an option</option>
-        <option name='volunteer' value='volunteer'>
-          Volunteer with us!
-        </option>
-        <option name='perform' value='perform'>
-          Perform at our Pride 2023
-        </option>
-      </select>
-      <input
-        className={getStyle('nick', styles.input)}
-        type='text'
-        placeholder='Name'
-        name='nick'
-        onChange={handleChange}
-        value={getMessage('nick')}
-      />
-      <textarea
-        rows='14'
-        cols='10'
-        className={getStyle('content', styles.areaInput)}
-        placeholder='Your message'
-        name='content'
-        onChange={handleChange}
-        value={getMessage('content')}
-      />
+      <div className={getStyle('email', styles.inputWrapper)}>
+        <input
+          className={styles.input}
+          type='text'
+          placeholder='Email'
+          name='email'
+          onChange={handleChange}
+          value={user.email}
+        />
+      </div>
+      <div className={getStyle('reason', styles.inputWrapper)}>
+        <select
+          className={styles.select}
+          type='text'
+          placeholder='Reason for contact'
+          name='reason'
+          onChange={handleChange}
+          defaultValue='Choose an option'
+        >
+          <option>Choose an option</option>
+          <option name='volunteer' value='volunteer'>
+            Volunteer with us!
+          </option>
+          <option name='perform' value='perform'>
+            Perform at our Pride 2023
+          </option>
+        </select>
+      </div>
+      <div className={getStyle('nick', styles.inputWrapper)}>
+        <input
+          className={styles.input}
+          type='text'
+          placeholder='Name'
+          name='nick'
+          onChange={handleChange}
+          value={user.nick}
+        />
+      </div>
+      <div className={getStyle('content', styles.inputWrapper)}>
+        <textarea
+          rows='14'
+          cols='10'
+          className={styles.areaInput}
+          placeholder='Your message'
+          name='content'
+          onChange={handleChange}
+          value={user.content}
+        />
+      </div>
       <div className={styles.buttonParent}>
         <Button type='submit' text='Submit' variant='dark' />
       </div>
