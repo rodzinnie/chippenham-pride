@@ -71,11 +71,10 @@ function Form() {
   }
 
   const getStyle = (name, style) => {
-    const invalidEmail = invalidEmailEntered(name)
-    const emptyField = user.hasError && user[name] === initialUserState[name]
-
     if (invalidEmailEntered(name))
       return `${style} ${styles.error} ${styles.invalidEmail}`
+
+    const emptyField = user.hasError && user[name] === initialUserState[name]
 
     return emptyField ? `${style} ${styles.error}` : style
   }
