@@ -24,7 +24,7 @@ article{
 }
 
 .h1 {
-  font-size: 60px;
+  font-size: 40px;
   text-shadow: 2px 4px rgba(255, 0, 0, 0.1);
   line-height: 90px;
   font-family: 'Poppins';
@@ -35,4 +35,10 @@ article{
   background-image: url('https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   color: transparent; 
   background-size: contain;
+}
+
+@media (min-width: 500px){
+  .h1 {
+    font-size: 60px;
+  }
 }

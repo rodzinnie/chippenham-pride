@@ -3,9 +3,8 @@ strong {
 }
 
 .form{
-    margin: auto;
-    text-align: center;
-    
+    text-align: left;
+    width: 100%;   
 }
 
 .imgParent {
@@ -83,6 +82,16 @@ strong {
     display: none;
     margin-top: 20px;
     color: white;
+}
+
+
+@media (min-width: 850px){
+            
+    .form{
+        text-align: center;
+        margin: auto;
+        width: 740px;   
+    }
 }
 
 @media (min-width: 1000px) {
