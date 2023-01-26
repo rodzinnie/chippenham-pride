@@ -20,7 +20,7 @@ function Home() {
         <p className={styles.fiver}>
         Donate £5 and get a range of benefits and a free entry to the afterparty @e11evens!
         </p>
-          <Button text={'Give us a fiver!'} handleClick={handleClick} variant='dark'></Button>
+          <Button text={'Give Pride a fiver!'} handleClick={handleClick} variant='dark'></Button>
         </div>
       </ArticleSection>
       <ArticleSection header='Donate!' background>
