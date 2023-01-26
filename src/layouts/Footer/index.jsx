@@ -13,6 +13,7 @@ import gewefa from '../../assets/GEWEFA.png'
 import tds from '../../assets/tds.png'
 import md from '../../assets/md.png'
 import flyingmonk from '../../assets/flyingmonk.jpg'
+import bostonburger from '../../assets/bostonburger.jpg'
 import { GoFundMe } from '../../common';
 
 
@@ -29,6 +30,7 @@ function Footer() {
       <a target="_blank" href='https://www.facebook.com/theflyingmonkpub/'><img src={flyingmonk} alt="The Flying Monk logo" className={styles.sponsorImg} /> </a>
       <a target="_blank" href='https://www.thedancespot.co.uk/'><img src={tds} alt="The dance spot logo" className={styles.sponsorImg} /> </a>
       <a target="_blank" href='https://www.manderduffill.com/'><img src={md} alt="mander duffill logo" className={styles.sponsorImg} /> </a>
+      <a target="_blank" href='https://www.bostonburger.co.uk/'><img src={bostonburger} alt="boston burger logo" className={styles.sponsorImg} /> </a>
       </section>
 
       <div className={styles.content}>
