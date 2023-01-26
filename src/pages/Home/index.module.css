@@ -5,6 +5,7 @@ strong {
 .form{
     margin: auto;
     text-align: center;
+    padding-top: 10px ;
     
 }
 
@@ -15,6 +16,11 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fiver{
+    font-size: 25px;
+    padding: 40px;
 }
 
 .img {

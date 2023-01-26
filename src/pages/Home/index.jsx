@@ -7,14 +7,20 @@ import map from '../../assets/pridemap.jpg'
 
 function Home() {
   const handleClick = (e) => {
-    window.location.assign('https://thelittleboxoffice.com/neeld/event/view/170166')
+    window.open('https://sticky.to/go/flow/a90fbb2a-6695-4dc9-882f-649eaf617844', '_blank').focus()
   }
 
   return (
     <section className={styles.root}>
       <ArticleSection  header='Register for your walk!'>
         <div className={styles.form}>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="640" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="640px" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div className={styles.form}>
+        <p className={styles.fiver}>
+        Donate £5 and get a range of benefits and a free entry to the afterparty @e11evens!
+        </p>
+          <Button text={'Give us a fiver!'} handleClick={handleClick} variant='dark'></Button>
         </div>
       </ArticleSection>
       <ArticleSection header='Donate!' background>
