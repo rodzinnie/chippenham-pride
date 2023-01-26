@@ -3,8 +3,9 @@ strong {
 }
 
 .form{
-    text-align: left;
-    width: 100%;   
+    margin: auto;
+    text-align: center;
+    padding-top: 10px ;
 }
 
 .imgParent {
@@ -14,6 +15,11 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fiver{
+    font-size: 25px;
+    padding: 40px;
 }
 
 .img {
