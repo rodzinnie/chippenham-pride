@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <section className={styles.root}>
-      <ArticleSection  header='Register for your walk!'>
+      <ArticleSection  header='Register your attendance!'>
         <div className={styles.form}>
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="640px" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>

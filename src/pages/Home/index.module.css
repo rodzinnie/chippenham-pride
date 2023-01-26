@@ -6,7 +6,6 @@ strong {
     margin: auto;
     text-align: center;
     padding-top: 10px ;
-    
 }
 
 .imgParent {
@@ -89,6 +88,16 @@ strong {
     display: none;
     margin-top: 20px;
     color: white;
+}
+
+
+@media (min-width: 850px){
+            
+    .form{
+        text-align: center;
+        margin: auto;
+        width: 740px;   
+    }
 }
 
 @media (min-width: 1000px) {
