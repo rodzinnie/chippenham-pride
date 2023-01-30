@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
-import { ArticleSection, Button, GoFundMe } from '../../common';
+import { ArticleSection, Button, GoFundMe, Sponsors } from '../../common';
+import { data } from './data';
 import styles from './index.module.css'
 
 
@@ -31,6 +32,7 @@ function Support() {
             <div ref={more} className={styles.more}>Chippenham Pride is a pro-bono charity. We have a policy of full transparency. With the money you kindly donate, we can pay for the stages, the venue for our talks, we can compensate our great artists and performers for their journey and expenses. If you want to know more about our spendings, please contact Bryan via our contact form.</div>
         </div>
         <GoFundMe />
+        <Sponsors data={data} />
     </ArticleSection>
   )
 }
