@@ -8,7 +8,7 @@ import { Home, About, BusinessSponsorship, SubmitMessage, Support, Team, TandC, 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<MainLayout />}>
+      <Route basename='/' element={<MainLayout />}>
         <Route index element={<Home />}></Route>
         <Route path='about' element={<About />}></Route>
         <Route path='volunteer' element={<Contact />}></Route>
