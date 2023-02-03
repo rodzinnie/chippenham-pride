@@ -1,4 +1,4 @@
-.dark, .light {
+.dark, .light, .lightOnLight{
     margin: auto;
     height: fit-content;
     border-radius: 35px;
@@ -14,13 +14,23 @@
     background-color: black;
     color: white;
 }
+.lightOnLight {
+    color: black;
+    border: 2px solid rgba(139, 134, 134, 0);
+    padding: 3px 15px;
+    font-size: 18px;
+}
 
-.light {
+.light{
     padding: 10px 30px;
-    background-color: transparent;
-    border: 1px solid rgb(244, 243, 243);
     color: rgb(243, 243, 243);
+    border: 1px solid rgb(244, 243, 243);
     border: 2px solid white;
+    
+}
+
+.light, .lightOnLight {
+    background-color: transparent;
 }
 
 .dark:hover{
@@ -28,8 +38,9 @@
     filter: invert(100%);
 }
 
-.light:hover {
+.light:hover, .lightOnLight:hover {
     background-color: white;
     color: black;
     border: 2px solid rgb(0, 0, 0);
 }
+
