@@ -1,9 +1,10 @@
 import React from 'react'
 
 import styles from './index.module.css'
-import { Form, ArticleSection, Button, GoFundMe } from '../../common'
+import { Form, ArticleSection, Button, GoFundMe, Highlights } from '../../common'
 import bingo from '../../assets/bingo.mp4'
 import map from '../../assets/pridemap.jpg'
+import {data} from './data'
 
 function Home() {
   const handleClick = (e) => {
@@ -12,6 +13,9 @@ function Home() {
 
   return (
     <section className={styles.root}>
+      <ArticleSection header='Whats&#39;on'>
+        <Highlights data={data}/>
+      </ArticleSection>
       <ArticleSection  header='Register your attendance!'>
         <div className={styles.form}>
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="100%" height="500px" frameBorder="0" marginheight="0" marginwidth="0">Loading…</iframe>

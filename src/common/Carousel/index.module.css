@@ -1,0 +1,43 @@
+.root{
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.image{
+  width: 100%;
+}
+
+.arrowLeft, .arrowRight{
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  transform:  translateY(-50%);
+  -webkit-tap-highlight-color: #ccc;
+}
+
+.arrowLeft:hover, .arrowRight:hover, .arrowLeft:active, .arrowRight:active{
+  -webkit-tap-highlight-color: #ccc;
+}
+
+.arrowRight{
+  right: 0;
+}
+
+.arrowLeft{
+  left: 0;
+}
+
+@media (min-width: 900px) {
+  .root{
+    /* width: 50%; */
+    margin: auto;
+  }
+
+}
