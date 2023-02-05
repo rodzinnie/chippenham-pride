@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styles from './index.module.css'
 import fb from '../../assets/facebook.png'
 import insta from '../../assets/insta.png'
@@ -14,7 +14,7 @@ function Footer() {
       <h2>Main Sponsors</h2>
       <Sponsors data={data} />
       <div className={styles.buttonWrapper}>
-        <Button text='see all of the sponsors' variant={'lightOnLight'} />
+        <Link to='/support'><Button text='see all of the sponsors' variant={'lightOnLight'} /></Link>
       </div>
        <div className={styles.content}>
         <nav className={styles.nav}>
