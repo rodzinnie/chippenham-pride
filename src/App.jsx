@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import { MainLayout } from './layouts'
-import { Home, About, BusinessSponsorship, SubmitMessage, Support, Team, TandC, Message, Contact } from './pages'
+import { Home, About, BusinessSponsorship, SubmitMessage, Support, Team, TandC, Message, Contact, WhatWeSupport } from './pages'
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path='tsandcs' element={<TandC />}></Route>
         <Route path='/submitmessage' element={<SubmitMessage />}></Route>
         <Route path='/message' element={<Message />}></Route>
+        <Route path='/whatWeSupport' element={<WhatWeSupport />}></Route>
       </Route>
     </Routes>
   )
