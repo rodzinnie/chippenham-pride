@@ -1,0 +1,48 @@
+.bar {
+  display: flex;
+  font-family: 'Poppins';
+}
+
+.breaking {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px;
+  background: red;
+  border: 2px solid black;
+  color: black;
+  width: fit-content;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.newsTicker {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 3;
+}
+
+.newsTicker p {
+  animation: tickerTape 10s linear infinite;
+  padding-left: 0.75rem;
+  font-size: 25px;
+  width: fit-content;
+}
+
+@keyframes tickerTape {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
