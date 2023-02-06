@@ -35,7 +35,7 @@ function Carousel({slides, timer, arrows}) {
     <div className={styles.root}>
       {arrows && <div className={styles.arrowLeft} onClick={() => handleOnClick('left')}>&lt;</div>}
       {arrows && <div className={styles.arrowRight} onClick={() => handleOnClick('right')}>&gt;</div>}
-      <img className={styles.image} alt='guest speaker' src='https://images.pexels.com/photos/12149144/pexels-photo-12149144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+      <img className={styles.image} alt={slides[slideNo].alt} src={slides[slideNo].src} />
     </div>
   )
 }

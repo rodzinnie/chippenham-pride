@@ -1,24 +1,30 @@
 .root{
   width: 250px;
-  height: 250px;
+  height: 280px;
   background-color: rgb(226, 73, 196);
   overflow: hidden;
 }
 
 .heading{
-  font-size: 20px;
-  margin-left: 30px ;
+  font-size: 16px;
+  padding:2px 0;
+  width: 90%;
+  margin: auto;
+
 }
 
 .para{
-  margin: 10px 30px;
-  font-size: 12px;
-  line-height: 100%;
+  font-size: 10px;
+  line-height: 110%;
+  width: 90%;
+  margin: auto;
 }
 
 .carousel{
-  height: 60%;
-  width: 100%;
+  padding-top: 5%;
+  height: 55%;
+  width: 90%;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
@@ -28,32 +34,28 @@
   }
   
   .heading{
-    font-size: 22px;
-    margin-left: 40px ;
+    font-size: 18px;
   }
 
   .para{
-    margin: 10px 40px;
-    font-size: 14px;
-    line-height: 100%;
+    font-size: 12px;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
   .root{
     width: 350px;
     height: 350px; 
   }
     
   .heading{
-    font-size: 30px;
-    margin-left: 50px ;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .para{
-    margin: 10px 50px;
-    font-size: 18px;
-    line-height: 100%;
+    font-size: 12px;
   }
 }
 
