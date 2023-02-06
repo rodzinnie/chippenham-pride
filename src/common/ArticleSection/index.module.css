@@ -10,8 +10,9 @@ article{
 .article >*, .highlight >* {
   font-family: 'Poppins';
   text-align: center;
-  font-size: 26px;
+  font-size: 18px;
   text-align:justify;
+  line-height: 23px;
 }
 
 .article, .highlight {

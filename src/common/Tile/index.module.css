@@ -1,0 +1,74 @@
+.root{
+  width: 250px;
+  height: 280px;
+  background-color: rgb(226, 73, 196);
+  overflow: hidden;
+}
+
+.heading{
+  font-size: 16px;
+  padding:2px 0;
+  width: 90%;
+  margin: auto;
+
+}
+
+.para{
+  font-size: 10px;
+  line-height: 110%;
+  width: 90%;
+  margin: auto;
+}
+
+.carousel{
+  padding-top: 5%;
+  height: 55%;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .root{
+    width: 300px;
+    height: 300px; 
+  }
+  
+  .heading{
+    font-size: 18px;
+  }
+
+  .para{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .root{
+    width: 350px;
+    height: 350px; 
+  }
+    
+  .heading{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .para{
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  .root{
+    width: 400px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .root{
+    width: 500px;
+    height: 500px;
+  }
+}
