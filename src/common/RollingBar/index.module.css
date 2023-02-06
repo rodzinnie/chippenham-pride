@@ -1,0 +1,45 @@
+.bar {
+  /* display: flex; */
+  font-family: 'Poppins';
+  background-color: black;
+}
+
+.breaking {
+  display: flex;
+  align-items: center;
+  /* font-size: 25px; */
+  font-weight: bold;
+  padding: 5px;
+  color: black;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.newsTicker {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+.newsTicker p {
+  padding: 5px 0;
+  animation: tickerTape 20s linear infinite;
+  padding-left: 0.75rem;
+  font-size: 25px;
+  width: fit-content;
+  background-color: black;
+}
+
+@keyframes tickerTape {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
