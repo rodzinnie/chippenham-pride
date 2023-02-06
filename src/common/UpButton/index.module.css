@@ -1,0 +1,16 @@
+.root{
+  position: sticky;
+  width: fit-content;
+  height: fit-content;
+  line-height: 80%;
+  text-align: right;
+  float: right;
+  top: 90vh;
+  right: 50px;
+  color: blueviolet;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: "Poppins";
+  z-index: 10;
+  cursor: pointer;
+}
