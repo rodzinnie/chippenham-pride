@@ -7,5 +7,6 @@ export const data = [
   {url: ' https://www.winemonkey.co.uk', src: 'https://i.postimg.cc/Pxj24zZP/winemonkey.png', alt: 'wine monkey logo' },
   {url: 'https://www.transinthecity.co.uk/', src: 'https://i.postimg.cc/4dQwF7bw/titc.png', alt: 'trans in the city' },
   {url: 'https://www.bostonburger.co.uk/', src: 'https://i.postimg.cc/0NmVDHzT/bostonburger.jpg  ', alt: 'boston burger logo' },
+  {url: 'https://www.chippenhammotor.co.uk?utm_source=pridewebsite&utm_medium=pridewebsite&utm_campaign=pridesponsorship&utm_content=prideheadlinesponsorarea', src: 'https://i.postimg.cc/qBtKZ0Pv/Pride-Website-Logo.png', alt: 'chippenham motor company' },
   {url: 'https://instagram.com/darkobsessiontattoo?igshid=YmMyMTA2M2Y=', src: 'https://i.postimg.cc/j2qvVxMT/darkobsession.jpg', alt: 'dark'}
 ]
