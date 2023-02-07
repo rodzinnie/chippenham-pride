@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import { ArticleSection, Button, GoFundMe, Sponsors } from '../../common';
-import { data } from './data';
+import { ArticleSection, Button, GoFundMe, Sponsors, Writeup } from '../../common';
+import { data, writeup} from './data';
 import styles from './index.module.css'
 
 
@@ -33,6 +33,7 @@ function Support() {
         </div>
         <GoFundMe />
         <Sponsors data={data} />
+        <Writeup>{writeup[0]}</Writeup>
     </ArticleSection>
   )
 }
