@@ -1,11 +1,15 @@
 import styles from './index.module.css'
-function Sponsors({data}) {
+import { ArticleSection } from '../'
+
+function Sponsors({data, header}) {
   return (
-    <section className={styles.sponsors}>
+    <ArticleSection header={header}>
+      <div className={styles.sponsors}>
       {data.map((e, i) => {
         return(<a target='_blank' href={e.url}><img src={e.src} alt={e.alt} className={styles.sponsorImg} /></a>)
       })}
-    </section>
+      </div>
+    </ArticleSection>
   )
 }
 
