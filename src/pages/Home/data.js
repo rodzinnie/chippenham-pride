@@ -14,8 +14,17 @@ export const data = [
   },
   {
     slides: [{src: "https://nspa.org.uk/wp-content/uploads/2020/12/Samaritans-new-logo.png", alt:'Samaritans Logo'}], 
-    title: 'Stalls', 
+    title: 'Commercial Stalls', 
+    text: 'From mental health resources to LGBTQ+ advocacy organizations, you\'ll find a welcoming and accepting environment. In addition, you\'ll find a selection of merchant stalls offering unique products. Support local businesses and take a little piece of the celebration home with you.'
+  },
+  {
+    slides: [{src: "https://i.etsystatic.com/isbl/643cbd/57497224/isbl_3360x840.57497224_mpzdxm00.jpg?version=0", alt:'Samaritans Logo'}], 
+    title: 'Community Stalls', 
     text: 'From mental health resources to LGBTQ+ advocacy organizations, you\'ll find a welcoming and accepting environment. In addition, you\'ll find a selection of merchant stalls offering unique products. Support local businesses and take a little piece of the celebration home with you.'
   },
 
 ]
+
+export const other = {
+  map: {src: 'https://i.postimg.cc/x1QfgVDr/CPmap.jpg', alt: 'Chippenham Pride Map'}
+}

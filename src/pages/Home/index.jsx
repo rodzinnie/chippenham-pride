@@ -4,7 +4,7 @@ import styles from './index.module.css'
 import { Form, ArticleSection, Button, GoFundMe, Highlights } from '../../common'
 import bingo from '../../assets/bingo.mp4'
 import map from '../../assets/pridemap.jpg'
-import {data} from './data'
+import {data, other} from './data'
 
 function Home() {
   const handleClick = (e) => {
@@ -36,7 +36,7 @@ function Home() {
         <p>We are meeting by The Rose and Crown pub, where we start our march at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
         <h2 className={styles.subTitle}>See the map</h2>
         <div className={styles.mapWrapper}>
-          <img src={map} className={styles.map}></img>
+          <img src={other.map.src} alt={other.map.alt} className={styles.map}></img>
         </div>
       </ArticleSection>
 

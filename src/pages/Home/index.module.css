@@ -1,145 +1,165 @@
 strong {
-    font-weight: 900;
+  font-weight: 900;
 }
 
-.form{
-    margin: auto;
-    text-align: center;
-    padding-top: 10px ;
+.form {
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .imgParent {
-    padding-top: 40px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-top: 40px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fiver{
-    font-size: 25px;
-    padding: 40px;
+.fiver {
+  font-size: 25px;
+  padding: 40px;
 }
 
 .img {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 .eventCard {
-    width: 100%;
-    
-    min-height: 100px;
-    position: relative;
+  width: 100%;
+
+  min-height: 100px;
+  position: relative;
 }
 
-.eventMedia{
-    position: relative;
-    width: 100%;  
-}
-.subTitle{
-    font-size: 20px;
-    text-align: center;
+.eventMedia {
+  position: relative;
+  width: 100%;
 }
 
-.mapWrapper{
-    width: 100%;
-    margin: auto;
-    text-align: center;
+.subTitle {
+  font-size: 20px;
+  text-align: center;
 }
 
-.map{
+.mapWrapper {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.map {
+  width: 90%;
+  margin: auto;
+}
+
+.donateText {
+  width: 90%;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 10;
+}
+
+.cardInfo {
+  color: black;
+  margin: 10px 0;
+  font-size: 15px;
+  width: 100%;
+
+}
+
+.smallPrint {
+  font-size: 12px;
+}
+
+.eventCardButton {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardOverlayInfo {
+  display: none;
+  margin-top: 20px;
+  color: white;
+}
+
+
+@media (min-width: 850px) {
+
+  .map{
     width: 60%;
+  }
+
+  .form {
+    text-align: center;
     margin: auto;
-}
-
-.donateText{
-    width: 90%;
-    margin: auto;
-}
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top:0;
-    background-color: rgba(0, 0, 0, 0.301);
-    z-index: 10;
-}
-.cardInfo{
-    color: black;
-    margin: 10px 0;
-    font-size: 15px;
-    width: 100%;
-
-}
-.smallPrint{
-    font-size: 12px;
-}
-.eventCardButton{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cardOverlayInfo{
-    display: none;
-    margin-top: 20px;
-    color: white;
-}
-
-
-@media (min-width: 850px){
-            
-    .form{
-        text-align: center;
-        margin: auto;
-        width: 740px;   
-    }
+    width: 740px;
+  }
 }
 
 @media (min-width: 1000px) {
-    .subTitle{
-        font-size: 30px;
-    }
-    p{  
-        margin:auto;
-        width:60%;
-        line-height: 40px;
-        font-size: 35px;
-    }
-    .eventCard {
-        width: 60%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-    }
-    .eventInfo{
-        width: 40%;
-        margin: auto;
-        text-align: justify;
-    }
-    .formSection{
-        width: 60%;
-        margin: auto;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .imgParent{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 40px;
-    }
-    .img {
-        width: 100%;
-    }
-    
-    /* .eventCard {
+  .subTitle {
+    font-size: 30px;
+  }
+
+  .map{
+    width: 60%;
+  }
+
+  p {
+    margin: auto;
+    width: 60%;
+    line-height: 40px;
+    font-size: 35px;
+  }
+
+  .eventCard {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .eventInfo {
+    width: 40%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  .formSection {
+    width: 60%;
+    margin: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .imgParent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  /* .eventCard {
         width: 60%;
         margin: auto;
         min-height: 100px;
@@ -147,11 +167,12 @@ strong {
         display: flex;
         align-items: center;
     } */
-    .eventCardImage{
-        width: 80%;
-    }
+  .eventCardImage {
+    width: 80%;
+  }
 
-    .formParent{
-        width: 60%;
-    }
+  .formParent {
+    width: 60%;
+  }
 }
+
