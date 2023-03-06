@@ -25,9 +25,6 @@ function Hero() {
         </div>
         <div className={styles.button}>
           <GoFundMe noImage={false} light={true} />
-          <div className={styles.arrParent} onClick={() => console.log('jelo')}>
-            <img className={styles.arr} src={arrow} alt='arrow down' />
-          </div>
         </div>
         <RollingBar />
       </section>

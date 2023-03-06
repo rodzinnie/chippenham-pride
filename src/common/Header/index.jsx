@@ -6,9 +6,9 @@ import styles from './index.module.css'
 
 const Header = () => {
   return (
-    <header>
-      <div className="nav-area">
-        <Link to="/" className="logo">
+    <header className={styles.header}>
+      <div className={styles.navArea}>
+        <Link to="/" className={styles.logo}>
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
         <Navbar />

@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <ul className={clsx(styles.menuTop, isOpen ? '' : 'hidden')}>
+      <ul className={clsx('menus', isOpen ? '' : 'hidden')}>
         {menuItems.map((menu, index) => { 
           const depthLevel = 0;
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;

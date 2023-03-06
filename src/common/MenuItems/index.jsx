@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import {Dropdown} from "../";
 
@@ -16,7 +17,6 @@ const MenuItems = ({ items, depthLevel }) => {
     document.addEventListener("mousedown", handler);
     document.addEventListener("touchstart", handler);
     return () => {
-      // Cleanup the event listener
       document.removeEventListener("mousedown", handler);
       document.removeEventListener("touchstart", handler);
     };
@@ -40,17 +40,17 @@ const MenuItems = ({ items, depthLevel }) => {
       {/* if item has url and submenu, we make the button clickable to visit 
       the url while still showing dropdown on hover. If no url, we only show 
       hover without linking the button. Else, we render a simple <a> element. 
-      Be aware that they are internal links, so we will use the <Link> component from react-router. Here, we are using the <a> for simplicity. */}
+      Be aware that they are internal links, so we will use the <Link> component
+      from react-router. Here, we are using the <a> for simplicity. */}
       {items.url && items.submenu ? (
         <>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            // onClick={() => setDropdown((prev) => !prev)}
+            onClick={() => setDropdown((prev) => !prev)}
           >
-            <a href={items.url}>{items.title}</a>
-            {/* {items.title}{" "} */}
+            <Link to={items.url}>{items.title}</Link>
             {depthLevel > 0 ? (
               <span>&raquo;</span>
             ) : (
@@ -67,26 +67,8 @@ const MenuItems = ({ items, depthLevel }) => {
             dropdown={dropdown}
           />
         </>
-      ) : !items.url && items.submenu ? (
-        <>
-          <button
-            type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
-          >
-            {/* <a href="/#">{items.title}</a> */}
-            {items.title}{" "}
-            {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
-          </button>
-          <Dropdown
-            depthLevel={depthLevel}
-            submenus={items.submenu}
-            dropdown={dropdown}
-          />
-        </>
       ) : (
-        <a href={items.url}>{items.title}</a>
+        <Link to={items.url}>{items.title}</Link>
       )}
     </li>
   );

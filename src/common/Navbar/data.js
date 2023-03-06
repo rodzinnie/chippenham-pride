@@ -1,58 +1,57 @@
 export const menuItems = [
   {
     title: 'Home',
-    path: '',
-    submenu: []
+    url: '',
   },
   {
     title: 'Event Details',
-    path: 'details',
+    url: 'details',
     submenu: [
       {
         title: 'Main Stage',
-        path: 'main-stage'
+        url: 'details/main-stage'
       },
       {
         title: 'Small Stage',
-        path: 'small-stage'
+        url: 'details/small-stage'
       },
       {
         title: 'Community Stalls',
-        path: 'community-stalls'
+        url: 'details/community-stalls'
       },
       {
         title: 'Commercial Stalls',
-        path: 'commercial-stalls'
+        url: 'details/commercial-stalls'
       }
     ]
   },
   {
     title: 'Artists and Speakers',
-    path: 'guests',
-    submenu: []
+    url: 'guests',
+
   },
   {
     title: 'About',
-    path: 'about',
+    url: 'about',
     submenu: [
       {
         title: 'For Business',
-        path: 'for-business'
+        url: 'about/for-business'
       },
       {
         title: 'The Team',
-        path: 'the-team'
+        url: 'about/the-team'
       }
     ]
   },
   {
     title: 'Sponsor Pride',
-    path: 'sponsor',
-    submenu: []
+    url: 'sponsor',
+
   },
   {
     title: 'Contact Us',
-    path: 'contact',
-    submenu: []
+    url: 'contact',
+
   }
 ]
