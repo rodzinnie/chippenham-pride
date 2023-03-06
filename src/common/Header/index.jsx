@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.navArea}>
-        <Link to="/" className={styles.logo}>
+        <Link to="/" className={styles.sample}>
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
         <Navbar />
