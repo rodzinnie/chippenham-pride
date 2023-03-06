@@ -1,11 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import RollingBar from '../../common/RollingBar/index'
-import { Button, GoFundMe, Navbar } from '../../common'
+import { Button, GoFundMe, Header } from '../../common'
 import styles from './index.module.css'
 import arrow from '../../assets/arr.png'
 
-function Header() {
+function Hero() {
   const navigateTo = useNavigate()
   const handleClick = () => {
     navigateTo('/volunteer')
@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header className={styles.root}>
-      <Navbar />
+      <Header />
       <section className={styles.section}>
         <div className={styles.shoutout}>
           <h1 className={styles.h1}>
@@ -35,4 +35,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Hero

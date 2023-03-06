@@ -1,11 +1,15 @@
 import styles from './index.module.css'
-import { Tile } from '../'
+import { Button, Tile } from '../'
+import { Link } from 'react-router-dom'
 function Highlights({data}) {
   return (
     <div className={styles.root}>
       {data.map((e,i) => {
+        console.log(e)
         return(
-          <Tile data={e} />
+          <Link to={e.path} key={i}>
+            <Tile data={e} />
+          </Link>
         )
       })}
     </div>

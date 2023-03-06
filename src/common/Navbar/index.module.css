@@ -58,10 +58,6 @@
     color: var(--navbar-color);
 }
 
-.logo{
-    height: 80px;
-}
-
 .hamburger {
     position: absolute;
     z-index: 10;

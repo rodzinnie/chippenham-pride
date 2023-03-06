@@ -1,6 +1,7 @@
 export { default as About } from './About'
 export { default as BusinessSponsorship } from './BusinessSponsorship'
 export { default as Contact } from './Contact'
+export { default as DetailsNav } from './DetailsNav'
 export { default as Home } from './Home'
 export { default as Message } from './Message'
 export { default as SubmitMessage } from './SubmitMessage'
