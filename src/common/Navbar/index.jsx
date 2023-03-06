@@ -1,9 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Sling as Hamburger } from "hamburger-react";
+import { Sling as Hamburger } from '../Hamburger/Sling' 
 import clsx from 'clsx'
 
-import { GoFundMe } from "..";
-import logo from "../../assets/logo.png";
 import styles from "./index.module.css";
 import { menuItems } from "./data"; 
 import { MenuItems } from '../'
@@ -40,11 +38,12 @@ const Navbar = () => {
           const depthLevel = 0;
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
+        {windowSize.innerWidth <= 900 ?         
         <Hamburger
            toggled={isOpen}
            toggle={setOpen}
            color="#FFFFFF"
-         />
+         /> : ''}
       </ul>
     </nav>
   );
