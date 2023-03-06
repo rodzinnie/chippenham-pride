@@ -10,12 +10,15 @@ const Navbar = () => {
 
   const [isOpen, setOpen] = useState(false);
   const [windowSize, setWindowSize] = useState(getWindowSize())
+  const [smallScreen, setSmallScreen] = useState(getSmallScreen())
 
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   }
-  
+  function getSmallScreen() {
+    return windowSize.innerWidth < 900 ? true : false
+  }
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -29,22 +32,41 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
+  }, [])
+  useEffect(() => {
+    setSmallScreen(getSmallScreen())
+  }, [windowSize])
 
   return (
-    <nav>
-      <ul className={clsx('menus', isOpen ? '' : 'hidden')}>
+    <nav className={styles.wrapper}>
+      {!smallScreen ?
+      <ul className={'menus'}>
         {menuItems.map((menu, index) => { 
           const depthLevel = 0;
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
-        {windowSize.innerWidth <= 900 ?         
-        <Hamburger
-           toggled={isOpen}
-           toggle={setOpen}
-           color="#FFFFFF"
-         /> : ''}
+      </ul> :
+      smallScreen && isOpen ? 
+      (<>
+      <Hamburger
+      toggled={isOpen}
+      toggle={setOpen}
+      color="#FFFFFF"
+    /> 
+      <ul className={clsx('menus', 'expandDown')}>
+        {menuItems.map((menu, index) => { 
+          const depthLevel = 0;
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+        })}
       </ul>
+        </>
+        ) :
+      <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          color="#FFFFFF"
+        /> 
+      }
     </nav>
   );
 };

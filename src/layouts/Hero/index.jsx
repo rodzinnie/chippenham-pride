@@ -12,7 +12,7 @@ function Hero() {
   }
 
   return (
-    <header className={styles.root}>
+    <div className={styles.root}>
       <Header />
       <section className={styles.section}>
         <div className={styles.shoutout}>
@@ -28,7 +28,7 @@ function Hero() {
         </div>
         <RollingBar />
       </section>
-    </header>
+    </div>
   )
 }
 

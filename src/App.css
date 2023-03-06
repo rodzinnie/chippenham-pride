@@ -22,13 +22,27 @@ ul, li {
   box-sizing: border-box;
 }
 
-
+.hamburger-react{
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
 
 .menus {
+  z-index: 10;
   display: flex;
   list-style: none;
   font-family: 'Poppins', sans-serif;
   color: white;
+}
+
+.expandDown{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  /* width: 80%; */
+  flex-direction: column;
 }
 
 .menu-items {

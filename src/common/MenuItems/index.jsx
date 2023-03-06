@@ -42,15 +42,16 @@ const MenuItems = ({ items, depthLevel }) => {
       hover without linking the button. Else, we render a simple <a> element. 
       Be aware that they are internal links, so we will use the <Link> component
       from react-router. Here, we are using the <a> for simplicity. */}
-      {items.url && items.submenu ? (
+            {items.url && items.submenu ? (
         <>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
+            // onClick={() => setDropdown((prev) => !prev)}
           >
-            <Link to={items.url}>{items.title}</Link>
+            <a href={items.url}>{items.title}</a>
+            {/* {items.title}{" "} */}
             {depthLevel > 0 ? (
               <span>&raquo;</span>
             ) : (
@@ -67,8 +68,26 @@ const MenuItems = ({ items, depthLevel }) => {
             dropdown={dropdown}
           />
         </>
+      ) : !items.url && items.submenu ? (
+        <>
+          <button
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded={dropdown ? "true" : "false"}
+            onClick={() => setDropdown((prev) => !prev)}
+          >
+            {/* <a href="/#">{items.title}</a> */}
+            {items.title}{" "}
+            {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+          </button>
+          <Dropdown
+            depthLevel={depthLevel}
+            submenus={items.submenu}
+            dropdown={dropdown}
+          />
+        </>
       ) : (
-        <Link to={items.url}>{items.title}</Link>
+        <a href={items.url}>{items.title}</a>
       )}
     </li>
   );

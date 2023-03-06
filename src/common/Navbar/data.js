@@ -5,8 +5,11 @@ export const menuItems = [
   },
   {
     title: 'Event Details',
-    url: 'details',
     submenu: [
+      {
+        title: 'General Info',
+        url: 'details'
+      },
       {
         title: 'Main Stage',
         url: 'details/main-stage'
@@ -32,8 +35,11 @@ export const menuItems = [
   },
   {
     title: 'About',
-    url: 'about',
     submenu: [
+      {
+        title: 'About Pride',
+        url: 'about'
+      },
       {
         title: 'For Business',
         url: 'about/for-business'

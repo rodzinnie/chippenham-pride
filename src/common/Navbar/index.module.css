@@ -4,6 +4,12 @@
     --main-font: 'Poppins', sans-serif;
 }
 
+.wrapper{
+  position: relative;
+  background-color: black;
+  width: 80%;
+}
+
 .root {
   padding: 0;
   margin: 0;

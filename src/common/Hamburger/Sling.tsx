@@ -14,6 +14,10 @@ export const Sling = ((props) => (
       role="button"
       style={{
         ...o.burgerStyles,
+        position: 'absolute',
+        zIndex: 20,
+        top: -60,
+        right: 0,
         transform: `${o.isToggled
           ? `rotateY(${180 * (o.isLeft ? -1 : 1)}deg)`
           : 'none'
