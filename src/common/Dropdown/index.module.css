@@ -6,10 +6,10 @@
 .dropdown {
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 50px;
   left: auto;
-  box-shadow: 5px 15px 5px -3px rgba(35, 4, 66, 0.08),
-  5px 15px 5px -3px rgba(111, 34, 188, 0.731);
+  box-shadow: 5px 10px 5px -3px rgba(35, 4, 66, 0.08),
+  5px 10px 5px -3px rgba(30, 9, 52, 0.731);
   font-size: 0.875rem;
   z-index: 9999;
   min-width: 50%;
