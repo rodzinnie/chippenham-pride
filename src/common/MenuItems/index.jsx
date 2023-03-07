@@ -49,9 +49,10 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            // onClick={() => setDropdown((prev) => !prev)}
-          >
-            <a href={items.url}>{items.title}</a>
+            onClick={() => {
+              setDropdown((prev) => !prev)
+            }}          >
+            <Link to={items.url} onClick={() => handleClick(false)}>{items.title}</Link>
             {/* {items.title}{" "} */}
             {depthLevel > 0 ? (
               <span>&raquo;</span>
@@ -91,8 +92,8 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
           />
         </>
       ) : (
-        <Link to={items.url}>{items.title}</Link>
-      )}
+        <Link to={items.url} onClick={() => handleClick(false)}>{items.title}</Link>
+        )}
     </li>
   );
 };

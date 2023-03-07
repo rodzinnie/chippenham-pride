@@ -1,6 +1,8 @@
 article{
   color: #000;
   min-height: 90px;
+  min-width: 80%;
+  margin: auto;
 }
 
 .highlight{

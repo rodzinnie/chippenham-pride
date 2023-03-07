@@ -5,6 +5,12 @@
     justify-content: space-between;
 }
 
+.sponsorsH2{
+  position: absolute;
+  max-width: fit-content;
+
+}
+
 .buttonWrapper{
     margin: auto;
     width: 100%;
@@ -18,7 +24,6 @@
 
 .socialMed{
     flex-basis: 100%;
-    /* outline: 1px solid black; */
     /* margin: auto; */
     display: flex;
     flex-direction: column;
@@ -47,6 +52,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .sponsorImg{

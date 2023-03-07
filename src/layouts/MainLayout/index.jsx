@@ -13,7 +13,7 @@ function MainLayout() {
         <div className={styles.outlet}>
           <Outlet />
         </div>
-        {/* <Footer /> */}
+        <Footer />
         
     </div>
   )
