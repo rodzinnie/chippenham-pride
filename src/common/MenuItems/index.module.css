@@ -2,7 +2,8 @@
 .menuItems {
   position: relative;
   font-size: 25px;
-  /* width: 100%; */
+  width: fit-content;
+  min-width: 150px;
 }
 
 .menuItems a {
@@ -33,7 +34,7 @@
 .menuItems a,
 .menuItems button {
   text-align: left;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0;
 }
 
 
