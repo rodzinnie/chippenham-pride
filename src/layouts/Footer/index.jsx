@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import styles from "./index.module.css";
 import fb from "../../assets/facebook.png";
 import insta from "../../assets/insta.png";
-import tiktok from "../../assets/tiktok.png";
 import { Button, GoFundMe, Sponsors } from "../../common";
 import { data } from "./data";
 
@@ -39,7 +38,7 @@ function Footer() {
         <div className={styles.registry}>
           CHIPPENHAM PRIDE CIC <br /> Company number: <br />
           14287807
-          <GoFundMe noImage={true} />
+          <GoFundMe noImage={true} text={'Donate'} />
         </div>
       </div>
       <p className={styles.rights}>

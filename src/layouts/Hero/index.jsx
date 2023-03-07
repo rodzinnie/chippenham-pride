@@ -11,6 +11,20 @@ function Hero() {
     navigateTo('/volunteer')
   }
 
+  const moveToForm = () => {
+    const path = window.location.pathname
+    if(path != '/') {
+      navigateTo('/')
+      setTimeout(() => {
+        const element = document.getElementById("walkRegistration");
+        element.scrollIntoView({ behavior: "smooth" })
+      }, 800)
+    } else {
+      const element = document.getElementById("walkRegistration");
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div className={styles.root}>
       <Header />
@@ -24,7 +38,8 @@ function Hero() {
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
         <div className={styles.button}>
-          <GoFundMe noImage={false} light={true} />
+          <GoFundMe noImage={false} light={true} text={'Donate'} />
+          <GoFundMe noImage={false} light={true} text={'Register for the Walk'} handleClick={moveToForm}/>
         </div>
         <RollingBar />
       </section>

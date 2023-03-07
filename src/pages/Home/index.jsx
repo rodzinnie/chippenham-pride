@@ -16,7 +16,7 @@ function Home() {
         <Highlights data={data}/>
       </ArticleSection>
       <ArticleSection  header='Register your attendance!'>
-        <div className={styles.form}>
+        <div className={styles.form} id={'walkRegistration'}>
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="100%" height="500px" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
         </div>
         <div className={styles.form}>
@@ -28,7 +28,7 @@ function Home() {
       </ArticleSection>
       <ArticleSection header='Donate!' background>
         <p className={styles.donateText}>We organise our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
-        <GoFundMe />
+        <GoFundMe text='donate'/>
       </ArticleSection>
       <ArticleSection header='The Event'>
         <h2 className={styles.subTitle}>The plan</h2>

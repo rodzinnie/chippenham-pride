@@ -35,14 +35,12 @@ function Form() {
       setUser({ ...user, hasError: true })
       return null
     }
-    console.log('Pierwszy', user.reason, initialUserState.reason)
     if (
       user.nick &&
       user.reason !== initialUserState.reason &&
       user.email &&
       user.content
     ) {
-      console.log('Drugi', user.reason, initialUserState.reason)
 
       const message = {
         person: {
