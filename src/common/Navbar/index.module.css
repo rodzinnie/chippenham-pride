@@ -8,6 +8,29 @@
   position: relative;
   background-color: black;
   width: 80%;
+  /* outline: 1px solid teal; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.expandDown{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  flex-direction: column;
+  /* outline: 1px solid blue; */
+}
+
+.menus {
+  /* outline: 1px solid pink; */
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .root {
@@ -17,7 +40,6 @@
   flex-wrap: nowrap;
   opacity: 1;
   width: 100%;
-  outline: 1px solid teal;
 }
 
 .menuTop{

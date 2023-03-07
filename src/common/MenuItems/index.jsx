@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import {Dropdown} from "../";
+import styles from './index.module.css'
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({ items, depthLevel, handleClick }) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef();
@@ -32,7 +33,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
   return (
     <li
-      className="menu-items"
+      className={styles.menuItems}
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -74,7 +75,10 @@ const MenuItems = ({ items, depthLevel }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
+            onClick={() => {
+              dropdown && handleClick(false)
+              setDropdown((prev) => !prev)
+            }}
           >
             {/* <a href="/#">{items.title}</a> */}
             {items.title}{" "}
@@ -87,7 +91,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <a href={items.url}>{items.title}</a>
+        <Link to={items.url}>{items.title}</Link>
       )}
     </li>
   );

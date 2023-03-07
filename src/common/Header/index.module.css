@@ -5,6 +5,11 @@
   padding: 10px 0;
 }
 
+.sample{
+  display: block;
+  padding: 10px;
+}
+
 .logo {
   display: block;
   height: 70px;
@@ -14,8 +19,7 @@
 }
 
 .navArea{
-  margin: 2%;
-  width: 96%;
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: space-between;

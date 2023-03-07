@@ -14,13 +14,13 @@ function Footer() {
       <h2>Main Sponsors</h2>
       <Sponsors data={data} />
       <div className={styles.buttonWrapper}>
-        <Link to='/support'><Button text='see all of the sponsors' variant={'lightOnLight'} /></Link>
+        <Link to='/sponsor'><Button text='see all of the sponsors' variant={'lightOnLight'} /></Link>
       </div>
        <div className={styles.content}>
         <nav className={styles.nav}>
           <NavLink to="about">About</NavLink>
           <NavLink to="volunteer">Contact us</NavLink>
-          <NavLink to="support">Help us fund the PRIDE</NavLink>
+          <NavLink to="sponsor">Help us fund the PRIDE</NavLink>
         </nav>
        <div className={styles.socialMed}>
         <p>See us on Social Media</p>
