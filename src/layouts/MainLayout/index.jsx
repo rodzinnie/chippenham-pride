@@ -2,13 +2,13 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 
 import styles from './index.module.css'
-import { Header, Footer } from '..'
+import { Hero, Footer } from '..'
 import { UpButton } from '../../common';
 
 function MainLayout() {
   return (
     <div className={styles.root}>
-        <Header />
+        <Hero />
         <UpButton />
         <div className={styles.outlet}>
           <Outlet />

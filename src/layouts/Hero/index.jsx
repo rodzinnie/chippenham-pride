@@ -1,19 +1,33 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import RollingBar from '../../common/RollingBar/index'
-import { Button, GoFundMe, Navbar } from '../../common'
+import { Button, GoFundMe, Header } from '../../common'
 import styles from './index.module.css'
 import arrow from '../../assets/arr.png'
 
-function Header() {
+function Hero() {
   const navigateTo = useNavigate()
   const handleClick = () => {
     navigateTo('/volunteer')
   }
 
+  const moveToForm = () => {
+    const path = window.location.pathname
+    if(path != '/') {
+      navigateTo('/')
+      setTimeout(() => {
+        const element = document.getElementById("walkRegistration");
+        element.scrollIntoView({ behavior: "smooth" })
+      }, 800)
+    } else {
+      const element = document.getElementById("walkRegistration");
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
-    <header className={styles.root}>
-      <Navbar />
+    <div className={styles.root}>
+      <Header />
       <section className={styles.section}>
         <div className={styles.shoutout}>
           <h1 className={styles.h1}>
@@ -24,15 +38,13 @@ function Header() {
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
         <div className={styles.button}>
-          <GoFundMe noImage={false} light={true} />
-          <div className={styles.arrParent} onClick={() => console.log('jelo')}>
-            <img className={styles.arr} src={arrow} alt='arrow down' />
-          </div>
+          <GoFundMe noImage={false} light={true} text={'Donate'} />
+          <GoFundMe noImage={false} light={true} text={'Register for the Walk'} handleClick={moveToForm}/>
         </div>
         <RollingBar />
       </section>
-    </header>
+    </div>
   )
 }
 
-export default Header
+export default Hero

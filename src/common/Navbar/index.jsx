@@ -1,18 +1,25 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Sling as Hamburger } from "hamburger-react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react"
+import { useLocation } from 'react-router-dom'
+import { Sling as Hamburger } from '../Hamburger/Sling' 
+import clsx from 'clsx'
 
-import { GoFundMe } from "..";
-import logo from "../../assets/logo.png";
 import styles from "./index.module.css";
+import { menuItems } from "./data"; 
+import { MenuItems } from '../'
 
-function Navbar() {
+const Navbar = () => {
+
   const [isOpen, setOpen] = useState(false);
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-  const inputRef = useRef();
-  const rootRef = useRef();
-  const navigateTo = useNavigate();
-
+  const [windowSize, setWindowSize] = useState(getWindowSize())
+  const [smallScreen, setSmallScreen] = useState(getSmallScreen())
+  
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+  function getSmallScreen() {
+    return windowSize.innerWidth < 900 ? true : false
+  }
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -23,88 +30,48 @@ function Navbar() {
       }
     }
     window.addEventListener("resize", handleWindowResize);
-
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
+  }, [])
 
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
-    return { innerWidth, innerHeight };
-  }
 
-  const handleHamburger = (toggled) => {
-    if (toggled) {
-      inputRef.current.style.right = 0;
-      rootRef.current.style.overflow = "visible";
-    } else {
-      inputRef.current.style.right = "-120%";
-      setTimeout(() => (rootRef.current.style.overflow = "hidden"), 400);
-    }
-  };
-
-  const handleIsActive = ({ isActive }) => {
-    return {
-      borderBottom: isActive ? "1px black solid" : "none",
-      textShadow: isActive ? "2px 3px #33323280" : "none",
-    };
-  };
-
-  const handleOnClick = (e) => {
-    e.preventDefault();
-    navigateTo("/volunteer");
-  };
+  useEffect(() => {
+    setSmallScreen(getSmallScreen())
+  }, [windowSize])
 
   return (
-    <div className={styles.root} ref={rootRef}>
-      <div className={styles.logos}>
-        <img src={logo} alt="logo" className={styles.logo} />
-        <div className={styles.title}>
-          <span className={styles.span}>Chippenham</span>
-          <span className={styles.span}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pride 2023
-          </span>
-        </div>
-      </div>
-      <nav ref={inputRef} className={styles.nav}>
-        <NavLink style={handleIsActive} className={styles.navlink} to="/">
-          The Event
-        </NavLink>
-        <NavLink style={handleIsActive} className={styles.navlink} to="about">
-          About
-        </NavLink>
-        <NavLink
-          style={handleIsActive}
-          className={styles.navlink}
-          to="volunteer"
-        >
-          Contact us!
-        </NavLink>
-        <NavLink style={handleIsActive} className={styles.navlink} to="support">
-          Sponsor Pride
-        </NavLink>
-        <NavLink
-          style={handleIsActive}
-          className={styles.navlink}
-          to="business"
-        >
-          For Businesses
-        </NavLink>
-        <NavLink style={handleIsActive} className={styles.navlink} to="team">
-          The Team
-        </NavLink>
-      </nav>
-      <div className={styles.hamburger}>
-        <Hamburger
-          onToggle={handleHamburger}
+    <nav className={styles.wrapper}>
+      {!smallScreen ?
+      <ul className={styles.menus}>
+        {menuItems.map((menu, index) => { 
+          const depthLevel = 0;
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+        })}
+      </ul> :
+      smallScreen && isOpen ? 
+      (<>
+      <Hamburger
+      toggled={isOpen}
+      toggle={setOpen}
+      color="#FFFFFF"
+    /> 
+      <ul className={clsx(styles.menus, styles.expandDown)}>
+        {menuItems.map((menu, index) => { 
+          const depthLevel = 0;
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} handleClick={setOpen} />;
+        })}
+      </ul>
+        </>
+        ) :
+      <Hamburger
           toggled={isOpen}
           toggle={setOpen}
           color="#FFFFFF"
-        />
-      </div>
-    </div>
+        /> 
+      }
+    </nav>
   );
-}
+};
 
 export default Navbar;
