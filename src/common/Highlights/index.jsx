@@ -7,7 +7,7 @@ function Highlights({data}) {
       {data.map((e,i) => {
         console.log(e)
         return(
-          <Link to={e.path} key={i}>
+          <Link to={e.path} key={i} className={styles.link}>
             <Tile data={e} />
           </Link>
         )

@@ -19,6 +19,14 @@ export const menuItems = [
         url: 'details/small-stage'
       },
       {
+        title: 'Comedy',
+        url: 'details/comedy'
+      },
+      {
+        title: 'Speakers',
+        url: 'details/speakers'
+      },
+      {
         title: 'Community Stalls',
         url: 'details/community-stalls'
       },
@@ -29,16 +37,15 @@ export const menuItems = [
     ]
   },
   {
-    title: 'Artists and Speakers',
-    url: 'guests',
-
-  },
-  {
     title: 'About',
     submenu: [
       {
         title: 'About Pride',
         url: 'about'
+      },
+      {
+        title: 'Artists and Speakers',
+        url: 'guests',
       },
       {
         title: 'For Business',

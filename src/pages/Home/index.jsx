@@ -13,7 +13,7 @@ function Home() {
   return (
     <section className={styles.root}>
       <ArticleSection header='Whats&#39;on'>
-        {/* <Highlights data={data}/> */}
+        <Highlights data={data}/>
       </ArticleSection>
       <ArticleSection  header='Register your attendance!'>
         <div className={styles.form}>
