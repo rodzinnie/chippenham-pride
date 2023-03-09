@@ -1,10 +1,9 @@
 import { useLocation } from 'react-router-dom'
-import { useState } from 'react'
-
+import { useState, useEffect } from 'react'
 import styles from './index.module.css'
 import {eventDetails} from './data.js'
-import { ArticleSection } from '../../common'
-import { useEffect } from 'react'
+import { ArticleSection, Highlights,  Tile } from '../../common'
+
 const EventDetailsCategory = () => {
   const path = useLocation()
   const pathname = path.pathname
@@ -13,12 +12,21 @@ const EventDetailsCategory = () => {
     const obj = array[0]
     return obj
   }
-  const currentObj = filterArray(eventDetails)
+
+  const [currentObj, setCurrentObj] = useState(filterArray(eventDetails))
+
+  const prepareTilesData = (obj) => {
+    const arr = []
+    for(let part of obj) {
+      arr.push({slides: [{src: part.img, alt: part.name}], title: part.name, text: part.description})
+    }
+    return arr
+  }
+  const dupa = prepareTilesData(currentObj.data)
+  
   return (
     <ArticleSection header={currentObj.type}>
-      {eventDetails.map((e,i) => {
-        <div className={styles.wrapper} key={i}>{currentObj.type}</div>
-      })}
+      <Highlights data={dupa} link={false}/>
     </ArticleSection>
   )
 }
