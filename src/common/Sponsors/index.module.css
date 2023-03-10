@@ -48,6 +48,18 @@
   padding-top: 60px;
 }
 
+.sponsorImgGold{
+  width: 25vw;
+  padding-top: 60px;
+}
+
+.goldTitle{
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
 .qr {
   /* width: 100%; */
   /* text-align: center; */
@@ -123,7 +135,10 @@
   .sponsorImg{
       width: 20vw;
       padding-top: 0;
-
+  }
+  .sponsorImgGold{
+    width: 10vw;
+    padding-top: 0;
   }
 
   .socialMed{

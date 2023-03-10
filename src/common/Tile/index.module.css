@@ -1,8 +1,15 @@
 .root{
   width: 250px;
-  height: 280px;
+  min-height: 280px;
+  height: fit-content;
   background-color: rgb(226, 73, 196);
   overflow: hidden;
+  box-shadow: 10px 5px 5px rgba(20, 11, 46, 0.564);
+}
+
+.root:hover{
+  transform: scale(1.1);  
+  cursor: pointer;
 }
 
 .heading{
@@ -19,11 +26,12 @@
   line-height: 110%;
   width: 90%;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 .carousel{
   padding-top: 5%;
-  height: 55%;
+  height: 170px;
   width: 90%;
   margin: auto;
 }
@@ -31,7 +39,7 @@
 @media (min-width: 600px) {
   .root{
     width: 300px;
-    height: 300px; 
+    min-height: 300px; 
   }
   
   .heading{
@@ -46,7 +54,7 @@
 @media (min-width: 1100px) {
   .root{
     width: 350px;
-    height: 350px; 
+    min-height: 350px; 
   }
     
   .heading{
@@ -64,12 +72,33 @@
 @media (min-width: 1500px) {
   .root{
     width: 400px;
+    height: 500px;
+  }
+      
+  .heading{
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .para{
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1800px) {
   .root{
     width: 500px;
-    height: 500px;
+    height: 550px;
+  }
+        
+  .heading{
+    font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+  }
+
+  .para{
+    font-size: 18px;
   }
 }

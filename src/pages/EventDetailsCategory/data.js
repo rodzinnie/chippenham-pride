@@ -1,66 +1,179 @@
-export const eventDetails  = [
+export const eventDetails = [
   {
-    mainStage: {
-      data: [
-        {name: 'Stuart Rolfe', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Sam', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Becky Lawrence', img: 'https://rb.gy/czri08', type: 'singer', decription: 'Drifted from the shores of the Isle of Man, Becky Lawrence is a singer/songwriter and storyteller, now residing in Wiltshire. From years of threading the boards in hit shows such as \'Les Miserables\', \'Miss Saigon\' and \'Evita\', to cowboy boots and writing her own songs, Becky loves nothing more then bringing her audience on a journey everytime she performs. She\'ll make you laugh, sometimes make you cry and above all, she hopes she can make you feel or heal through her story telling.'},
-        {name: 'The Real Cheesemakers', img: 'https://rb.gy/tjzwt3', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Boston Green', img: 'https://rb.gy/bcea7m', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Concrete Prairie', img: 'https://rb.gy/bcea7m', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Wiltshire Rock Choir', img: 'https://rb.gy/bcea7m', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Wiltshire Rock Choir', img: 'https://rb.gy/bcea7m', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'main-stage'
+    data: [
+      {
+        name: "Stuart Rolfe",
+        url: 'https://www.facebook.com/DaylightStealers/?locale=en_GB',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Sam",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Becky Lawrence",
+        url: 'https://google.com',
+        img: "https://i.postimg.cc/BbZqpByt/becky-Lawrence.png",
+        type: "singer",
+        description:
+          "Drifted from the shores of the Isle of Man, Becky Lawrence is a singer/songwriter and storyteller, now residing in Wiltshire. From years of threading the boards in hit shows such as 'Les Miserables', 'Miss Saigon' and 'Evita', to cowboy boots and writing her own songs, Becky loves nothing more then bringing her audience on a journey everytime she performs. She'll make you laugh, sometimes make you cry and above all, she hopes she can make you feel or heal through her story telling.",
+      },
+      {
+        name: "The Real Cheesemakers",
+        url: 'https://google.com',
+        img: "https://rb.gy/tjzwt3",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Boston Green",
+        url: 'https://google.com',
+        img: "https://rb.gy/bcea7m",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Concrete Prairie",
+        url: 'https://google.com',
+        img: "https://rb.gy/bcea7m",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Wiltshire Rock Choir",
+        url: 'https://google.com',
+        img: "https://rb.gy/bcea7m",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/main-stage",
+    type: "main stage",
   },
   {
-    smallStage: {
-      data: [
-        {name: 'Stuart Rolfe', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'small-stage'
+    data: [
+      {
+        name: "Stuart Rolfe",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/small-stage",
+    type: "small stage",
   },
   {
-    speakers: {
-      data: [
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'speakers'
+    data: [
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/speakers",
+    type: "speakers theatre",
   },
   {
-    comedy: {
-      data: [
-        {name: 'Andrew O\'Neil', img: 'https://www.chortle.co.uk/images/photos/small/aon-andrew-oneill-22.jpg', type: 'comedian', decription: 'Stu is great!'},
-        {name: 'Sooz Kempner', img: 'https://cdn.comedy.co.uk/images/library/people/900x450/s/sooz_kempner.jpg', type: 'singer', decription: 'Stu is great!'},
-        {name: 'Jonathan Mayor', img: 'https://www.comedygigs.co.uk/img-artists/artist-1183-1.jpg', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'comedy'
+    data: [
+      {
+        name: "Andrew O'Neil",
+        url: 'https://google.com',
+        img: "https://www.chortle.co.uk/images/photos/small/aon-andrew-oneill-22.jpg",
+        type: "comedian",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Sooz Kempner",
+        url: 'https://google.com',
+        img: "https://cdn.comedy.co.uk/images/library/people/900x450/s/sooz_kempner.jpg",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+      {
+        name: "Jonathan Mayor",
+        url: 'https://google.com',
+        img: "https://www.comedygigs.co.uk/img-artists/artist-1183-1.jpg",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/comedy",
+    type: "comedy",
   },
   {
-    communityStalls: {
-      data: [
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'community-stalls'
+    data: [
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/community-stalls",
+    type: "stalls",
   },
   {
-    commercialStalls: {
-      data: [
-        {name: 'Stu', img: 'https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588', type: 'singer', decription: 'Stu is great!'},
-      ]
-    },
-    url: 'commercial-stalls'
-  }
-
-]
+    data: [
+      {
+        name: "Stu",
+        url: 'https://google.com',
+        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+        type: "singer",
+        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      },
+    ],
+    url: "/details/commercial-stalls",
+    type: "stalls",
+  },
+];
