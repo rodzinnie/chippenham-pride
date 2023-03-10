@@ -1,15 +1,14 @@
 .bar {
-  /* display: flex; */
   font-family: 'Poppins';
   background-color: black;
+  height: 100px;
 }
 
 .breaking {
   display: flex;
   align-items: center;
-  /* font-size: 25px; */
   font-weight: bold;
-  padding: 5px;
+  /* padding: 5px; */
   color: black;
   width: fit-content;
   white-space: nowrap;
@@ -18,7 +17,6 @@
 .newsTicker {
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -27,7 +25,7 @@
 }
 
 .newsTicker p {
-  padding: 5px 0;
+  padding: 25px 0;
   animation: tickerTape 20s linear infinite;
   padding-left: 0.75rem;
   font-size: 25px;
@@ -41,5 +39,12 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+
+@media (min-width: 900px) {
+  .bar{
+    height: 80px;
   }
 }
