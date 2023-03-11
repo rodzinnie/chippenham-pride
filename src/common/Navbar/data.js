@@ -14,14 +14,14 @@ export const menuItems = [
         title: 'Main Stage',
         url: 'details/main-stage'
       },
-      {
-        title: 'Small Stage',
-        url: 'details/small-stage'
-      },
-      {
-        title: 'Comedy',
-        url: 'details/comedy'
-      },
+      // {
+      //   title: 'Small Stage',
+      //   url: 'details/small-stage'
+      // },
+      // {
+      //   title: 'Comedy',
+      //   url: 'details/comedy'
+      // },
       {
         title: 'Speakers',
         url: 'details/speakers'
