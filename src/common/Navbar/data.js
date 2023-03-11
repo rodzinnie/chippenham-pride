@@ -26,13 +26,13 @@ export const menuItems = [
         title: 'Speakers',
         url: 'details/speakers'
       },
+      // {
+      //   title: 'Community Stalls',
+      //   url: 'details/community-stalls'
+      // },
       {
-        title: 'Community Stalls',
-        url: 'details/community-stalls'
-      },
-      {
-        title: 'Commercial Stalls',
-        url: 'details/commercial-stalls'
+        title: 'Stalls',
+        url: 'details/stalls'
       }
     ]
   },

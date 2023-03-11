@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import styles from './index.module.css'
-import {eventDetails} from './data.js'
+import {eventDetails} from '../data.js'
 import { ArticleSection, Highlights } from '../../common'
 
 const EventDetailsCategory = () => {

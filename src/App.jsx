@@ -3,7 +3,7 @@ import { Routes, Route, Outlet } from 'react-router-dom'
 
 import './App.css'
 import { Details, MainLayout } from './layouts'
-import { DetailsNav, Home, About, BusinessSponsorship, EventDetailsCategory,  SubmitMessage, Support, Team, TandC, Message, Contact, WhatWeSupport } from './pages'
+import { DetailsNav, Home, About, BusinessSponsorship, EventDetailsCategory, Stalls, SubmitMessage, Support, Team, TandC, Message, Contact, WhatWeSupport } from './pages'
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
           <Route path='small-stage' element={<EventDetailsCategory />} />
           <Route path='comedy' element={<EventDetailsCategory />} />
           <Route path='speakers' element={<EventDetailsCategory />} />
-          <Route path='community-stalls' element={<EventDetailsCategory />} />
-          <Route path='commercial-stalls' element={<EventDetailsCategory />} />
+          {/* <Route path='community-stalls' element={<EventDetailsCategory />} /> */}
+          <Route path='stalls' element={<Stalls />} />
         </Route>
           <Route path='guests' element={<div>Speakers list here</div>} />
         <Route path='about' element={<><Outlet /></>}>

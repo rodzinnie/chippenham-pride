@@ -13,7 +13,7 @@ export const data = [
     [{src: "https://yassmagazine.files.wordpress.com/2020/05/ojbvhz7acllv64o2mp5gfyw2mp3knzdxpuo3fvxu.jpeg?w=1200", alt:'Lord Michael Cashman at a Pride event'}], 
     title: 'Speaker Stage', 
     text: 'Join us for an unforgettable experience as Lord Michael Cashman, a champion for LGBTQ+ rights, takes the stage at Chippenham Pride 2023. Don\'t miss the opportunity to hear from a true leader and activist in the community.',
-    path: 'details/speaker-stage'
+    path: 'details/speakers'
   },
   {
     slides: [{src: "https://i.etsystatic.com/isbl/643cbd/57497224/isbl_3360x840.57497224_mpzdxm00.jpg?version=0", alt:'Samaritans Logo'}], 

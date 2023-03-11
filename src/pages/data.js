@@ -185,30 +185,35 @@ export const eventDetails = [
     url: "/details/comedy",
     type: "comedy",
   },
-  {
-    data: [
-      {
-        name: "Stu",
-        url: 'https://google.com',
-        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
-        type: "band",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-      },
-    ],
-    url: "/details/community-stalls",
-    type: "stalls",
-  },
-  {
-    data: [
-      {
-        name: "Stu",
-        url: 'https://google.com',
-        img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
-        type: "band",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-      },
-    ],
-    url: "/details/commercial-stalls",
-    type: "stalls",
-  },
+  // {
+  //   data: [
+  //     {
+  //       name: "Stu",
+  //       url: 'https://google.com',
+  //       img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
+  //       type: "band",
+  //       description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+  //     },
+  //   ],
+  //   url: "/details/community-stalls",
+  //   type: "stalls",
+  // },
 ];
+
+export const stalls = [
+  {stallName: 'HCRG Care Group', type: 'wellbeing',},
+  {stallName: 'Splits (renamed)', type: 'wellbeing',},
+  {stallName: 'The Rise Trust', type: 'wellbeing',},
+  {stallName: 'Doorway', type: 'wellbeing',},
+  {stallName: 'Rethink', type: 'wellbeing',},
+  {stallName: 'Samaritans', type: 'wellbeing',},
+  {stallName: 'Smash', type: 'wellbeing',},
+  {stallName: 'Kandu Arts', type: 'wellbeing',},
+  {stallName: 'Girl Guides', type: 'wellbeing',},
+  {stallName: 'CMC & two cars', type: 'other',},
+  {stallName: 'Pheebs pole fit - pole play', type: 'other',},
+  {stallName: 'Chippenham Football Club ', type: 'other',},
+  {stallName: 'Hogs Heaven', type: 'food',},
+  {stallName: 'The Plant Kitchen', type: 'food',},
+  {stallName: 'Burger Bus', type: 'food',},
+]
