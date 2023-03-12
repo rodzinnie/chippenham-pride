@@ -13,10 +13,9 @@ function Highlights({data, internalLink = true}) {
     <div className={styles.root}>
       {data.map((e,i) => {
         const col = colorGenerator(colors, i)
-        console.log(i)
         return(
           internalLink ? (<Link to={e.path} key={i} className={styles.link}>
-            <Tile data={e} />
+            <Tile data={e} color={colors[col+3]} />
           </Link>) :
           (<a href={e.url} key={i}><Tile data={e} color={colors[col]} /></a>)
         )
