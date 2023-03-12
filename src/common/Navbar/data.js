@@ -44,10 +44,6 @@ export const menuItems = [
         url: 'about'
       },
       {
-        title: 'Artists and Speakers',
-        url: 'guests',
-      },
-      {
         title: 'The Team',
         url: 'about/the-team'
       }

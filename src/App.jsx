@@ -18,7 +18,6 @@ function App() {
           {/* <Route path='community-stalls' element={<EventDetailsCategory />} /> */}
           <Route path='stalls' element={<Stalls />} />
         </Route>
-          <Route path='guests' element={<div>Speakers list here</div>} />
         <Route path='about' element={<><Outlet /></>}>
           <Route index element={<About />}></Route>
           <Route path='the-team' element={<Team />}></Route>
