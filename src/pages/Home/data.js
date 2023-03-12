@@ -2,9 +2,9 @@
 export const data = [
   {
     slides: 
-    [{src: "https://www.chippenham.gov.uk/wp-content/uploads/2022/08/Monkton-Park-2022.png", alt:'Chippenham Monkton Park Event'}], 
+    [{src: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg", alt:'Chippenham Monkton Park Event'}], 
     title: 'Main Event', 
-    text: 'Celebrate pride at our outdoor event with a lineup of talented bands and comedians! Jam out to the beat of live music and laugh until your sides hurt. This is a day to come together and celebrate love, acceptance, and community. Don\'t miss out, register your attendance now!',
+    text: 'Celebrate pride at our outdoor event with a lineup of talented artists! Jam out to the beat of live music whith our headline artist: Concerte Praire. This is a day to come together and celebrate love, acceptance, and community. Don\'t miss out, register your attendance now!',
     path: '/details/main-stage'
 
   },
