@@ -48,10 +48,6 @@ export const menuItems = [
         url: 'guests',
       },
       {
-        title: 'For Business',
-        url: 'about/for-business'
-      },
-      {
         title: 'The Team',
         url: 'about/the-team'
       }
@@ -61,6 +57,10 @@ export const menuItems = [
     title: 'Sponsor Pride',
     url: 'sponsor',
 
+  },
+  {
+    title: 'For Business',
+    url: 'for-business'
   },
   {
     title: 'Contact Us',
