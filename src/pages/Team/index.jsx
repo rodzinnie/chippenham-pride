@@ -4,14 +4,13 @@ import styles from './index.module.css'
 import { ArticleSection, PersonCard } from '../../common';
 import penny from '../../assets/penny.jpg'
 import bryan from '../../assets/bryan.jpg'
-import bobby from '../../assets/avatar.jpg'
-import stu from '../../assets/avatar.jpg'
+import { others } from './data';
 
 
 function Team() {
   return (
     <>
-      <ArticleSection header={'Meet our Team'} />
+      <ArticleSection header={'Meet our Team'}>
       <div className={styles.root}>
         <PersonCard name={'Penny Richman'} role={'chair'} email={'penny@chippenhampride.com'} src={penny}/>
         <PersonCard name={'Bobbi Pickard'} role={'sponsorship'} email={'sponsorship@chippenhampride.com'} src={'https://www.transinthecity.co.uk/uploads/1/2/4/1/12414535/bobbiwebsite_orig.jpg'}/>
@@ -19,6 +18,17 @@ function Team() {
         <PersonCard name={'Bryan Houde'} role={'treasurer'} email={'accounts@chippenhampride.com'} src={bryan}/>
       </div>
       <h2 className={styles.subheader}>And others</h2>
+      <div className={styles.others}>
+        {others.map((e, i) => {
+          return (
+            <div key={i}>
+              <b>{e.fullName} </b> 
+              <em>{e.role}</em>
+            </div>
+          )
+        })}
+      </div>
+      </ArticleSection>
     </>
   )
 }
