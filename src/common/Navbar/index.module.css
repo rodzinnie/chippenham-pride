@@ -4,10 +4,11 @@
     --main-font: 'Poppins', sans-serif;
 }
 
+
 .wrapper{
   position: relative;
   background-color: black;
-  width: 80%;
+  width: 100%;
   display: flex;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .menus {
-  /* outline: 1px solid pink; */
+  /* outline: 1px solid white; */
   justify-content: space-between;
   width: 100%;
   z-index: 10;

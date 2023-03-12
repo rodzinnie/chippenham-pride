@@ -38,11 +38,6 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {/* if item has url and submenu, we make the button clickable to visit 
-      the url while still showing dropdown on hover. If no url, we only show 
-      hover without linking the button. Else, we render a simple <a> element. 
-      Be aware that they are internal links, so we will use the <Link> component
-      from react-router. Here, we are using the <a> for simplicity. */}
             {items.url && items.submenu ? (
         <>
           <button
@@ -52,7 +47,7 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
             onClick={() => {
               setDropdown((prev) => !prev)
             }}          >
-            <Link to={items.url} onClick={() => handleClick(false)}>{items.title}</Link>
+            <Link to={items.url} onClick={() => handleClick(false)} className={styles.link}>{items.title}</Link>
             {/* {items.title}{" "} */}
             {depthLevel > 0 ? (
               <span>&raquo;</span>

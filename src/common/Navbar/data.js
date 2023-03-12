@@ -14,25 +14,25 @@ export const menuItems = [
         title: 'Main Stage',
         url: 'details/main-stage'
       },
-      {
-        title: 'Small Stage',
-        url: 'details/small-stage'
-      },
-      {
-        title: 'Comedy',
-        url: 'details/comedy'
-      },
+      // {
+      //   title: 'Small Stage',
+      //   url: 'details/small-stage'
+      // },
+      // {
+      //   title: 'Comedy',
+      //   url: 'details/comedy'
+      // },
       {
         title: 'Speakers',
         url: 'details/speakers'
       },
+      // {
+      //   title: 'Community Stalls',
+      //   url: 'details/community-stalls'
+      // },
       {
-        title: 'Community Stalls',
-        url: 'details/community-stalls'
-      },
-      {
-        title: 'Commercial Stalls',
-        url: 'details/commercial-stalls'
+        title: 'Stalls',
+        url: 'details/stalls'
       }
     ]
   },
@@ -48,10 +48,6 @@ export const menuItems = [
         url: 'guests',
       },
       {
-        title: 'For Business',
-        url: 'about/for-business'
-      },
-      {
         title: 'The Team',
         url: 'about/the-team'
       }
@@ -61,6 +57,10 @@ export const menuItems = [
     title: 'Sponsor Pride',
     url: 'sponsor',
 
+  },
+  {
+    title: 'For Business',
+    url: 'for-business'
   },
   {
     title: 'Contact Us',

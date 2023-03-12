@@ -27,6 +27,7 @@
   width: 90%;
   margin: auto;
   padding-bottom: 20px;
+  color: black;
 }
 
 .carousel{
@@ -38,7 +39,7 @@
 
 @media (min-width: 600px) {
   .root{
-    width: 300px;
+    width: 350px;
     min-height: 300px; 
   }
   
@@ -54,7 +55,7 @@
 @media (min-width: 1100px) {
   .root{
     width: 350px;
-    min-height: 350px; 
+    min-height: 400px; 
   }
     
   .heading{

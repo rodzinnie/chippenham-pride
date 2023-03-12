@@ -2,8 +2,8 @@
 .menuItems {
   position: relative;
   font-size: 25px;
-  width: fit-content;
-  min-width: 150px;
+  width: 100%;
+
 }
 
 .menuItems a {
@@ -24,6 +24,7 @@
   background-color: transparent;
   cursor: pointer;
   width: 100%;
+  /* outline: 1px solid white; */
 
   /* new additions */
   display: flex;
@@ -46,6 +47,10 @@
 .menuItems a:hover,
 .menuItems button:hover {
   background-color: #2a2a2a;
+}
+
+.link{
+  width: 100%;
 }
 
 

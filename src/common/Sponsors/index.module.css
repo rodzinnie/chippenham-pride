@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.wrapper{
+  padding: 5px 10px; 
+}
+
 .nav, .registry {
   flex-basis: 80%;
 }
