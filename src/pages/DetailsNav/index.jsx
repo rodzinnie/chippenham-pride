@@ -1,8 +1,10 @@
+import { useSelector } from 'react-redux'
+
 import {ArticleSection} from '../../common'
 import styles from './index.module.css'
-import { lineup } from './data'
 
 const DetailsNav = () => {
+  const lineup = useSelector((state) => state.data.lineup)
   return (
     <ArticleSection header={'The Lineup!'}>
       <h3 className={styles.subhead}>{lineup[0].place}</h3>
