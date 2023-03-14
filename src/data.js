@@ -71,7 +71,7 @@ export const data = {
       list: [
         { artist: 'the decibels', time: '12.30pm' },
         { artist: 'Welcome Pride', time: '1.15pm' },
-        { artist: 'Sheila Tackya (Drag)', time: '1.25pm' },
+        { artist: 'Sheila Tackya', time: '1.25pm' },
         { artist: 'Becky & Stuart', time: '2 pm' },
         { artist: 'Meg', time: '3.30 pm' },
         { artist: 'Winner', time: '4 pm' },
