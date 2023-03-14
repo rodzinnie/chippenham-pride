@@ -21,7 +21,12 @@ export const data = [
     text: 'From mental health resources to LGBTQ+ advocacy organizations, you\'ll find a welcoming and accepting environment. In addition, you\'ll find a selection of merchant stalls offering unique products. Support local businesses and take a little piece of the celebration home with you.',
     path: '/details/commercial-stalls'
   },
-
+  {
+    slides: [{src: "https://www.chortle.co.uk/images/photos/small/aon-andrew-oneill-22.jpg", alt:'Andrew ONeil'}], 
+    title: 'Commedy', 
+    text: 'Chippenham Pride event will be filled with uproarious laughter as talented comedians take to the stage to entertain the crowd. The lighthearted and playful atmosphere of the comedy stage will be a perfect addition to the celebration of diversity and inclusion at the event.',
+    path: '/details/comedy'
+  },
 ]
 
 export const other = {

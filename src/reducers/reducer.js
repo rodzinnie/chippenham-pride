@@ -1,3 +1,5 @@
+import { data } from "../data"
+
 const initState = {
     message: {},
     person: {
@@ -7,7 +9,8 @@ const initState = {
     department: '',
     loading: true,
     newsletter: false,
-    error: ''
+    error: '',
+    data: data
 }
 
 const reducer = (state=initState, action) => {
