@@ -183,6 +183,27 @@ export const data = {
           description: "Born and raised in the East End of London, Michael had a highly successful career as an actor, singer, writer and director. Elected member of the Labour Party National Executive for 12 years, serving as vice-chair and chair. Co-president of the LGBT Intergroup, vice-president of the Petitions Committee, president of South African Delegation and chair of Delegation Chairs. Co-founder and founding chair of the Stonewall Group. Labour Party’s LGBT Global Envoy 2014-16",
         },
         {
+          name: "Peter Tatchell",
+          url: 'https://www.petertatchell.net/',
+          img: "https://www.abertay.ac.uk/media/6031/peter-tatchell.jpg",
+          type: "speaker",
+          description: "Peter Tatchell has been campaigning for human rights, democracy, LGBT+ freedom and global justice since 1967. Peter’s key political inspirations are Mahatma Gandhi, Sylvia Pankhurst, Martin Luther King and, to some extent, Malcolm X and Rosa Luxemburg. He has adapted many of their methods to his contemporary non-violent struggle for human rights – and invented a few of his own.",
+        },
+        {
+          name: "Ian Watkins 'H'",
+          url: 'https://www.instagram.com/ianhwatkins/?hl=en',
+          img: "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTvZFlaCohGF2cU8UeqSABQNxbmo3-QT1iTRpbbJ5698c55QogN54Uu36VUs1xTrE58W0rzCXMQp9ESI5U",
+          type: "speaker",
+          description: "Ian 'H' Watkins is most famous as one of the singers in Steps, but he has also appeared on Celebrity Big Brother and acted extensively on stage. In 2020 he went on Dancing on Ice, becoming part of the first same-sex couple to compete.",
+        },
+        {
+          name: "Emily Hamilton",
+          url: 'https://www.transinthecity.co.uk/leadership.html',
+          img: "https://www.mygwork.com/media/cache/profile_preview/rc/VjQol4EJ/uploads/images/e0/2c/e02c52e9d9907e5c6b0be0d62fcda89d3ee1829f.jpeg",
+          type: "speaker",
+          description: "Emily is a senior leader in Trans in the City and a 20+ year professional in the field of Programme and Project Management. She transitioned at work in 2019 and is passionate about increasing visibility of members of the LGBTQ+ community and amplifying women’s voices in the workplace.",
+        },
+        {
           name: "Linda Riley",
           url: 'https://www.lindariley.co.uk/',
           img: "https://static.wixstatic.com/media/9f212f_be30482267ad409ea4919577c2953c0d~mv2.jpg/v1/crop/x_0,y_130,w_4608,h_2941/fill/w_940,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/191114_EuropeanDiversityAwards_Capture_0.jpg",
