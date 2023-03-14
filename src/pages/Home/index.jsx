@@ -3,8 +3,7 @@ import React from 'react'
 import styles from './index.module.css'
 import { Form, ArticleSection, Button, GoFundMe, Highlights } from '../../common'
 import bingo from '../../assets/bingo.mp4'
-import map from '../../assets/pridemap.jpg'
-import {data} from './data'
+import {data, other} from './data'
 
 function Home() {
   const handleClick = (e) => {
@@ -17,8 +16,8 @@ function Home() {
         <Highlights data={data}/>
       </ArticleSection>
       <ArticleSection  header='Register your attendance!'>
-        <div className={styles.form}>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="100%" height="500px" frameBorder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div className={styles.form} id={'walkRegistration'}>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePajiRdSnX4Xc5Uw8YIVQ83njxqAMfps2iUiSWAKqNkDsiXg/viewform?embedded=true" width="100%" height="500px" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
         </div>
         <div className={styles.form}>
         <p className={styles.fiver}>
@@ -29,14 +28,14 @@ function Home() {
       </ArticleSection>
       <ArticleSection header='Donate!' background>
         <p className={styles.donateText}>We organise our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
-        <GoFundMe />
+        <GoFundMe text='donate'/>
       </ArticleSection>
       <ArticleSection header='The Event'>
         <h2 className={styles.subTitle}>The plan</h2>
-        <p>We are meeting by The Rose and Crown pub, where we start our march at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
+        <p>We are meeting by The Rose and Crown pub, where we start our walk at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
         <h2 className={styles.subTitle}>See the map</h2>
         <div className={styles.mapWrapper}>
-          <img src={map} className={styles.map}></img>
+          <img src={other.map.src} alt={other.map.alt} className={styles.map}></img>
         </div>
       </ArticleSection>
 
