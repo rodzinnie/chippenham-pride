@@ -5,12 +5,6 @@
     flex-wrap: wrap;
 }
 
-.buttonWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .donatepp {
     /* background-color: transparent; */
     margin-bottom: 10px;

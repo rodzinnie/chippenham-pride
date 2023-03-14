@@ -32,7 +32,7 @@ function Home() {
       </ArticleSection>
       <ArticleSection header='The Event'>
         <h2 className={styles.subTitle}>The plan</h2>
-        <p>We are meeting by The Rose and Crown pub, where we start our march at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
+        <p>We are meeting by The Rose and Crown pub, where we start our walk at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
         <h2 className={styles.subTitle}>See the map</h2>
         <div className={styles.mapWrapper}>
           <img src={other.map.src} alt={other.map.alt} className={styles.map}></img>

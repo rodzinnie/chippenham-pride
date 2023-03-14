@@ -10,7 +10,7 @@ function PersonCard({name, role, src, email}) {
         </div>
         <h3 className={styles.name}>{name}</h3>
         <h4 className={styles.role}>{role}</h4>
-        <h4 className={styles.email}>{email || 'accounts@chippenhampride.com'}</h4>
+        <h4 className={styles.email}>{email}</h4>
       </div>
     </div>
   )

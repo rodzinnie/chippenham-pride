@@ -4,11 +4,11 @@ import { Sling as Hamburger } from '../Hamburger/Sling'
 import clsx from 'clsx'
 
 import styles from "./index.module.css";
-import { menuItems } from "./data"; 
 import { MenuItems } from '../'
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-
+  const navbar = useSelector(state => state.data.navbar)
   const [isOpen, setOpen] = useState(false);
   const [windowSize, setWindowSize] = useState(getWindowSize())
   const [smallScreen, setSmallScreen] = useState(getSmallScreen())
@@ -44,7 +44,7 @@ const Navbar = () => {
     <nav className={styles.wrapper}>
       {!smallScreen ?
       <ul className={styles.menus}>
-        {menuItems.map((menu, index) => { 
+        {navbar.map((menu, index) => { 
           const depthLevel = 0;
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
@@ -57,7 +57,7 @@ const Navbar = () => {
       color="#FFFFFF"
     /> 
       <ul className={clsx(styles.menus, styles.expandDown)}>
-        {menuItems.map((menu, index) => { 
+        {navbar.map((menu, index) => { 
           const depthLevel = 0;
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} handleClick={setOpen} />;
         })}

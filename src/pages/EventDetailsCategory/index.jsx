@@ -1,10 +1,11 @@
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import styles from './index.module.css'
-import {eventDetails} from '../data.js'
 import { ArticleSection, Highlights } from '../../common'
+import { useSelector } from 'react-redux'
 
 const EventDetailsCategory = () => {
+  const eventDetails = useSelector(state => state.data.eventDetails)
   const path = useLocation()
   const pathname = path.pathname
   const filterArray = (arr) => {
