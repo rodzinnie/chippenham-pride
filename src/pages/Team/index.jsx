@@ -1,15 +1,15 @@
 import React from 'react'
 
 import styles from './index.module.css'
-import { ArticleSection, PersonCard } from '../../common';
+import { ArticleSection, PersonCard, Piechart } from '../../common';
 import penny from '../../assets/penny.jpg'
 import bryan from '../../assets/bryan.jpg'
 import { others } from './data';
 
-
 function Team() {
   return (
     <>
+      <Piechart />
       <ArticleSection header={'Meet our Team'}>
       <div className={styles.root}>
         <PersonCard name={'Penny Richman'} role={'chair'} email={'penny@chippenhampride.com'} src={penny}/>
