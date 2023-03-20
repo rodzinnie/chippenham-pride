@@ -220,7 +220,7 @@ export const data = {
         {
           name: "Bobbi Pickard",
           url: 'https://www.transinthecity.co.uk/',
-          img: "https://www.transinthecity.co.uk/uploads/1/2/4/1/12414535/bobbiwebsite_orig.jpg",
+          img: "https://champions-speakers.co.uk/sites/default/files/styles/profile_gallery_xs/public/2022-07/new_project_2_0.jpg.jpeg?itok=IU3IKgY3",
           type: "speaker",
           description: "Bobbi Pickard is a Diversity Equity and Inclusion professional with many years senior operational and programme management experience in the banking, trading, technology and energy sectors. She is CEO of Trans in the City an organisation she founded in response to seeing a lack of co-operative working between global corporates to help the trans and non-binary community and has transformed it into a global organisation with over 350 major organisations collaborating on furthering trans awareness across the world.",
         },
