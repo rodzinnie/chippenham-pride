@@ -5,7 +5,7 @@ import styles from './index.module.css'
 const Piechart = () => {
 
   const defaultLabelStyle = {
-    fontSize: '5px',
+    fontSize: '0.3rem',
   }
 
   const data = [
@@ -30,8 +30,8 @@ const Piechart = () => {
         }}      
         radius={42}
         animate
-        labelPosition={80}
-        style={{ height: '350px' }}        
+        labelPosition={82}
+        style={{ height: '250px' }}        
       />
       </div>
     </ArticleSection>
