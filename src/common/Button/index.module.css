@@ -1,4 +1,4 @@
-.dark, .light, .lightOnLight{
+.dark, .light, .lightOnLight, .darkSm{
     margin: auto;
     height: fit-content;
     border-radius: 35px;
@@ -7,6 +7,10 @@
     font-size: 25px;
     max-width: fit-content;
     z-index: 5;
+}
+
+.darkSm{
+  font-size: 15px;
 }
 
 .dark {
@@ -38,7 +42,7 @@
     filter: invert(100%);
 }
 
-.light:hover, .lightOnLight:hover {
+.light:hover, .lightOnLight:hover{
     background-color: white;
     color: black;
     border: 2px solid rgb(0, 0, 0);

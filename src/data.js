@@ -92,6 +92,13 @@ export const data = {
     {
       data: [
         {
+          name: "Concrete Prairie",
+          url: 'https://google.com',
+          img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
+          type: "band",
+          description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",
+        },
+        {
           name: "Stuart Rolfe",
           url: 'https://www.facebook.com/DaylightStealers/?locale=en_GB',
           img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
@@ -125,13 +132,6 @@ export const data = {
           img: "https://i.postimg.cc/qMJJkc41/bgreen.jpg",
           type: "band",
           description: "They’ve written multiple originals with varying influences between each of the songs. They sit within an Indie-Rock/Alternative genre, but be prepared to hear many of your favourite songs from throughout the years as they love taking covers and bringing a new spin on them.",
-        },
-        {
-          name: "Concrete Prairie",
-          url: 'https://google.com',
-          img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
-          type: "band",
-          description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",
         },
         {
           name: "Rock Choir Wiltshire and Somerset",
@@ -220,7 +220,7 @@ export const data = {
         {
           name: "Bobbi Pickard",
           url: 'https://www.transinthecity.co.uk/',
-          img: "https://www.transinthecity.co.uk/uploads/1/2/4/1/12414535/bobbiwebsite_orig.jpg",
+          img: "https://champions-speakers.co.uk/sites/default/files/styles/profile_gallery_xs/public/2022-07/new_project_2_0.jpg.jpeg?itok=IU3IKgY3",
           type: "speaker",
           description: "Bobbi Pickard is a Diversity Equity and Inclusion professional with many years senior operational and programme management experience in the banking, trading, technology and energy sectors. She is CEO of Trans in the City an organisation she founded in response to seeing a lack of co-operative working between global corporates to help the trans and non-binary community and has transformed it into a global organisation with over 350 major organisations collaborating on furthering trans awareness across the world.",
         },
@@ -310,6 +310,22 @@ export const data = {
     {stallName: 'Pride Silent Auction ', type: 'commercial',},
     {stallName: 'Pride Face Painting', type: 'commercial',},
     {stallName: 'HCRG Care Group', type: 'wellbeing',},
-  ]
-  
+  ],
+  merchLink: {
+    header: "Our Merch",
+    text: "By purchasing merchandise from the event's website, not only can you show your support for the LGBTQ+ community, but you can also help fund future events and initiatives. So, don't hesitate to check out the merchandise website and grab some awesome items to commemorate this amazing event!",
+    url: "https://chippenham-pride.myspreadshop.co.uk/?fbclid=IwAR391NZkGIadBRY8Kdw9sqT33QOLfgQk15eYOhRe67OscgAX7Xa4y1iM64c",
+    alt: "merchandise website",
+    button: 'go to our store',
+    img: 'https://image.spreadshirtmedia.net/image-server/v1/products/T1155A1PA2483PT17X42Y8D317406624W16755H25000/views/1,width=650,height=650,appearanceId=1/chippenham-pride-2023-official-merchandise.jpg'
+  },
+  generalInfo: {
+    text: {
+      paragraphs: [
+        { id: 0, text: "Chippenham pride has been a year in the making. The team (made up completely by volunteers) have been busy working on bringing you the best of local entertainment, small business retailers, inspirational speakers and hilarious comedy acts."},
+        { id: 1, text: "It’s our aim to provide Chippenham with not only its first ever pride event but also a family event that welcomes everyone no matter what their gender, sexuality, colour or age."},
+        
+      ]
+    }
+  }
 }

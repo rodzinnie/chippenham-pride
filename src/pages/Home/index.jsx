@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from './index.module.css'
-import { Form, ArticleSection, Button, GoFundMe, Highlights } from '../../common'
+import { Form, ArticleSection, Button, GoFundMe, Highlights, MerchLink } from '../../common'
 import bingo from '../../assets/bingo.mp4'
 import {data, other} from './data'
 
@@ -30,6 +30,7 @@ function Home() {
         <p className={styles.donateText}>We organise our Pride pro bono. But we can't fund it 100% ourselves. Please help us to get our Pride up and running. Thanks, see you on our parade!</p>
         <GoFundMe text='donate'/>
       </ArticleSection>
+      <MerchLink />
       <ArticleSection header='The Event'>
         <h2 className={styles.subTitle}>The plan</h2>
         <p>We are meeting by The Rose and Crown pub, where we start our walk at 1pm. We will walk down the Town Market to get to the main stage in the Monkton Park. </p>
