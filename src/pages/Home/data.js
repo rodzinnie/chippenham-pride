@@ -4,7 +4,7 @@ export const data = [
     slides: 
     [{src: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg", alt:'Chippenham Monkton Park Event'}], 
     title: 'Main Event', 
-    text: 'Celebrate pride at our outdoor event with a lineup of talented artists! Jam out to the beat of live music whith our headline artist: Concerte Praire. This is a day to come together and celebrate love, acceptance, and community. Don\'t miss out, register your attendance now!',
+    text: 'Celebrate pride at our outdoor event with a lineup of talented artists! Jam out to the beat of live music whith our headline artist: Concerte Prairie. This is a day to come together and celebrate love, acceptance, and community. Don\'t miss out, register your attendance now!',
     path: '/details/main-stage'
 
   },
@@ -23,7 +23,7 @@ export const data = [
   },
   {
     slides: [{src: "https://www.chortle.co.uk/images/photos/small/aon-andrew-oneill-22.jpg", alt:'Andrew ONeil'}], 
-    title: 'Commedy', 
+    title: 'Comedy', 
     text: 'Chippenham Pride event will be filled with uproarious laughter as talented comedians take to the stage to entertain the crowd. The lighthearted and playful atmosphere of the comedy stage will be a perfect addition to the celebration of diversity and inclusion at the event.',
     path: '/details/comedy'
   },

@@ -6,6 +6,7 @@ export const sponsors = [
   {url: 'https://www.facebook.com/theflyingmonkpub/', src: 'https://i.postimg.cc/FFxnTqTm/flyingmonk.jpg', alt: 'The Flying Monk logo', level: 2},
   {url: ' https://www.winemonkey.co.uk', src: 'https://i.postimg.cc/Pxj24zZP/winemonkey.png', alt: 'wine monkey logo', level: 2},
   {url: 'https://www.bostonburger.co.uk/', src: 'https://i.postimg.cc/0NmVDHzT/bostonburger.jpg  ', alt: 'boston burger logo', level: 2},
+  {url: 'https://2zzplenty.co.uk/index.php', src: 'https://2zzplenty.co.uk/assets/img/logo2.png', alt: '2\'zz plenty cleaners', level: 2  },
   {url: 'https://instagram.com/darkobsessiontattoo?igshid=YmMyMTA2M2Y=', src: 'https://i.postimg.cc/j2qvVxMT/darkobsession.jpg', alt: 'dar', level: 2},
   {url: 'https://www.chippenhammotor.co.uk?utm_source=pridewebsite&utm_medium=pridewebsite&utm_campaign=pridesponsorship&utm_content=prideheadlinesponsorarea', src: 'https://i.postimg.cc/qBtKZ0Pv/Pride-Website-Logo.png', alt: 'chippenham motor company', level: 0},
   {url: 'https://www.transinthecity.co.uk/', src: 'https://i.postimg.cc/rsbhS69L/Tit-C-Logo-Google.jpg', alt: 'trans in the city', level: 0},

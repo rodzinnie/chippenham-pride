@@ -15,6 +15,7 @@ article{
   font-size: 18px;
   text-align:justify;
   line-height: 23px;
+  margin: auto;
 }
 
 .article, .highlight {
