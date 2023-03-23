@@ -1,10 +1,10 @@
 export const others = [
-{fullName: 'Giorgia Nyman', role: 'Social Media'} ,
-{fullName: 'Liza Claire Frayne', role: 'Social Media'} ,
-{fullName: 'Hayley Barnden', role: 'Social Media'} ,
-{fullName: 'Nicki Lambert', role: 'Sponsorship'} ,
+  {fullName: 'Liz Alstorm', role: 'Townhall Liason | Mayor'} ,
+  {fullName: 'Nicki Lambert', role: 'Sponsorship'} ,
+  {fullName: 'Hayley Barnden', role: 'Social Media'} ,
+  {fullName: 'Liza Claire Frayne', role: 'Social Media'} ,
+  {fullName: 'Giorgia Nyman', role: 'Social Media'} ,
 {fullName: 'Aggie Skorska', role: 'Website Development'} ,
-{fullName: 'Liz Alstorm', role: 'Legal'} ,
 ]
 
 export const main = [
