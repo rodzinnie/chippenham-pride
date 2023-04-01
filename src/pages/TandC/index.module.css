@@ -4,3 +4,9 @@
     font-family: 'Poppins';
     color: black;
 }
+
+.h1{
+  width: fit-content;
+  margin: auto;
+  padding: 10px 0;
+}
