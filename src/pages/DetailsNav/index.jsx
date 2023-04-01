@@ -9,6 +9,7 @@ const DetailsNav = () => {
         <p>Chippenham pride has been a year in the making. The team (made up completely by volunteers) have been busy working on bringing you the best of local entertainment, small business retailers, inspirational speakers and hilarious comedy acts. </p>
         <br />
         <p>It’s our aim to provide Chippenham with not only its first ever pride event but also a family event that welcomes everyone no matter what their gender, sexuality, colour or age. </p>
+        <br />
         <ul className={styles.list}>
           We invite you to explore our website where you’ll find more details on:
           <li className={styles.listItem}>The acts, their bios and stage times. </li>
