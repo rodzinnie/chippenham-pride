@@ -50,6 +50,10 @@ export const data = {
         {
           title: 'The Team',
           url: 'about/the-team'
+        },
+        {
+          title: 'Terms and Conditions',
+          url: 'tsandcs'
         }
       ]
     },
@@ -338,5 +342,10 @@ export const data = {
         
       ]
     }
-  }
+  },
+  tsncs: [
+    {variant: 'nohover', carousel: false, title: 'Alcohol Policy', text: 'Chippenham Pride are vendors of alcohol and will not have an bars onsite. We encourage anyone bringing alcohol to the park area to do so in plastic or recyclable containers and not glass.', img: 'https://cdn.pixabay.com/photo/2014/04/02/14/04/glass-306047_960_720.png', alt: 'drink'},
+    {variant: 'nohover', carousel: false, title: 'Drugs Policy',text: 'ZERO tolerance policy to drugs and legal highs; in the event of discovering users or dealers within any of the areas these shall be reported to the police and security for immediate removal.', img: 'https://cdn.pixabay.com/photo/2018/04/06/19/39/symbol-3296654_960_720.png', alt: 'pills'},
+    {variant: 'nohover', carousel: false, title: 'Drones Policy',text: 'Drones will not be permitted at any time in the Island Park unless accompanied by a CAA licence. Unless previously agreed with The Chippenham Pride Committee and Chippenham Town Council.', img: 'https://cdn.pixabay.com/photo/2021/11/05/00/19/camera-6769730_960_720.png', alt: 'drone'}
+  ]
 }
