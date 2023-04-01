@@ -2,6 +2,10 @@
 // so that the local data files can be removed (on a component level)
 
 export const data = {
+  volunteer: {
+    volunteerBlurb: 'Are you looking for a meaningful way to give back to your community? Do you want to help create a more inclusive and accepting environment for all? Join the Chippenham Pride team as a volunteer!<br /> Whether you have a few hours a week or a few days a month, we welcome volunteers of all backgrounds and experiences. Together, we can create a brighter future for Chippenham and beyond. Join us today and help us make history!',
+    volunteerMsg: 'Hey Pride, I\'d like to help out with organising the event. Please reach out to me so I can get involved. Cheers!'
+  },
   navbar: [
     {
       title: 'Home',
@@ -93,7 +97,7 @@ export const data = {
       data: [
         {
           name: "Concrete Prairie",
-          url: 'https://google.com',
+          url: 'https://www.facebook.com/concreteprairie/',
           img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
           type: "band",
           description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",

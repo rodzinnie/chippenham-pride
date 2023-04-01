@@ -24,6 +24,7 @@ function App() {
         </Route>
         <Route path='for-business' element={<BusinessSponsorship />}></Route>
         <Route path='contact' element={<Contact />}></Route>
+        <Route path='volunteer' element={<Contact />}></Route>
         <Route path='sponsor' element={<Support />}></Route>
         <Route path='tsandcs' element={<TandC />}></Route>
         <Route path='submitmessage' element={<SubmitMessage />}></Route>
