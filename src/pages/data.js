@@ -2,6 +2,13 @@ export const eventDetails = [
   {
     data: [
       {
+        name: "Concrete Prairie",
+        url: 'https://google.com',
+        img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
+        type: "band",
+        description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",
+      },
+      {
         name: "Stuart Rolfe",
         url: 'https://www.facebook.com/DaylightStealers/?locale=en_GB',
         img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
@@ -35,13 +42,6 @@ export const eventDetails = [
         img: "https://i.postimg.cc/qMJJkc41/bgreen.jpg",
         type: "band",
         description: "They’ve written multiple originals with varying influences between each of the songs. They sit within an Indie-Rock/Alternative genre, but be prepared to hear many of your favourite songs from throughout the years as they love taking covers and bringing a new spin on them.",
-      },
-      {
-        name: "Concrete Prairie",
-        url: 'https://google.com',
-        img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
-        type: "band",
-        description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",
       },
       {
         name: "Rock Choir North Wiltshire",

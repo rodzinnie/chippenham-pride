@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
@@ -6,8 +6,7 @@ import styles from './index.module.css'
 import { Button } from '..'
 import { sendMessageAction } from '../../actions'
 import { isEmailValid } from './utils'
-import { useEffect } from 'react'
-
+import { data } from '../../data'
 const initialUserState = {
   email: '',
   reason: 'Choose an option',
@@ -16,13 +15,15 @@ const initialUserState = {
   hasError: false,
 }
 
-function Form() {
+function Form({preselect}) {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
   const [user, setUser] = useState(initialUserState)
   const [checked, setChecked] = useState(true)
-
+  useEffect(() => {
+    if(preselect) setUser({...user, content: data.volunteer.volunteerMsg})
+  }, [])
   const handleChange = (e) => {
     const name = e.target.name
     const value = e.target.value
@@ -96,7 +97,7 @@ function Form() {
           placeholder='Reason for contact'
           name='reason'
           onChange={handleChange}
-          defaultValue='Choose an option'
+          defaultValue={preselect ? 'volunteer' : 'Choose an option'}
         >
           <option>Choose an option</option>
           <option name='volunteer' value='volunteer'>

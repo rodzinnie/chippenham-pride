@@ -22,10 +22,11 @@ function App() {
           <Route index element={<About />}></Route>
           <Route path='the-team' element={<Team />}></Route>
         </Route>
+        <Route path='tsandcs' element={<TandC />}></Route>
         <Route path='for-business' element={<BusinessSponsorship />}></Route>
         <Route path='contact' element={<Contact />}></Route>
+        <Route path='volunteer' element={<Contact />}></Route>
         <Route path='sponsor' element={<Support />}></Route>
-        <Route path='tsandcs' element={<TandC />}></Route>
         <Route path='submitmessage' element={<SubmitMessage />}></Route>
         <Route path='message' element={<Message />}></Route>
         <Route path='whatWeSupport' element={<WhatWeSupport />}></Route>

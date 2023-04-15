@@ -38,7 +38,7 @@ function Hero() {
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
         <div className={styles.button}>
-          <GoFundMe noImage={false} light={true} text={'Donate'} />
+          <GoFundMe noImage={false} light={true} text={'Volunteer with us!'} handleClick={handleClick}/>
           <GoFundMe noImage={false} light={true} text={'Register for the Walk'} handleClick={moveToForm}/>
         </div>
         <RollingBar />

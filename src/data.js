@@ -2,6 +2,10 @@
 // so that the local data files can be removed (on a component level)
 
 export const data = {
+  volunteer: {
+    volunteerBlurb: 'Are you looking for a meaningful way to give back to your community? Do you want to help create a more inclusive and accepting environment for all? Join the Chippenham Pride team as a volunteer!<br /> Whether you have a few hours a week or a few days a month, we welcome volunteers of all backgrounds and experiences. Together, we can create a brighter future for Chippenham and beyond. Join us today and help us make history!',
+    volunteerMsg: 'Hey Pride, I\'d like to help out with organising the event. Please reach out to me so I can get involved. Cheers!'
+  },
   navbar: [
     {
       title: 'Home',
@@ -46,6 +50,10 @@ export const data = {
         {
           title: 'The Team',
           url: 'about/the-team'
+        },
+        {
+          title: 'Terms and Conditions',
+          url: 'tsandcs'
         }
       ]
     },
@@ -93,7 +101,7 @@ export const data = {
       data: [
         {
           name: "Concrete Prairie",
-          url: 'https://google.com',
+          url: 'https://www.facebook.com/concreteprairie/',
           img: "https://i.postimg.cc/050hnLDN/concerte-praire.jpg",
           type: "band",
           description: "United by a love of all things Indie, Folk & Americana, Concrete Prairie are a five-piece ensemble delivering a veritable soundtrack for the glamour and grit of modern living. While their compositions tackle themes such as mental well-being, loss and hardships, the songs are shot through with hope, evidenced by a spirited and rousing sound orchestrated with twanging guitars, straining fiddle and yearning prose. Dance if you dare, cry if you want to.",
@@ -334,5 +342,10 @@ export const data = {
         
       ]
     }
-  }
+  },
+  tsncs: [
+    {variant: 'nohover', carousel: false, title: 'Alcohol Policy', text: 'Chippenham Pride are vendors of alcohol and will not have an bars onsite. We encourage anyone bringing alcohol to the park area to do so in plastic or recyclable containers and not glass.', img: 'https://cdn.pixabay.com/photo/2014/04/02/14/04/glass-306047_960_720.png', alt: 'drink'},
+    {variant: 'nohover', carousel: false, title: 'Drugs Policy',text: 'ZERO tolerance policy to drugs and legal highs; in the event of discovering users or dealers within any of the areas these shall be reported to the police and security for immediate removal.', img: 'https://cdn.pixabay.com/photo/2018/04/06/19/39/symbol-3296654_960_720.png', alt: 'pills'},
+    {variant: 'nohover', carousel: false, title: 'Drones Policy',text: 'Drones will not be permitted at any time in the Island Park unless accompanied by a CAA licence. Unless previously agreed with The Chippenham Pride Committee and Chippenham Town Council.', img: 'https://cdn.pixabay.com/photo/2021/11/05/00/19/camera-6769730_960_720.png', alt: 'drone'}
+  ]
 }
