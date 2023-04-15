@@ -1,3 +1,18 @@
+.heading{
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section{
+  padding: 10px 0;
+  margin: auto;
+}
+.container{
+  width: 100%;
+  margin: auto;
+}
+
 .subhead{
   margin: auto;
   text-transform: capitalize;
@@ -42,5 +57,11 @@
   .artist{
     font-size: 22px;
     padding-left: 5px;
+  }
+}
+
+@media (min-width: 1000px){
+  .container{
+    width: 500px;
   }
 }
