@@ -1,26 +1,33 @@
-import { useSelector } from 'react-redux'
+import { ArticleSection } from "../";
+import styles from "./index.module.css";
+import DescriptionToggle from "./DescriptionToggle";
 
-import {ArticleSection} from '../'
-import styles from './index.module.css'
-
-const LineUp = () => {
-  const lineup = useSelector((state) => state.data.lineup)
-
+const LineUp = ({ lineup }) => {
   return (
-    <ArticleSection header={'The Lineup!'}>
-      <h3 className={styles.subhead}>{lineup[0].place}</h3>
-      <ul className={styles.list}>
-      {lineup[0].list.map((e, i) => {
+    <ArticleSection header={"The Lineup!"}>
+      {lineup.map((stage, i) => {
         return (
-          <li key={i} className={styles.li}>
-              <span className={styles.time}>{e.time}</span>
-              <span className={styles.artist}> {e.artist}</span>
-            </li>
-          )
-        })}
-      </ul>
+          <div key={i} className={styles.section}>
+            <h3 className={styles.subhead}>{stage.place}</h3>
+            <ul className={styles.list}>
+              {stage.list.map((e, i) => {
+                return (
+                  <li key={i} className={styles.li}>
+                    {e.time && <span className={styles.time}>{e.time}</span>}
+                    {e.heading && <div className={styles.heading}><b>{e.heading}</b></div>}
+                    {e.artist && (
+                      <span className={styles.artist} dangerouslySetInnerHTML={{__html: e.artist}}></span>
+                    )}
+                    {e.description && <DescriptionToggle short={e.short} long={e.description}/>}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        );
+      })}
     </ArticleSection>
-  )
-}
+  );
+};
 
-export default LineUp
+export default LineUp;
