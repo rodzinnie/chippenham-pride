@@ -4,7 +4,20 @@
 export const data = {
   volunteer: {
     volunteerBlurb: 'Are you looking for a meaningful way to give back to your community? Do you want to help create a more inclusive and accepting environment for all? Join the Chippenham Pride team as a volunteer!<br /> Whether you have a few hours a week or a few days a month, we welcome volunteers of all backgrounds and experiences. Together, we can create a brighter future for Chippenham and beyond. Join us today and help us make history!',
-    volunteerMsg: 'Hey Pride, I\'d like to help out with organising the event. Please reach out to me so I can get involved. Cheers!'
+    volunteerMsg: 'Hey Pride, I\'d like to help out with organising the event. Please reach out to me so I can get involved. Cheers!'},
+  eventDetailTexts: {
+    list: `<p>Chippenham pride has been a year in the making. The team (made up completely by volunteers) have been busy working on bringing you the best of local entertainment, small business retailers, inspirational speakers and hilarious comedy acts. </p>
+    <br />
+    <p>It’s our aim to provide Chippenham with not only its first ever pride event but also a family event that welcomes everyone no matter what their gender, sexuality, colour or age. </p>
+    <ul>
+      We invite you to explore our website where you’ll find more details on:
+      <li>The acts, their bios and stage times. </li>
+      <li>You’ll see our amazing small business providing you with retail stalls. </li>
+      <li>There’s help and information on our well-being tab with links to help you get the support at the touch of a button. </li>
+      <li>See the awesome bios of our inspiring speakers and their stage times</li>
+      <li>Purchase our unique merchandise ahead of the day</li>
+      <li>And see who our awesome sponsors and supporters are</li>
+    </ul>`
   },
   navbar: [
     {
