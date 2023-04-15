@@ -114,23 +114,26 @@ export const data = {
       sponsors: "The Angel Hotel",
       list: [
         {
+          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-beyond-stonewall-tickets-609371425337`,
           short: `Lord Michael Cashman CBE and Lisa Power MBE, in conversation with
           Bobbi Pickard.`,
           description: `<b>Lord Michael Cashman CBE</b> and <b>Lisa Power MBE</b>, both prominent
         champions of LGBTQ+ rights who fought against Section 28 and went on
         to found Stonewall, join <b>Bobbi Pickard</b>, CEO of Trans in the City, to talk
         about their activism and how the landscape has changed over the years.`,
-          heading: "1400 – 1500 Stonewall and Beyond",
+          heading: "2pm – 3pm Stonewall and Beyond",
         },
         {
+          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-being-proud-tickets-609320101827`,
           short: `Ian ‘H’ Watkins, speaks to Bobbi Pickard.`,
           description: `<b>Ian ‘H’ Watkins</b>, well known for being a member of the pop group Steps,
         speaks to <b>Bobbi Pickard</b>, CEO of Trans in the City, about being a proud
         gay man, ally and his amazing achievement organising Pride events in his
         home town.`,
-          heading: "1515 – 1615 Being Proud",
+          heading: "3.15pm – 4.15pm Being Proud",
         },
         {
+          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-making-change-happen-tickets-609327564147`,
           short: `Linda Riley, Lucy Kamper and Tanya Levene speak to the Trans in the City
           team.`,
           description: `<b>Linda Riley</b>, a leading LGBTQI+ activist who uses her platform to
@@ -139,9 +142,10 @@ export const data = {
         wellbeing of all LGBTQI+ communities, talk to the Trans in the City team
         about how they make change happen and empower people to make
         individual and collective changes.`,
-          heading: "1635 – 1735 Making Change Happen",
+          heading: "4.35pm – 5.35pm Making Change Happen",
         },
         {
+          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-being-on-the-frontline-tickets-609330141857`,
           short: `Emily Hamilton, in discussion with Eva Echo, Leng Montgomery and Skye
           Morden.`,
           description: `<b>Emily Hamilton</b>, Director of Trans in the City and leading trans advocate,
@@ -149,15 +153,16 @@ export const data = {
         <b>Leng Montgomery and <b>Skye Morden</b>, their lived experiences of being a
         trans person in the current climate and how they face the challenges of
         hate and misinformation in the media.`,
-          heading: "1715 - 1815 Being on the Frontline",
+          heading: "5.15pm - 6.15pm Being on the Frontline",
         },
         {
+          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-leading-with-love-tickets-609335768687`,
           short: `Amanda Jette Knox talks to Bobbi Pickard.`,
           description: `<b>Amanda Jette Knox</b>, an award-winning Canadian writer, human rights
         advocate and public speaker, talks to <b>Bobbi Pickard</b> about her work on
         LGBTQ+ rights and education and how living with her transgender wife
         and daughter has changed her life.`,
-          heading: `1830 – 1930 Leading with Love`,
+          heading: `6.30pm – 7.30pm Leading with Love`,
         },
       ],
     },
@@ -267,12 +272,12 @@ export const data = {
             "Born and raised in the East End of London, Michael had a highly successful career as an actor, singer, writer and director. Elected member of the Labour Party National Executive for 12 years, serving as vice-chair and chair. Co-president of the LGBT Intergroup, vice-president of the Petitions Committee, president of South African Delegation and chair of Delegation Chairs. Co-founder and founding chair of the Stonewall Group. Labour Party’s LGBT Global Envoy 2014-16",
         },
         {
-          name: "Peter Tatchell",
-          url: "https://www.petertatchell.net/",
-          img: "https://www.abertay.ac.uk/media/6031/peter-tatchell.jpg",
+          name: "Amanda Jette Knox",
+          url: "https://www.amandajetteknox.com/about",
+          img: "https://images.squarespace-cdn.com/content/v1/581fe1603e00be924187287e/1478487731708-WJV1J13T72MYTXA39UVK/30.png?format=500w",
           type: "speaker",
           description:
-            "Peter Tatchell has been campaigning for human rights, democracy, LGBT+ freedom and global justice since 1967. Peter’s key political inspirations are Mahatma Gandhi, Sylvia Pankhurst, Martin Luther King and, to some extent, Malcolm X and Rosa Luxemburg. He has adapted many of their methods to his contemporary non-violent struggle for human rights – and invented a few of his own.",
+            "Amanda Jetté Knox is an award-winning writer, human rights advocate and public speaker. In early 2014, her middle child came out to the family as a transgender girl, shifting the focus of her mom’s writing career towards LGBTQ+ rights and education. Alexis' journey changed everything, and taught Amanda a great deal about courage, compassion and authenticity. It made her a better person. Full stop.",
         },
         {
           name: "Ian Watkins 'H'",
@@ -301,7 +306,7 @@ export const data = {
         {
           name: "Linda Riley",
           url: "https://www.lindariley.co.uk/",
-          img: "https://static.wixstatic.com/media/9f212f_be30482267ad409ea4919577c2953c0d~mv2.jpg/v1/crop/x_0,y_130,w_4608,h_2941/fill/w_940,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/191114_EuropeanDiversityAwards_Capture_0.jpg",
+          img: "https://i.postimg.cc/wB00ykSm/Linda-Riley.jpg",
           type: "speaker",
           description:
             "Linda began her career in publishing over 20 years ago as joint publisher of both g3 and Out in the City magazine, and started working in diversity related events a decade later. She has become a powerhouse in the diversity and inclusion sector, starting initiatives such as the Global Diversity List, British and European Diversity Awards, the Pride Power List and many more.",
@@ -364,19 +369,6 @@ export const data = {
       url: "/details/comedy",
       type: "comedy",
     },
-    // {
-    //   data: [
-    //     {
-    //       name: "Stu",
-    //       url: 'https://google.com',
-    //       img: "https://i.scdn.co/image/ab6761610000e5eb2f34440ca30dd0c4e8f6b588",
-    //       type: "band",
-    //       description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-    //     },
-    //   ],
-    //   url: "/details/community-stalls",
-    //   type: "stalls",
-    // },
   ],
 
   stalls: [
