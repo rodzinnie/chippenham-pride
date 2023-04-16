@@ -38,8 +38,13 @@ function Hero() {
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
         <div className={styles.button}>
-          <GoFundMe noImage={false} light={true} text={'Volunteer with us!'} handleClick={handleClick}/>
-          <GoFundMe noImage={false} light={true} text={'Register for the Walk'} handleClick={moveToForm}/>
+          <Button text={'Volunteer with us!'} variant='light' handleClick={handleClick}/>
+        </div>
+        <div className={styles.button}>
+          <Button text={'Book tickets for the talks'} variant='light' handleClick={() => {window.location.href = "https://www.eventbrite.com/cc/chippenham-pride-trans-in-the-city-speaker-stage-2018999"}}/>
+        </div>
+        <div className={styles.button}>
+          <Button text={'Register for the Walk'} variant='light' handleClick={moveToForm}/>
         </div>
         <RollingBar />
       </section>
