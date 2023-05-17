@@ -121,7 +121,7 @@ export const data = {
         champions of LGBTQ+ rights who fought against Section 28 and went on
         to found Stonewall, join <b>Bobbi Pickard</b>, CEO of Trans in the City, to talk
         about their activism and how the landscape has changed over the years.`,
-          heading: "2pm – 3pm Stonewall and Beyond",
+          heading: "2pm Beyond Stonewall",
         },
         {
           link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-being-proud-tickets-609320101827`,
@@ -130,7 +130,15 @@ export const data = {
         speaks to <b>Bobbi Pickard</b>, CEO of Trans in the City, about being a proud
         gay man, ally and his amazing achievement organising Pride events in his
         home town.`,
-          heading: "3.15pm – 4.15pm Being Proud",
+          heading: "3.15pm Being Proud",
+        },
+        {
+          link: `https://www.eventbrite.com/e/speaking-out-tickets-629139722847?aff=odcleoeventsincollection&keep_tld=1`,
+          short: `Peter Tatchell talks to Bobbi Pickard.`,
+          description: `<b>Peter Tatchell</b>, human rights, democracy, civil liberties, LGBT equality and global justice campaigner, talks to Bobbi Pickard about his ground breaking work throughout the world on human rights and his Reclaim Pride initiative, which seeks to get Pride back to its roots, with corporate sponsorship being replaced by a grassroots community and a human rights focus.
+
+`,
+          heading: "4:35pm Speaking Out",
         },
         {
           link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-making-change-happen-tickets-609327564147`,
@@ -142,7 +150,7 @@ export const data = {
         wellbeing of all LGBTQI+ communities, talk to the Trans in the City team
         about how they make change happen and empower people to make
         individual and collective changes.`,
-          heading: "4.35pm – 5.35pm Making Change Happen",
+          heading: "5.50 pm Making Change Happen",
         },
         {
           link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-being-on-the-frontline-tickets-609330141857`,
@@ -153,16 +161,7 @@ export const data = {
         <b>Leng Montgomery and <b>Skye Morden</b>, their lived experiences of being a
         trans person in the current climate and how they face the challenges of
         hate and misinformation in the media.`,
-          heading: "5.15pm - 6.15pm Being on the Frontline",
-        },
-        {
-          link: `https://www.eventbrite.co.uk/e/chippenham-pride-trans-in-the-city-speaker-stage-leading-with-love-tickets-609335768687`,
-          short: `Amanda Jette Knox talks to Bobbi Pickard.`,
-          description: `<b>Amanda Jette Knox</b>, an award-winning Canadian writer, human rights
-        advocate and public speaker, talks to <b>Bobbi Pickard</b> about her work on
-        LGBTQ+ rights and education and how living with her transgender wife
-        and daughter has changed her life.`,
-          heading: `6.30pm – 7.30pm Leading with Love`,
+          heading: "5.05pm Being on the Frontline",
         },
       ],
     },
