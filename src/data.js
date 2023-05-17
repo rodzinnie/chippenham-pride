@@ -271,12 +271,12 @@ export const data = {
             "Born and raised in the East End of London, Michael had a highly successful career as an actor, singer, writer and director. Elected member of the Labour Party National Executive for 12 years, serving as vice-chair and chair. Co-president of the LGBT Intergroup, vice-president of the Petitions Committee, president of South African Delegation and chair of Delegation Chairs. Co-founder and founding chair of the Stonewall Group. Labour Party’s LGBT Global Envoy 2014-16",
         },
         {
-          name: "Amanda Jette Knox",
-          url: "https://www.amandajetteknox.com/about",
-          img: "https://images.squarespace-cdn.com/content/v1/581fe1603e00be924187287e/1478487731708-WJV1J13T72MYTXA39UVK/30.png?format=500w",
+          name: "Peter Tatchell",
+          url: "https://www.petertatchellfoundation.org/",
+          img: "https://www.abertay.ac.uk/media/6031/peter-tatchell.jpg",
           type: "speaker",
           description:
-            "Amanda Jetté Knox is an award-winning writer, human rights advocate and public speaker. In early 2014, her middle child came out to the family as a transgender girl, shifting the focus of her mom’s writing career towards LGBTQ+ rights and education. Alexis' journey changed everything, and taught Amanda a great deal about courage, compassion and authenticity. It made her a better person. Full stop.",
+            "Peter Tatchell, human rights, democracy, civil liberties, LGBT equality and global justice campaigner, will talk to Bobbi Pickard about his ground breaking work throughout the world on human rights and his Reclaim Pride initiative, which seeks to get Pride back to its roots, with corporate sponsorship being replaced by a grassroots community and a human rights focus.",
         },
         {
           name: "Ian Watkins 'H'",
