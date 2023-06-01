@@ -219,7 +219,7 @@ export const data = {
         },
         {
           name: "Rock Choir Wiltshire and Somerset",
-          url: "https://www.facebook.com/rockchoirnorthwiltshire",
+          url: "https://www.facebook.com/WiltshireandSomersetRockChoir/",
           img: "https://i.postimg.cc/xC55CHZZ/rock-choir.png",
           type: "band",
           description:
