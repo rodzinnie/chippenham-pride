@@ -96,7 +96,7 @@ export const data = {
         { artist: "Sheila Tackya", time: "1.25pm" },
         { artist: "Becky & Stuart", time: "2 pm" },
         { artist: "Meg", time: "3.30 pm" },
-        { artist: "Winner", time: "4 pm" },
+        { artist: "The Sunnies", time: "4 pm" },
         { artist: "Pheebs Pole Fit", time: "4.30 pm" },
         { artist: "Boston Green", time: "4.45 pm" },
         { artist: "Rock Choir", time: "5.30 pm" },
