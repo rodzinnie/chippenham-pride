@@ -6,8 +6,7 @@ import {data} from '../../data'
 
 function Contact() {
   const volunteerPath = useLocation().pathname == '/volunteer' ? true : false
-  console.log(volunteerPath)
- 
+
 
   return (
     <ArticleSection className={styles.root} header='Contact us!'>
