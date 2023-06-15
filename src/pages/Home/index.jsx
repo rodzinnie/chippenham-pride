@@ -1,9 +1,8 @@
 import React from 'react'
 
 import styles from './index.module.css'
-import { ArticleSection, Button, GoFundMe, Highlights, MerchLink } from '../../common'
-import prog from '../../assets/pride_programme.pdf'
-import {data, other} from './data'
+import { ArticleSection, Button, GoFundMe, Highlights, MerchLink, Programme } from '../../common'
+import {data} from './data'
 
 function Home() {
   const handleClick = (e) => {
@@ -31,17 +30,7 @@ function Home() {
         <GoFundMe text='donate'/>
       </ArticleSection>
       <MerchLink />
-      <ArticleSection header='The Event'>
-        <h2 className={styles.subTitle}>The Programme</h2>
-          <img src="https://i.postimg.cc/Bbyv9jCM/IMG-1677.jpg" alt="Pride programme" style={{display: 'block'}}/>
-        <p style={{width: 'fit-content', margin: '40px auto'}}>
-          <a href={prog} download >Download Programme</a>
-        </p>
-        <h2 className={styles.subTitle}>See the map</h2>
-        <div className={styles.mapWrapper}>
-          <img src={other.map.src} alt={other.map.alt} className={styles.map}></img>
-        </div>
-      </ArticleSection>
+      <Programme />
 
     </section>
   )
