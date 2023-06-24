@@ -1,13 +1,14 @@
-export { default as About } from './About'
-export { default as BusinessSponsorship } from './BusinessSponsorship'
-export { default as Contact } from './Contact'
-export { default as DetailsNav } from './DetailsNav'
-export { default as EventDetailsCategory } from './EventDetailsCategory'
-export { default as Home } from './Home'
-export { default as Message } from './Message'
-export { default as  Stalls} from './Stalls'
-export { default as SubmitMessage } from './SubmitMessage'
-export { default as Support } from './Support'
-export { default as Team } from './Team'
-export { default as TandC } from './TandC'
-export { default as WhatWeSupport } from './WhatWeSupport'
+export { default as About } from "./About";
+export { default as Archive } from "./Archive";
+export { default as BusinessSponsorship } from "./BusinessSponsorship";
+export { default as Contact } from "./Contact";
+export { default as DetailsNav } from "./DetailsNav";
+export { default as EventDetailsCategory } from "./EventDetailsCategory";
+export { default as Home } from "./Home";
+export { default as Message } from "./Message";
+export { default as Stalls } from "./Stalls";
+export { default as SubmitMessage } from "./SubmitMessage";
+export { default as Support } from "./Support";
+export { default as Team } from "./Team";
+export { default as TandC } from "./TandC";
+export { default as WhatWeSupport } from "./WhatWeSupport";

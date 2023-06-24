@@ -2,6 +2,29 @@
 // so that the local data files can be removed (on a component level)
 
 export const data = {
+  archive: {
+    year2023: {
+      summary: `
+        <p>First Chippenham Pride was an amazingly successful event. People from across Wiltshire (and further) have gathered to enjoy this beautiful, family-oriented event and support those from all minorities.</p>
+        <br/>
+        <p>We will strive to continue on this endeavour to promote equality and diversity in our historical market town.</p>
+      `,
+      images: [
+        {
+          alt: "Councillor Declan Baseley and Councillor Liz Alstrom",
+          src: "https://i.postimg.cc/02kp8vqF/mayor.jpg",
+        },
+        {
+          alt: "People walking through the town with pride banners",
+          src: "https://i.postimg.cc/15vDXdmt/pride-Front.jpg",
+        },
+        {
+          alt: "The town council Pride Flag Rasing ceremony",
+          src: "https://i.postimg.cc/dVDry939/townflag.jpgg",
+        },
+      ],
+    },
+  },
   volunteer: {
     volunteerBlurb:
       "Are you looking for a meaningful way to give back to your community? Do you want to help create a more inclusive and accepting environment for all? Join the Chippenham Pride team as a volunteer!<br /> Whether you have a few hours a week or a few days a month, we welcome volunteers of all backgrounds and experiences. Together, we can create a brighter future for Chippenham and beyond. Join us today and help us make history!",
@@ -9,18 +32,8 @@ export const data = {
       "Hey Pride, I'd like to help out with organising the event. Please reach out to me so I can get involved. Cheers!",
   },
   eventDetailTexts: {
-    list: `<p>Chippenham pride has been a year in the making. The team (made up completely by volunteers) have been busy working on bringing you the best of local entertainment, small business retailers, inspirational speakers and hilarious comedy acts. </p>
-    <br />
-    <p>It’s our aim to provide Chippenham with not only its first ever pride event but also a family event that welcomes everyone no matter what their gender, sexuality, colour or age. </p>
-    <ul>
-      We invite you to explore our website where you’ll find more details on:
-      <li>The acts, their bios and stage times. </li>
-      <li>You’ll see our amazing small business providing you with retail stalls. </li>
-      <li>There’s help and information on our well-being tab with links to help you get the support at the touch of a button. </li>
-      <li>See the awesome bios of our inspiring speakers and their stage times</li>
-      <li>Purchase our unique merchandise ahead of the day</li>
-      <li>And see who our awesome sponsors and supporters are</li>
-    </ul>`,
+    list: `<p>Chippenham Pride has been a year in the making. The team (made up completely by volunteers) have been busy working on bringing you the best of local entertainment, small business retailers, inspirational speakers and hilarious comedy acts. </p>
+    <br />`,
   },
   navbar: [
     {
@@ -34,25 +47,30 @@ export const data = {
           title: "General Info",
           url: "details",
         },
-        {
-          title: "Main Stage",
-          url: "details/main-stage",
-        },
-        {
-          title: "Comedy",
-          url: "details/comedy",
-        },
-        {
-          title: "Speakers",
-          url: "details/speakers",
-        },
         // {
-        //   title: 'Community Stalls',
-        //   url: 'details/community-stalls'
+        //   title: "Main Stage",
+        //   url: "details/main-stage",
+        // },
+        // {
+        //   title: "Comedy",
+        //   url: "details/comedy",
+        // },
+        // {
+        //   title: "Speakers",
+        //   url: "details/speakers",
+        // },
+        // {
+        //   title: "Stalls",
+        //   url: "details/stalls",
         // },
         {
-          title: "Stalls",
-          url: "details/stalls",
+          title: "Previous Events",
+          submenu: [
+            {
+              title: "2023",
+              url: "archive/2023",
+            },
+          ],
         },
       ],
     },
