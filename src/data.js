@@ -63,14 +63,14 @@ export const data = {
         //   title: "Stalls",
         //   url: "details/stalls",
         // },
+      ],
+    },
+    {
+      title: "Previous Events",
+      submenu: [
         {
-          title: "Previous Events",
-          submenu: [
-            {
-              title: "2023",
-              url: "archive/2023",
-            },
-          ],
+          title: "2023",
+          url: "archive/2023",
         },
       ],
     },
