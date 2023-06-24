@@ -7,11 +7,25 @@ import { Button, GoFundMe, Sponsors } from "../../common";
 import { data } from "./data";
 
 function Footer() {
+  const handleClick = () => {
+    navigateTo("/volunteer");
+  };
   return (
     <footer className={styles.root}>
       <h2 className={styles.sponsorsH2}>Main Sponsors</h2>
       <div className={styles.sponsors}>
-        <Sponsors data={data} />
+        <h1>We are open for sponsorship for 2024</h1>
+        <p>
+          Last year's event was a major success. If you would like to partake in
+          making our town even more LGBTQ+ friendly, ask now how you can support
+          us!
+        </p>
+        <Button
+          text={"Contact us!"}
+          variant="light"
+          handleClick={handleClick}
+        />
+        {/* <Sponsors data={data} /> */}
       </div>
       <div className={styles.buttonWrapper}>
         <Link to="/sponsor">
@@ -38,7 +52,7 @@ function Footer() {
         <div className={styles.registry}>
           CHIPPENHAM PRIDE CIC <br /> Company number: <br />
           14287807
-          <GoFundMe noImage={true} text={'Donate'} />
+          <GoFundMe noImage={true} text={"Donate"} />
         </div>
       </div>
       <p className={styles.rights}>

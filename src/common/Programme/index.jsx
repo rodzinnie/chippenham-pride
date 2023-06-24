@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import { ArticleSection } from '../'
-import prog from '../../assets/pride_programme.pdf' 
-import map from '../../assets/Map.pdf' 
+// import prog from '../../assets/pride_programme.pdf' 
+// import map from '../../assets/Map.pdf' 
 
 const index = () => {
   const [windowSize, setWindowSize] = useState(
@@ -35,7 +35,7 @@ const index = () => {
 
   return (
     <ArticleSection header={'the Programme'}>
-      <img
+      {/* <img
         src="https://i.postimg.cc/Bbyv9jCM/IMG-1677.jpg"
         alt="Pride programme"
         style={{ display: "block", width: imgWidth}}
@@ -49,7 +49,7 @@ const index = () => {
         <a href={map} download>
           Download Map
         </a>
-      </p>
+      </p> */}
       </ArticleSection>
   )
 }
