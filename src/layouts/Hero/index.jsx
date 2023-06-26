@@ -33,7 +33,7 @@ function Hero() {
           <h1 className={styles.h1}>
             Join Proud Chippenham in celebrating its diversity!
           </h1>
-          <p className={styles.date}>15 June 2024</p>
+          <p className={styles.date}>TBC - June 2024</p>
           <p className={styles.start}>Start: 1pm</p>
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
