@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import {Dropdown} from "../";
-import styles from './index.module.css'
+import Dropdown from "../Dropdown";
+import styles from "./index.module.css";
 
 const MenuItems = ({ items, depthLevel, handleClick }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -38,16 +38,23 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-            {items.url && items.submenu ? (
+      {items.url && items.submenu ? (
         <>
           <button
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => {
-              setDropdown((prev) => !prev)
-            }}          >
-            <Link to={items.url} onClick={() => handleClick(false)} className={styles.link}>{items.title}</Link>
+              setDropdown((prev) => !prev);
+            }}
+          >
+            <Link
+              to={items.url}
+              onClick={() => handleClick(false)}
+              className={styles.link}
+            >
+              {items.title}
+            </Link>
             {/* {items.title}{" "} */}
             {depthLevel > 0 ? (
               <span>&raquo;</span>
@@ -72,8 +79,8 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => {
-              dropdown && handleClick(false)
-              setDropdown((prev) => !prev)
+              dropdown && handleClick(false);
+              setDropdown((prev) => !prev);
             }}
           >
             {/* <a href="/#">{items.title}</a> */}
@@ -87,8 +94,10 @@ const MenuItems = ({ items, depthLevel, handleClick }) => {
           />
         </>
       ) : (
-        <Link to={items.url} onClick={() => handleClick(false)}>{items.title}</Link>
-        )}
+        <Link to={items.url} onClick={() => handleClick(false)}>
+          {items.title}
+        </Link>
+      )}
     </li>
   );
 };
