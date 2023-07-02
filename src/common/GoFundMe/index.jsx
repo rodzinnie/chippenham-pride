@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "../";
 import styles from "./index.module.css";
 import gofundme from "../../assets/gofundme.png";
+import sticky from "../../assets/sticky.gif";
 
 function GoFundMe({ noImage, light, text, handleClick }) {
   const gofundmeClick = () => {
@@ -19,20 +20,21 @@ function GoFundMe({ noImage, light, text, handleClick }) {
   return (
     <>
       <div className={styles.right}>
-        {!noImage && <img className={styles.img} src={gofundme} />}
-        <Button
-          text={text}
-          variant={light ? "light" : "dark"}
-          className={styles.button}
-          handleClick={handleClick ? handleClick : gofundmeClick}
-        />
+        {!noImage && (
+          <>
+            <img className={styles.img} src={gofundme} />
+            <Button
+              text={"Donate"}
+              variant={light ? "light" : "dark"}
+              className={styles.button}
+              handleClick={handleClick ? handleClick : gofundmeClick}
+            />
+          </>
+        )}
       </div>
       <div className={styles.right}>
-        <Button
-          text="donate via sticky"
-          variant="dark"
-          handleClick={stickyClick}
-        />
+        {!noImage && <img className={styles.img} src={sticky} />}
+        <Button text="Donate" variant="dark" handleClick={stickyClick} />
       </div>
     </>
   );
