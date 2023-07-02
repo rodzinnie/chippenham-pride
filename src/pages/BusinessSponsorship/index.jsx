@@ -3,7 +3,7 @@ import React from "react";
 import { Button, ArticleSection } from "../../common";
 import styles from "./index.module.css";
 import sponsorship from "../../assets/Sponsorship1.jpeg";
-import sponsorshiptnc from "../../assets/Sponsorshiptnc.jpeg";
+import sponsorshiptnc from "../../assets/sponsorshiptnc.jpeg";
 import headline from "../../assets/headlinesponsorship.jpeg";
 import other from "../../assets/othersponsorship.jpeg";
 
