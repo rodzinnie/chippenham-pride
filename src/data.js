@@ -2,6 +2,16 @@
 // so that the local data files can be removed (on a component level)
 
 export const data = {
+  donate: `
+    We organise our Pride pro bono. But we can't fund it 100% ourselves.
+  Please help us to get our Pride up and running. Thanks, see you on our
+  parade!
+  `,
+  generalEventInfo: {
+    paragraphs: `
+    We are thrilled to announce that the <b>first Pride event in Chippenham was an outstanding success!</b> The day was filled with joy, love, and celebration, bringing together people from all walks of life to embrace diversity and promote equality.<br/> As we look ahead to next year's Pride, we are actively seeking sponsors, artists, charities, food vendors, and others to join us in making it even more remarkable. It's important to note that <b>our organization is a non-profit</b>, which means we are unable to financially compensate the artists for their performances, as we do not generate any revenue from the event. However, we firmly believe that this Pride is about <b>supporting our local community and fostering a sense of unity</b>. It is a community-building event rather than a commercial endeavor. We welcome all passionate individuals and organizations to come forward and contribute their talents and resources to help create a truly unforgettable experience for everyone involved. <br/> <b>Together, let's continue to spread love, acceptance, and inclusion in Chippenham!</b>
+    `,
+  },
   archive: {
     year2023: {
       summary: `
@@ -109,22 +119,7 @@ export const data = {
       place: "main stage",
       sponsors: "chippenham motor company",
       list: [
-        { artist: "the decibels", time: "12.30pm" },
-        { artist: "Welcome Pride", time: "1.15pm" },
-        { artist: "Sheila Tackya", time: "1.25pm" },
-        { artist: "Becky & Stuart", time: "2 pm" },
-        { artist: "Meg", time: "3.30 pm" },
-        { artist: "The Sunnies", time: "4 pm" },
-        { artist: "Pheebs Pole Fit", time: "4.30 pm" },
-        { artist: "Boston Green", time: "4.45 pm" },
-        { artist: "Rock Choir", time: "5.30 pm" },
-        { artist: "The Real Cheesmakers", time: "6 pm" },
-        { artist: "Nyther Silence", time: "6.45 pm" },
-        { artist: "Pheebs", time: "7.15 pm" },
-        { artist: "Smash By", time: "7.30 pm" },
-        { artist: "Courtney Jackson (Drag)", time: "8.15 pm" },
-        { artist: "Concrete Prairie", time: "9 pm" },
-        { artist: "Stage Close", time: "10.10 pm" },
+        // { artist: "the decibels", time: "12.30pm" },
       ],
     },
     {

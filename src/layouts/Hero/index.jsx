@@ -1,28 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import RollingBar from "../../common/RollingBar/index";
-import { Button, GoFundMe, Header } from "../../common";
+import { Button, Header } from "../../common";
 import styles from "./index.module.css";
-import arrow from "../../assets/arr.png";
 
 function Hero() {
   const navigateTo = useNavigate();
   const handleClick = () => {
     navigateTo("/volunteer");
-  };
-
-  const moveToForm = () => {
-    const path = window.location.pathname;
-    if (path != "/") {
-      navigateTo("/");
-      setTimeout(() => {
-        const element = document.getElementById("walkRegistration");
-        element.scrollIntoView({ behavior: "smooth" });
-      }, 800);
-    } else {
-      const element = document.getElementById("walkRegistration");
-      element.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
