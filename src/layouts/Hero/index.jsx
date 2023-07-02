@@ -23,7 +23,7 @@ function Hero() {
         <div className={styles.button}>
           <Button
             text={"Volunteer with us!"}
-            variant="light"
+            variant="dark"
             handleClick={handleClick}
           />
         </div>
