@@ -4,6 +4,7 @@ export { default as BusinessSponsorship } from "./BusinessSponsorship";
 export { default as Contact } from "./Contact";
 export { default as DetailsNav } from "./DetailsNav";
 export { default as EventDetailsCategory } from "./EventDetailsCategory";
+export { default as EventDetailsGeneral } from "./EventDetailsGeneral";
 export { default as Home } from "./Home";
 export { default as Message } from "./Message";
 export { default as Stalls } from "./Stalls";

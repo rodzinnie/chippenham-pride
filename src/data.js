@@ -2,6 +2,16 @@
 // so that the local data files can be removed (on a component level)
 
 export const data = {
+  donate: `
+    We organise our Pride pro bono. But we can't fund it 100% ourselves.
+  Please help us to get our Pride up and running. Thanks, see you on our
+  parade!
+  `,
+  generalEventInfo: {
+    paragraphs: `
+    We are thrilled to announce that the <b>first Pride event in Chippenham was an outstanding success!</b> The day was filled with joy, love, and celebration, bringing together people from all walks of life to embrace diversity and promote equality.<br/> As we look ahead to next year's Pride, we are actively seeking sponsors, artists, charities, food vendors, and others to join us in making it even more remarkable. It's important to note that <b>our organization is a non-profit</b>, which means we are unable to financially compensate the artists for their performances, as we do not generate any revenue from the event. However, we firmly believe that this Pride is about <b>supporting our local community and fostering a sense of unity</b>. It is a community-building event rather than a commercial endeavor. We welcome all passionate individuals and organizations to come forward and contribute their talents and resources to help create a truly unforgettable experience for everyone involved. <br/> <b>Together, let's continue to spread love, acceptance, and inclusion in Chippenham!</b>
+    `,
+  },
   archive: {
     year2023: {
       summary: `

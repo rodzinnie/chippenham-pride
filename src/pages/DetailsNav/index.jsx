@@ -2,7 +2,6 @@ import { ArticleSection } from "../../common";
 import styles from "./index.module.css";
 import { data } from "../../data";
 const DetailsNav = () => {
-
   return (
     <>
       {/* <Programme /> */}

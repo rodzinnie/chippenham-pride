@@ -8,6 +8,7 @@ import {
   Home,
   About,
   BusinessSponsorship,
+  EventDetailsGeneral,
   SubmitMessage,
   Support,
   Team,
@@ -23,14 +24,22 @@ function App() {
     <Routes>
       <Route basename="/" element={<MainLayout />}>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path='details' element={<><Outlet /></>}>
-          <Route path='main-stage' element={<EventDetailsCategory />} />
+        <Route
+          path="details"
+          element={
+            <>
+              <Outlet />
+            </>
+          }
+        >
+          <Route path="" element={<EventDetailsGeneral />} />
+          {/* <Route path='main-stage' element={<EventDetailsCategory />} />
           <Route path='small-stage' element={<EventDetailsCategory />} />
           <Route path='comedy' element={<EventDetailsCategory />} />
           <Route path='speakers' element={<EventDetailsCategory />} />
           <Route path='community-stalls' element={<EventDetailsCategory />} />
-          <Route path='stalls' element={<Stalls />} />
-        </Route> */}
+          <Route path='stalls' element={<Stalls />} /> */}
+        </Route>
         <Route
           path="about"
           element={
@@ -52,7 +61,7 @@ function App() {
         <Route path="whatWeSupport" element={<WhatWeSupport />}></Route>
         {/* <Route path='details' element={<Details />}> */}
         <Route path="archive/2023" element={<Archive />}></Route>
-        <Route index element={<DetailsNav />}></Route>
+        {/* <Route index element={<DetailsNav />}></Route> */}
         {/* <Route path='main-stage' element={< />}></Route> */}
         {/* </Route> */}
       </Route>
