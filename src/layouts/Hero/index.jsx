@@ -18,13 +18,12 @@ function Hero() {
             Join Proud Chippenham in celebrating its diversity!
           </h1>
           <p className={styles.date}>TBC - June 2024</p>
-          <p className={styles.start}>Start: 1pm</p>
           <p className={styles.place}>Monkton Park, Chippenham</p>
         </div>
         <div className={styles.button}>
           <Button
             text={"Volunteer with us!"}
-            variant="light"
+            variant="dark"
             handleClick={handleClick}
           />
         </div>

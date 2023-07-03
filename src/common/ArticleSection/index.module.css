@@ -30,14 +30,15 @@ article{
 .h1 {
   text-transform: capitalize;
   font-size: 40px;
-  text-shadow: 2px 4px rgba(255, 0, 0, 0.1);
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 90px;
   font-family: 'Poppins';
   font-weight: 800;
   text-align:center;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url('https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('../../assets/pridebackgroundlong.jpg');
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.286); /* width and color */
   color: transparent; 
   background-size: contain;
 }
