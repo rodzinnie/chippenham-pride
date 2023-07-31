@@ -5,6 +5,17 @@
     --background-color: white;
 }
 
+.countdown{
+  text-align: center;
+  padding: 30px 0;
+}
+
+.countdownDays{
+  font-size: 60px;
+  font-weight: 900;
+  padding: 10px;
+}
+
 .root {
   background-color: black;
   width: 100%;
@@ -51,7 +62,7 @@
   align-items: center;
 }
 
-.date, .start, .place {
+.date, .start, .place, .countdown {
   -webkit-user-select:none;
   font-family: var(--main-font);
   font-size: 30px;
@@ -65,24 +76,22 @@
 
 .date {
   letter-spacing: 0.1em;
-  font-size: 80px;
-  font-weight: 900;
-  /* background-image: url('https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  font-size: 60px;
+  font-weight: 600;
   background-image: url('../../assets/pridebackgroundlong.jpg');
   background-size: contain;
-  /* background: -webkit-linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 30px 0;
 }
 .h1 {
-  width: 70%;
-  font-size: 40px;
-  font-weight: 400;
+  width: 100%;
+  font-size: 30px;
   color: var(--navbar-color);
   text-align: center;
   font-family: 'Poppins';
-  font-weight: 900;
+  font-weight: 200;
 }
 
 .button {
